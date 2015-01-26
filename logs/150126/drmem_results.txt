@@ -1,0 +1,2090 @@
+Dr. Memory version 1.8.0 build 8 built on Sep  9 2014 16:27:02
+Dr. Memory results for pid 3436: "Rterm.exe"
+Application cmdline: "Rterm.exe"
+Recorded 108 suppression(s) from default C:\src\drm\bin\suppress-default.txt
+
+WARNING: application is missing line number information.
+
+Error #1: UNINITIALIZED READ: reading register cl
+# 0 KERNEL32.dll!LZClose             +0xbb     (0x75cb0fa6 <KERNEL32.dll+0x90fa6>)
+# 1 KERNEL32.dll!GetConsoleTitleW    +0xd8     (0x75c7c356 <KERNEL32.dll+0x5c356>)
+# 2 KERNEL32.dll!GetConsoleTitleA    +0x13     (0x75ccbfc5 <KERNEL32.dll+0xabfc5>)
+# 3 R.dll!?                          +0x0      (0x6c7207c8 <R.dll+0x207c8>)
+# 4 Rterm.exe!?                      +0x0      (0x00401731 <Rterm.exe+0x1731>)
+# 5 Rterm.exe!?                      +0x0      (0x00401589 <Rterm.exe+0x1589>)
+# 6 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 7 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:00:07.379 in thread 3756
+Note: instruction: test   %cl %cl
+
+Error #2: UNADDRESSABLE ACCESS: writing 0xffff089d-0xffff08a1 4 byte(s) within 0xffff089d-0xffff08a1
+# 0 system call NtUserMessageCall ResultInfo
+# 1 USER32.dll!GetScrollBarInfo                           +0x13f    (0x75d24f51 <USER32.dll+0x14f51>)
+# 2 USER32.dll!CallWindowProcA                            +0x1a     (0x75d42bee <USER32.dll+0x32bee>)
+# 3 Rgraphapp.dll!GAI_app_control_procedure@16             [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 USER32.dll!gapfnScSendMessage                         +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+# 5 USER32.dll!gapfnScSendMessage                         +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+# 6 USER32.dll!DefWindowProcW                             +0x216    (0x75d25294 <USER32.dll+0x15294>)
+# 7 USER32.dll!SendMessageA                               +0x48     (0x75d1ada9 <USER32.dll+0xada9>)
+# 8 Rgraphapp.dll!GA_changelistbox                         [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 9 Rgraphapp.dll!GA_newlistbox                            [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+#10 utils.dll!?                                           +0x0      (0x6e5d25a0 <utils.dll+0x125a0>)
+#11 R.dll!?                                               +0x0      (0x6c775dfd <R.dll+0x75dfd>)
+#12 R.dll!?                                               +0x0      (0x6c77e662 <R.dll+0x7e662>)
+#13 R.dll!?                                               +0x0      (0x6c782b16 <R.dll+0x82b16>)
+#14 R.dll!?                                               +0x0      (0x6c77b57d <R.dll+0x7b57d>)
+#15 R.dll!?                                               +0x0      (0x6c77e662 <R.dll+0x7e662>)
+#16 R.dll!?                                               +0x0      (0x6c782b16 <R.dll+0x82b16>)
+#17 R.dll!?                                               +0x0      (0x6c77e777 <R.dll+0x7e777>)
+#18 R.dll!?                                               +0x0      (0x6c780ef1 <R.dll+0x80ef1>)
+#19 R.dll!?                                               +0x0      (0x6c77e9e7 <R.dll+0x7e9e7>)
+Note: @0:00:29.172 in thread 3756
+
+Error #3: UNADDRESSABLE ACCESS: writing 0xffff089d-0xffff08a1 4 byte(s) within 0xffff089d-0xffff08a1
+# 0 system call NtUserMessageCall ResultInfo
+# 1 USER32.dll!GetScrollBarInfo                           +0x13f    (0x75d24f51 <USER32.dll+0x14f51>)
+# 2 USER32.dll!CallWindowProcA                            +0x1a     (0x75d42bee <USER32.dll+0x32bee>)
+# 3 Rgraphapp.dll!GAI_app_control_procedure@16             [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 USER32.dll!gapfnScSendMessage                         +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+# 5 USER32.dll!gapfnScSendMessage                         +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+# 6 USER32.dll!DefWindowProcW                             +0x216    (0x75d25294 <USER32.dll+0x15294>)
+# 7 USER32.dll!SendMessageA                               +0x48     (0x75d1ada9 <USER32.dll+0xada9>)
+# 8 Rgraphapp.dll!GA_changelistbox                         [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 9 Rgraphapp.dll!GA_newlistbox                            [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+#10 utils.dll!?                                           +0x0      (0x6e5d25a0 <utils.dll+0x125a0>)
+#11 R.dll!?                                               +0x0      (0x6c775dfd <R.dll+0x75dfd>)
+#12 R.dll!?                                               +0x0      (0x6c77e662 <R.dll+0x7e662>)
+#13 R.dll!?                                               +0x0      (0x6c782b16 <R.dll+0x82b16>)
+#14 R.dll!?                                               +0x0      (0x6c77b57d <R.dll+0x7b57d>)
+#15 R.dll!?                                               +0x0      (0x6c77e662 <R.dll+0x7e662>)
+#16 R.dll!?                                               +0x0      (0x6c782b16 <R.dll+0x82b16>)
+#17 R.dll!?                                               +0x0      (0x6c77e777 <R.dll+0x7e777>)
+#18 R.dll!?                                               +0x0      (0x6c780ef1 <R.dll+0x80ef1>)
+#19 R.dll!?                                               +0x0      (0x6c77e9e7 <R.dll+0x7e9e7>)
+Note: @0:00:29.281 in thread 3756
+
+Error #4: UNADDRESSABLE ACCESS: writing 0xffff089d-0xffff08a1 4 byte(s) within 0xffff089d-0xffff08a1
+# 0 system call NtUserMessageCall ResultInfo
+# 1 USER32.dll!CallWindowProcA                            +0x1a     (0x75d42bee <USER32.dll+0x32bee>)
+# 2 Rgraphapp.dll!GAI_app_control_procedure@16             [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 3 USER32.dll!gapfnScSendMessage                         +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+# 4 USER32.dll!gapfnScSendMessage                         +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+# 5 USER32.dll!DefWindowProcW                             +0x216    (0x75d25294 <USER32.dll+0x15294>)
+# 6 USER32.dll!SendMessageA                               +0x48     (0x75d1ada9 <USER32.dll+0xada9>)
+# 7 Rgraphapp.dll!GA_changelistbox                         [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 8 Rgraphapp.dll!GA_newlistbox                            [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 9 utils.dll!?                                           +0x0      (0x6e5d25a0 <utils.dll+0x125a0>)
+#10 R.dll!?                                               +0x0      (0x6c775dfd <R.dll+0x75dfd>)
+#11 R.dll!?                                               +0x0      (0x6c77e662 <R.dll+0x7e662>)
+#12 R.dll!?                                               +0x0      (0x6c782b16 <R.dll+0x82b16>)
+#13 R.dll!?                                               +0x0      (0x6c77b57d <R.dll+0x7b57d>)
+#14 R.dll!?                                               +0x0      (0x6c77e662 <R.dll+0x7e662>)
+#15 R.dll!?                                               +0x0      (0x6c782b16 <R.dll+0x82b16>)
+#16 R.dll!?                                               +0x0      (0x6c77e777 <R.dll+0x7e777>)
+#17 R.dll!?                                               +0x0      (0x6c780ef1 <R.dll+0x80ef1>)
+#18 R.dll!?                                               +0x0      (0x6c77e9e7 <R.dll+0x7e9e7>)
+#19 R.dll!?                                               +0x0      (0x6c77f693 <R.dll+0x7f693>)
+Note: @0:00:29.406 in thread 3756
+
+Error #5: UNADDRESSABLE ACCESS: writing 0xffff05a3-0xffff05a7 4 byte(s) within 0xffff05a3-0xffff05a7
+# 0 system call NtUserMessageCall ResultInfo
+# 1 USER32.dll!GetScrollBarInfo                           +0x13f    (0x75d24f51 <USER32.dll+0x14f51>)
+# 2 USER32.dll!CallWindowProcA                            +0x1a     (0x75d42bee <USER32.dll+0x32bee>)
+# 3 Rgraphapp.dll!GAI_app_control_procedure@16             [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 USER32.dll!gapfnScSendMessage                         +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+# 5 USER32.dll!gapfnScSendMessage                         +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+# 6 USER32.dll!GetScrollBarInfo                           +0xfc     (0x75d24f0e <USER32.dll+0x14f0e>)
+# 7 USER32.dll!WindowFromPoint                            +0x36     (0x75d46c20 <USER32.dll+0x36c20>)
+# 8 ntdll.dll!KiUserCallbackDispatcher                    +0x2d     (0x774c6fee <ntdll.dll+0x46fee>)
+# 9 COMCTL32.dll!Ordinal342                               +0x16b9   (0x74554cb9 <COMCTL32.dll+0x24cb9>)
+#10 COMCTL32.dll!Ordinal342                               +0x1494   (0x74554a94 <COMCTL32.dll+0x24a94>)
+#11 COMCTL32.dll!Ordinal342                               +0x128a   (0x7455488a <COMCTL32.dll+0x2488a>)
+#12 COMCTL32.dll!Ordinal342                               +0x192a   (0x74554f2a <COMCTL32.dll+0x24f2a>)
+#13 COMCTL32.dll!Ordinal342                               +0x10a3   (0x745546a3 <COMCTL32.dll+0x246a3>)
+#14 COMCTL32.dll!Ordinal342                               +0x10e0   (0x745546e0 <COMCTL32.dll+0x246e0>)
+#15 USER32.dll!gapfnScSendMessage                         +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+#16 USER32.dll!gapfnScSendMessage                         +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+#17 USER32.dll!PeekMessageA                               +0x18b    (0x75d21b31 <USER32.dll+0x11b31>)
+#18 USER32.dll!CallWindowProcA                            +0x1a     (0x75d42bee <USER32.dll+0x32bee>)
+#19 Rgraphapp.dll!GAI_app_control_procedure@16             [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+Note: @0:00:31.013 in thread 3756
+
+Error #6: UNADDRESSABLE ACCESS: writing 0xffff05a3-0xffff05a7 4 byte(s) within 0xffff05a3-0xffff05a7
+# 0 system call NtUserMessageCall ResultInfo
+# 1 USER32.dll!CallWindowProcA                            +0x1a     (0x75d42bee <USER32.dll+0x32bee>)
+# 2 Rgraphapp.dll!GAI_app_control_procedure@16             [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 3 USER32.dll!gapfnScSendMessage                         +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+# 4 USER32.dll!gapfnScSendMessage                         +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+# 5 USER32.dll!GetScrollBarInfo                           +0xfc     (0x75d24f0e <USER32.dll+0x14f0e>)
+# 6 USER32.dll!WindowFromPoint                            +0x36     (0x75d46c20 <USER32.dll+0x36c20>)
+# 7 ntdll.dll!KiUserCallbackDispatcher                    +0x2d     (0x774c6fee <ntdll.dll+0x46fee>)
+# 8 COMCTL32.dll!Ordinal342                               +0x16b9   (0x74554cb9 <COMCTL32.dll+0x24cb9>)
+# 9 COMCTL32.dll!Ordinal342                               +0x1494   (0x74554a94 <COMCTL32.dll+0x24a94>)
+#10 COMCTL32.dll!Ordinal342                               +0x128a   (0x7455488a <COMCTL32.dll+0x2488a>)
+#11 COMCTL32.dll!Ordinal342                               +0x192a   (0x74554f2a <COMCTL32.dll+0x24f2a>)
+#12 COMCTL32.dll!Ordinal342                               +0x10a3   (0x745546a3 <COMCTL32.dll+0x246a3>)
+#13 COMCTL32.dll!Ordinal342                               +0x10e0   (0x745546e0 <COMCTL32.dll+0x246e0>)
+#14 USER32.dll!gapfnScSendMessage                         +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+#15 USER32.dll!gapfnScSendMessage                         +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+#16 USER32.dll!PeekMessageA                               +0x18b    (0x75d21b31 <USER32.dll+0x11b31>)
+#17 USER32.dll!CallWindowProcA                            +0x1a     (0x75d42bee <USER32.dll+0x32bee>)
+#18 Rgraphapp.dll!GAI_app_control_procedure@16             [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+#19 USER32.dll!gapfnScSendMessage                         +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+Note: @0:00:31.122 in thread 3756
+
+Error #7: UNADDRESSABLE ACCESS: writing 0xffff05a3-0xffff05a7 4 byte(s) within 0xffff05a3-0xffff05a7
+# 0 system call NtUserMessageCall ResultInfo
+# 1 USER32.dll!GetScrollBarInfo                           +0x13f    (0x75d24f51 <USER32.dll+0x14f51>)
+# 2 USER32.dll!CallWindowProcA                            +0x1a     (0x75d42bee <USER32.dll+0x32bee>)
+# 3 Rgraphapp.dll!GAI_app_control_procedure@16             [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 USER32.dll!gapfnScSendMessage                         +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+# 5 USER32.dll!gapfnScSendMessage                         +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+# 6 USER32.dll!GetScrollBarInfo                           +0xfc     (0x75d24f0e <USER32.dll+0x14f0e>)
+# 7 USER32.dll!CallNextHookEx                             +0xef     (0x75d1acd1 <USER32.dll+0xacd1>)
+# 8 ntdll.dll!KiUserCallbackDispatcher                    +0x2d     (0x774c6fee <ntdll.dll+0x46fee>)
+# 9 COMCTL32.dll!Ordinal342                               +0x16b9   (0x74554cb9 <COMCTL32.dll+0x24cb9>)
+#10 COMCTL32.dll!Ordinal342                               +0x1494   (0x74554a94 <COMCTL32.dll+0x24a94>)
+#11 COMCTL32.dll!Ordinal342                               +0x128a   (0x7455488a <COMCTL32.dll+0x2488a>)
+#12 COMCTL32.dll!Ordinal342                               +0x192a   (0x74554f2a <COMCTL32.dll+0x24f2a>)
+#13 COMCTL32.dll!Ordinal342                               +0x10a3   (0x745546a3 <COMCTL32.dll+0x246a3>)
+#14 COMCTL32.dll!Ordinal342                               +0x10e0   (0x745546e0 <COMCTL32.dll+0x246e0>)
+#15 USER32.dll!gapfnScSendMessage                         +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+#16 USER32.dll!gapfnScSendMessage                         +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+#17 USER32.dll!PeekMessageA                               +0x18b    (0x75d21b31 <USER32.dll+0x11b31>)
+#18 USER32.dll!CallWindowProcA                            +0x1a     (0x75d42bee <USER32.dll+0x32bee>)
+#19 Rgraphapp.dll!GAI_app_control_procedure@16             [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+Note: @0:00:31.231 in thread 3756
+
+Error #8: UNADDRESSABLE ACCESS: writing 0xffff05a3-0xffff05a7 4 byte(s) within 0xffff05a3-0xffff05a7
+# 0 system call NtUserMessageCall ResultInfo
+# 1 USER32.dll!CallWindowProcA                            +0x1a     (0x75d42bee <USER32.dll+0x32bee>)
+# 2 Rgraphapp.dll!GAI_app_control_procedure@16             [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 3 USER32.dll!gapfnScSendMessage                         +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+# 4 USER32.dll!gapfnScSendMessage                         +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+# 5 USER32.dll!GetScrollBarInfo                           +0xfc     (0x75d24f0e <USER32.dll+0x14f0e>)
+# 6 USER32.dll!CallNextHookEx                             +0xef     (0x75d1acd1 <USER32.dll+0xacd1>)
+# 7 ntdll.dll!KiUserCallbackDispatcher                    +0x2d     (0x774c6fee <ntdll.dll+0x46fee>)
+# 8 COMCTL32.dll!Ordinal342                               +0x16b9   (0x74554cb9 <COMCTL32.dll+0x24cb9>)
+# 9 COMCTL32.dll!Ordinal342                               +0x1494   (0x74554a94 <COMCTL32.dll+0x24a94>)
+#10 COMCTL32.dll!Ordinal342                               +0x128a   (0x7455488a <COMCTL32.dll+0x2488a>)
+#11 COMCTL32.dll!Ordinal342                               +0x192a   (0x74554f2a <COMCTL32.dll+0x24f2a>)
+#12 COMCTL32.dll!Ordinal342                               +0x10a3   (0x745546a3 <COMCTL32.dll+0x246a3>)
+#13 COMCTL32.dll!Ordinal342                               +0x10e0   (0x745546e0 <COMCTL32.dll+0x246e0>)
+#14 USER32.dll!gapfnScSendMessage                         +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+#15 USER32.dll!gapfnScSendMessage                         +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+#16 USER32.dll!PeekMessageA                               +0x18b    (0x75d21b31 <USER32.dll+0x11b31>)
+#17 USER32.dll!CallWindowProcA                            +0x1a     (0x75d42bee <USER32.dll+0x32bee>)
+#18 Rgraphapp.dll!GAI_app_control_procedure@16             [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+#19 USER32.dll!gapfnScSendMessage                         +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+Note: @0:00:31.372 in thread 3756
+
+Error #9: UNADDRESSABLE ACCESS: writing 0xffff05a3-0xffff05a7 4 byte(s) within 0xffff05a3-0xffff05a7
+# 0 system call NtUserMessageCall ResultInfo
+# 1 USER32.dll!GetScrollBarInfo                           +0x13f    (0x75d24f51 <USER32.dll+0x14f51>)
+# 2 USER32.dll!CallWindowProcA                            +0x1a     (0x75d42bee <USER32.dll+0x32bee>)
+# 3 Rgraphapp.dll!GAI_app_control_procedure@16             [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 USER32.dll!gapfnScSendMessage                         +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+# 5 USER32.dll!gapfnScSendMessage                         +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+# 6 USER32.dll!GetScrollBarInfo                           +0xfc     (0x75d24f0e <USER32.dll+0x14f0e>)
+# 7 USER32.dll!CallNextHookEx                             +0xef     (0x75d1acd1 <USER32.dll+0xacd1>)
+# 8 ntdll.dll!KiUserCallbackDispatcher                    +0x2d     (0x774c6fee <ntdll.dll+0x46fee>)
+# 9 COMCTL32.dll!Ordinal342                               +0x19a2   (0x74554fa2 <COMCTL32.dll+0x24fa2>)
+#10 COMCTL32.dll!Ordinal342                               +0x1494   (0x74554a94 <COMCTL32.dll+0x24a94>)
+#11 COMCTL32.dll!Ordinal342                               +0x128a   (0x7455488a <COMCTL32.dll+0x2488a>)
+#12 COMCTL32.dll!Ordinal342                               +0x192a   (0x74554f2a <COMCTL32.dll+0x24f2a>)
+#13 COMCTL32.dll!Ordinal342                               +0x10a3   (0x745546a3 <COMCTL32.dll+0x246a3>)
+#14 COMCTL32.dll!Ordinal342                               +0x10e0   (0x745546e0 <COMCTL32.dll+0x246e0>)
+#15 USER32.dll!gapfnScSendMessage                         +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+#16 USER32.dll!gapfnScSendMessage                         +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+#17 USER32.dll!PeekMessageA                               +0x18b    (0x75d21b31 <USER32.dll+0x11b31>)
+#18 USER32.dll!CallWindowProcA                            +0x1a     (0x75d42bee <USER32.dll+0x32bee>)
+#19 Rgraphapp.dll!GAI_app_control_procedure@16             [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+Note: @0:00:31.481 in thread 3756
+
+Error #10: UNADDRESSABLE ACCESS: writing 0xffff05a3-0xffff05a7 4 byte(s) within 0xffff05a3-0xffff05a7
+# 0 system call NtUserMessageCall ResultInfo
+# 1 USER32.dll!CallWindowProcA                            +0x1a     (0x75d42bee <USER32.dll+0x32bee>)
+# 2 Rgraphapp.dll!GAI_app_control_procedure@16             [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 3 USER32.dll!gapfnScSendMessage                         +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+# 4 USER32.dll!gapfnScSendMessage                         +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+# 5 USER32.dll!GetScrollBarInfo                           +0xfc     (0x75d24f0e <USER32.dll+0x14f0e>)
+# 6 USER32.dll!CallNextHookEx                             +0xef     (0x75d1acd1 <USER32.dll+0xacd1>)
+# 7 ntdll.dll!KiUserCallbackDispatcher                    +0x2d     (0x774c6fee <ntdll.dll+0x46fee>)
+# 8 COMCTL32.dll!Ordinal342                               +0x19a2   (0x74554fa2 <COMCTL32.dll+0x24fa2>)
+# 9 COMCTL32.dll!Ordinal342                               +0x1494   (0x74554a94 <COMCTL32.dll+0x24a94>)
+#10 COMCTL32.dll!Ordinal342                               +0x128a   (0x7455488a <COMCTL32.dll+0x2488a>)
+#11 COMCTL32.dll!Ordinal342                               +0x192a   (0x74554f2a <COMCTL32.dll+0x24f2a>)
+#12 COMCTL32.dll!Ordinal342                               +0x10a3   (0x745546a3 <COMCTL32.dll+0x246a3>)
+#13 COMCTL32.dll!Ordinal342                               +0x10e0   (0x745546e0 <COMCTL32.dll+0x246e0>)
+#14 USER32.dll!gapfnScSendMessage                         +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+#15 USER32.dll!gapfnScSendMessage                         +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+#16 USER32.dll!PeekMessageA                               +0x18b    (0x75d21b31 <USER32.dll+0x11b31>)
+#17 USER32.dll!CallWindowProcA                            +0x1a     (0x75d42bee <USER32.dll+0x32bee>)
+#18 Rgraphapp.dll!GAI_app_control_procedure@16             [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+#19 USER32.dll!gapfnScSendMessage                         +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+Note: @0:00:31.606 in thread 3756
+
+Error #11: UNADDRESSABLE ACCESS: writing 0xffff05a3-0xffff05a7 4 byte(s) within 0xffff05a3-0xffff05a7
+# 0 system call NtUserMessageCall ResultInfo
+# 1 USER32.dll!GetScrollBarInfo                           +0x13f    (0x75d24f51 <USER32.dll+0x14f51>)
+# 2 USER32.dll!CallWindowProcA                            +0x1a     (0x75d42bee <USER32.dll+0x32bee>)
+# 3 Rgraphapp.dll!GAI_app_control_procedure@16             [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 USER32.dll!gapfnScSendMessage                         +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+# 5 USER32.dll!gapfnScSendMessage                         +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+# 6 USER32.dll!GetScrollBarInfo                           +0xfc     (0x75d24f0e <USER32.dll+0x14f0e>)
+# 7 USER32.dll!WindowFromPoint                            +0x36     (0x75d46c20 <USER32.dll+0x36c20>)
+# 8 ntdll.dll!KiUserCallbackDispatcher                    +0x2d     (0x774c6fee <ntdll.dll+0x46fee>)
+# 9 COMCTL32.dll!Ordinal342                               +0x16b9   (0x74554cb9 <COMCTL32.dll+0x24cb9>)
+#10 COMCTL32.dll!Ordinal342                               +0x1494   (0x74554a94 <COMCTL32.dll+0x24a94>)
+#11 COMCTL32.dll!Ordinal342                               +0x128a   (0x7455488a <COMCTL32.dll+0x2488a>)
+#12 COMCTL32.dll!DPA_Merge                                +0x3d67   (0x745d8dc3 <COMCTL32.dll+0xa8dc3>)
+#13 COMCTL32.dll!Ordinal342                               +0x10a3   (0x745546a3 <COMCTL32.dll+0x246a3>)
+#14 COMCTL32.dll!Ordinal342                               +0x10e0   (0x745546e0 <COMCTL32.dll+0x246e0>)
+#15 USER32.dll!gapfnScSendMessage                         +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+#16 USER32.dll!gapfnScSendMessage                         +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+#17 USER32.dll!PeekMessageA                               +0x18b    (0x75d21b31 <USER32.dll+0x11b31>)
+#18 USER32.dll!CallWindowProcA                            +0x1a     (0x75d42bee <USER32.dll+0x32bee>)
+#19 Rgraphapp.dll!GAI_app_control_procedure@16             [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+Note: @0:00:32.885 in thread 3756
+
+Error #12: UNADDRESSABLE ACCESS: writing 0xffff05a3-0xffff05a7 4 byte(s) within 0xffff05a3-0xffff05a7
+# 0 system call NtUserMessageCall ResultInfo
+# 1 USER32.dll!CallWindowProcA                            +0x1a     (0x75d42bee <USER32.dll+0x32bee>)
+# 2 Rgraphapp.dll!GAI_app_control_procedure@16             [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 3 USER32.dll!gapfnScSendMessage                         +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+# 4 USER32.dll!gapfnScSendMessage                         +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+# 5 USER32.dll!GetScrollBarInfo                           +0xfc     (0x75d24f0e <USER32.dll+0x14f0e>)
+# 6 USER32.dll!WindowFromPoint                            +0x36     (0x75d46c20 <USER32.dll+0x36c20>)
+# 7 ntdll.dll!KiUserCallbackDispatcher                    +0x2d     (0x774c6fee <ntdll.dll+0x46fee>)
+# 8 COMCTL32.dll!Ordinal342                               +0x16b9   (0x74554cb9 <COMCTL32.dll+0x24cb9>)
+# 9 COMCTL32.dll!Ordinal342                               +0x1494   (0x74554a94 <COMCTL32.dll+0x24a94>)
+#10 COMCTL32.dll!Ordinal342                               +0x128a   (0x7455488a <COMCTL32.dll+0x2488a>)
+#11 COMCTL32.dll!DPA_Merge                                +0x3d67   (0x745d8dc3 <COMCTL32.dll+0xa8dc3>)
+#12 COMCTL32.dll!Ordinal342                               +0x10a3   (0x745546a3 <COMCTL32.dll+0x246a3>)
+#13 COMCTL32.dll!Ordinal342                               +0x10e0   (0x745546e0 <COMCTL32.dll+0x246e0>)
+#14 USER32.dll!gapfnScSendMessage                         +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+#15 USER32.dll!gapfnScSendMessage                         +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+#16 USER32.dll!PeekMessageA                               +0x18b    (0x75d21b31 <USER32.dll+0x11b31>)
+#17 USER32.dll!CallWindowProcA                            +0x1a     (0x75d42bee <USER32.dll+0x32bee>)
+#18 Rgraphapp.dll!GAI_app_control_procedure@16             [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+#19 USER32.dll!gapfnScSendMessage                         +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+Note: @0:00:33.010 in thread 3756
+
+Error #13: UNADDRESSABLE ACCESS: writing 0xffff05a3-0xffff05a7 4 byte(s) within 0xffff05a3-0xffff05a7
+# 0 system call NtUserMessageCall ResultInfo
+# 1 USER32.dll!GetScrollBarInfo                           +0x13f    (0x75d24f51 <USER32.dll+0x14f51>)
+# 2 USER32.dll!CallWindowProcA                            +0x1a     (0x75d42bee <USER32.dll+0x32bee>)
+# 3 Rgraphapp.dll!GAI_app_control_procedure@16             [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 USER32.dll!gapfnScSendMessage                         +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+# 5 USER32.dll!gapfnScSendMessage                         +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+# 6 USER32.dll!GetScrollBarInfo                           +0xfc     (0x75d24f0e <USER32.dll+0x14f0e>)
+# 7 USER32.dll!CallNextHookEx                             +0xef     (0x75d1acd1 <USER32.dll+0xacd1>)
+# 8 ntdll.dll!KiUserCallbackDispatcher                    +0x2d     (0x774c6fee <ntdll.dll+0x46fee>)
+# 9 COMCTL32.dll!Ordinal342                               +0x16b9   (0x74554cb9 <COMCTL32.dll+0x24cb9>)
+#10 COMCTL32.dll!Ordinal342                               +0x1494   (0x74554a94 <COMCTL32.dll+0x24a94>)
+#11 COMCTL32.dll!Ordinal342                               +0x128a   (0x7455488a <COMCTL32.dll+0x2488a>)
+#12 COMCTL32.dll!DPA_Merge                                +0x3d67   (0x745d8dc3 <COMCTL32.dll+0xa8dc3>)
+#13 COMCTL32.dll!Ordinal342                               +0x10a3   (0x745546a3 <COMCTL32.dll+0x246a3>)
+#14 COMCTL32.dll!Ordinal342                               +0x10e0   (0x745546e0 <COMCTL32.dll+0x246e0>)
+#15 USER32.dll!gapfnScSendMessage                         +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+#16 USER32.dll!gapfnScSendMessage                         +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+#17 USER32.dll!PeekMessageA                               +0x18b    (0x75d21b31 <USER32.dll+0x11b31>)
+#18 USER32.dll!CallWindowProcA                            +0x1a     (0x75d42bee <USER32.dll+0x32bee>)
+#19 Rgraphapp.dll!GAI_app_control_procedure@16             [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+Note: @0:00:33.150 in thread 3756
+
+Error #14: UNADDRESSABLE ACCESS: writing 0xffff05a3-0xffff05a7 4 byte(s) within 0xffff05a3-0xffff05a7
+# 0 system call NtUserMessageCall ResultInfo
+# 1 USER32.dll!CallWindowProcA                            +0x1a     (0x75d42bee <USER32.dll+0x32bee>)
+# 2 Rgraphapp.dll!GAI_app_control_procedure@16             [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 3 USER32.dll!gapfnScSendMessage                         +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+# 4 USER32.dll!gapfnScSendMessage                         +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+# 5 USER32.dll!GetScrollBarInfo                           +0xfc     (0x75d24f0e <USER32.dll+0x14f0e>)
+# 6 USER32.dll!CallNextHookEx                             +0xef     (0x75d1acd1 <USER32.dll+0xacd1>)
+# 7 ntdll.dll!KiUserCallbackDispatcher                    +0x2d     (0x774c6fee <ntdll.dll+0x46fee>)
+# 8 COMCTL32.dll!Ordinal342                               +0x16b9   (0x74554cb9 <COMCTL32.dll+0x24cb9>)
+# 9 COMCTL32.dll!Ordinal342                               +0x1494   (0x74554a94 <COMCTL32.dll+0x24a94>)
+#10 COMCTL32.dll!Ordinal342                               +0x128a   (0x7455488a <COMCTL32.dll+0x2488a>)
+#11 COMCTL32.dll!DPA_Merge                                +0x3d67   (0x745d8dc3 <COMCTL32.dll+0xa8dc3>)
+#12 COMCTL32.dll!Ordinal342                               +0x10a3   (0x745546a3 <COMCTL32.dll+0x246a3>)
+#13 COMCTL32.dll!Ordinal342                               +0x10e0   (0x745546e0 <COMCTL32.dll+0x246e0>)
+#14 USER32.dll!gapfnScSendMessage                         +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+#15 USER32.dll!gapfnScSendMessage                         +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+#16 USER32.dll!PeekMessageA                               +0x18b    (0x75d21b31 <USER32.dll+0x11b31>)
+#17 USER32.dll!CallWindowProcA                            +0x1a     (0x75d42bee <USER32.dll+0x32bee>)
+#18 Rgraphapp.dll!GAI_app_control_procedure@16             [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+#19 USER32.dll!gapfnScSendMessage                         +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+Note: @0:00:33.290 in thread 3756
+
+Error #15: UNADDRESSABLE ACCESS: writing 0xffff05a3-0xffff05a7 4 byte(s) within 0xffff05a3-0xffff05a7
+# 0 system call NtUserMessageCall ResultInfo
+# 1 USER32.dll!GetScrollBarInfo                           +0x13f    (0x75d24f51 <USER32.dll+0x14f51>)
+# 2 USER32.dll!CallWindowProcA                            +0x1a     (0x75d42bee <USER32.dll+0x32bee>)
+# 3 Rgraphapp.dll!GAI_app_control_procedure@16             [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 USER32.dll!gapfnScSendMessage                         +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+# 5 USER32.dll!gapfnScSendMessage                         +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+# 6 USER32.dll!GetScrollBarInfo                           +0xfc     (0x75d24f0e <USER32.dll+0x14f0e>)
+# 7 USER32.dll!CallNextHookEx                             +0xef     (0x75d1acd1 <USER32.dll+0xacd1>)
+# 8 ntdll.dll!KiUserCallbackDispatcher                    +0x2d     (0x774c6fee <ntdll.dll+0x46fee>)
+# 9 COMCTL32.dll!Ordinal342                               +0x19a2   (0x74554fa2 <COMCTL32.dll+0x24fa2>)
+#10 COMCTL32.dll!Ordinal342                               +0x1494   (0x74554a94 <COMCTL32.dll+0x24a94>)
+#11 COMCTL32.dll!Ordinal342                               +0x128a   (0x7455488a <COMCTL32.dll+0x2488a>)
+#12 COMCTL32.dll!DPA_Merge                                +0x3d67   (0x745d8dc3 <COMCTL32.dll+0xa8dc3>)
+#13 COMCTL32.dll!Ordinal342                               +0x10a3   (0x745546a3 <COMCTL32.dll+0x246a3>)
+#14 COMCTL32.dll!Ordinal342                               +0x10e0   (0x745546e0 <COMCTL32.dll+0x246e0>)
+#15 USER32.dll!gapfnScSendMessage                         +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+#16 USER32.dll!gapfnScSendMessage                         +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+#17 USER32.dll!PeekMessageA                               +0x18b    (0x75d21b31 <USER32.dll+0x11b31>)
+#18 USER32.dll!CallWindowProcA                            +0x1a     (0x75d42bee <USER32.dll+0x32bee>)
+#19 Rgraphapp.dll!GAI_app_control_procedure@16             [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+Note: @0:00:33.431 in thread 3756
+
+Error #16: UNADDRESSABLE ACCESS: writing 0xffff05a3-0xffff05a7 4 byte(s) within 0xffff05a3-0xffff05a7
+# 0 system call NtUserMessageCall ResultInfo
+# 1 USER32.dll!CallWindowProcA                            +0x1a     (0x75d42bee <USER32.dll+0x32bee>)
+# 2 Rgraphapp.dll!GAI_app_control_procedure@16             [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 3 USER32.dll!gapfnScSendMessage                         +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+# 4 USER32.dll!gapfnScSendMessage                         +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+# 5 USER32.dll!GetScrollBarInfo                           +0xfc     (0x75d24f0e <USER32.dll+0x14f0e>)
+# 6 USER32.dll!CallNextHookEx                             +0xef     (0x75d1acd1 <USER32.dll+0xacd1>)
+# 7 ntdll.dll!KiUserCallbackDispatcher                    +0x2d     (0x774c6fee <ntdll.dll+0x46fee>)
+# 8 COMCTL32.dll!Ordinal342                               +0x19a2   (0x74554fa2 <COMCTL32.dll+0x24fa2>)
+# 9 COMCTL32.dll!Ordinal342                               +0x1494   (0x74554a94 <COMCTL32.dll+0x24a94>)
+#10 COMCTL32.dll!Ordinal342                               +0x128a   (0x7455488a <COMCTL32.dll+0x2488a>)
+#11 COMCTL32.dll!DPA_Merge                                +0x3d67   (0x745d8dc3 <COMCTL32.dll+0xa8dc3>)
+#12 COMCTL32.dll!Ordinal342                               +0x10a3   (0x745546a3 <COMCTL32.dll+0x246a3>)
+#13 COMCTL32.dll!Ordinal342                               +0x10e0   (0x745546e0 <COMCTL32.dll+0x246e0>)
+#14 USER32.dll!gapfnScSendMessage                         +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+#15 USER32.dll!gapfnScSendMessage                         +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+#16 USER32.dll!PeekMessageA                               +0x18b    (0x75d21b31 <USER32.dll+0x11b31>)
+#17 USER32.dll!CallWindowProcA                            +0x1a     (0x75d42bee <USER32.dll+0x32bee>)
+#18 Rgraphapp.dll!GAI_app_control_procedure@16             [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+#19 USER32.dll!gapfnScSendMessage                         +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+Note: @0:00:33.587 in thread 3756
+
+Error #17: UNINITIALIZED READ: reading register ax
+# 0 KERNELBASE.dll!GetUserInfo                                                +0x3f     (0x756719fd <KERNELBASE.dll+0x219fd>)
+# 1 KERNELBASE.dll!SetStdHandle                                               +0xe7     (0x756641a1 <KERNELBASE.dll+0x141a1>)
+# 2 KERNELBASE.dll!GetLocaleInfoW                                             +0x3a     (0x75671712 <KERNELBASE.dll+0x21712>)
+# 3 Qt5Cored.dll!QSystemLocalePrivate::getLocaleInfo                           [tools/qlocale_win.cpp:149]
+# 4 Qt5Cored.dll!QSystemLocalePrivate::getLocaleInfo_qchar                     [tools/qlocale_win.cpp:172]
+# 5 Qt5Cored.dll!QSystemLocalePrivate::decimalPoint                            [tools/qlocale_win.cpp:226]
+# 6 Qt5Cored.dll!QSystemLocale::query                                          [tools/qlocale_win.cpp:663]
+# 7 Qt5Cored.dll!QLocalePrivate::updateSystemPrivate                           [tools/qlocale.cpp:612]
+# 8 Qt5Cored.dll!systemData                                                    [tools/qlocale.cpp:639]
+# 9 Qt5Cored.dll!defaultData                                                   [tools/qlocale.cpp:650]
+#10 Qt5Cored.dll!(anonymous namespace)::Q_QGS_defaultLocalePrivate::innerFunction::Holder::Holder [tools/qlocale.cpp:701]
+#11 Qt5Cored.dll!(anonymous namespace)::Q_QGS_defaultLocalePrivate::innerFunction [tools/qlocale.cpp:701]
+#12 Qt5Cored.dll!QGlobalStatic<>::operator*                                    [../../include/QtCore/qglobalstatic.h:137]
+#13 Qt5Cored.dll!QLocale::QLocale                                              [tools/qlocale.cpp:781]
+#14 Qt5Cored.dll!QResourceFileEnginePrivate::QResourceFileEnginePrivate        [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\corelib/io/qresource.cpp:1192]
+#15 Qt5Cored.dll!QResourceFileEngine::QResourceFileEngine                      [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\corelib/io/qresource.cpp:1221]
+#16 Qt5Cored.dll!_q_resolveEntryAndCreateLegacyEngine_recursive                [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\corelib/io/qfilesystemengine.cpp:154]
+#17 Qt5Cored.dll!QFileSystemEngine::resolveEntryAndCreateLegacyEngine          [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\corelib/io/qfilesystemengine.cpp:200]
+#18 Qt5Cored.dll!QFileInfo::exists                                             [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\corelib/io/qfileinfo.cpp:693]
+#19 Qt5Cored.dll!QFile::exists                                                 [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\corelib/io/qfile.cpp:432]
+Note: @0:00:44.710 in thread 3756
+Note: instruction: data16 cmp    %ax %cx
+
+Error #18: UNINITIALIZED READ: reading register ax
+# 0 KERNELBASE.dll!GetUserInfo                                                +0x3f     (0x756719fd <KERNELBASE.dll+0x219fd>)
+# 1 KERNELBASE.dll!SetStdHandle                                               +0x6a     (0x75664124 <KERNELBASE.dll+0x14124>)
+# 2 KERNELBASE.dll!GetLocaleInfoW                                             +0x3a     (0x75671712 <KERNELBASE.dll+0x21712>)
+# 3 Qt5Cored.dll!QSystemLocalePrivate::getLocaleInfo                           [tools/qlocale_win.cpp:149]
+# 4 Qt5Cored.dll!QSystemLocalePrivate::getLocaleInfo_qchar                     [tools/qlocale_win.cpp:172]
+# 5 Qt5Cored.dll!QSystemLocalePrivate::groupSeparator                          [tools/qlocale_win.cpp:231]
+# 6 Qt5Cored.dll!QSystemLocale::query                                          [tools/qlocale_win.cpp:665]
+# 7 Qt5Cored.dll!QLocalePrivate::updateSystemPrivate                           [tools/qlocale.cpp:616]
+# 8 Qt5Cored.dll!systemData                                                    [tools/qlocale.cpp:639]
+# 9 Qt5Cored.dll!defaultData                                                   [tools/qlocale.cpp:650]
+#10 Qt5Cored.dll!(anonymous namespace)::Q_QGS_defaultLocalePrivate::innerFunction::Holder::Holder [tools/qlocale.cpp:701]
+#11 Qt5Cored.dll!(anonymous namespace)::Q_QGS_defaultLocalePrivate::innerFunction [tools/qlocale.cpp:701]
+#12 Qt5Cored.dll!QGlobalStatic<>::operator*                                    [../../include/QtCore/qglobalstatic.h:137]
+#13 Qt5Cored.dll!QLocale::QLocale                                              [tools/qlocale.cpp:781]
+#14 Qt5Cored.dll!QResourceFileEnginePrivate::QResourceFileEnginePrivate        [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\corelib/io/qresource.cpp:1192]
+#15 Qt5Cored.dll!QResourceFileEngine::QResourceFileEngine                      [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\corelib/io/qresource.cpp:1221]
+#16 Qt5Cored.dll!_q_resolveEntryAndCreateLegacyEngine_recursive                [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\corelib/io/qfilesystemengine.cpp:154]
+#17 Qt5Cored.dll!QFileSystemEngine::resolveEntryAndCreateLegacyEngine          [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\corelib/io/qfilesystemengine.cpp:200]
+#18 Qt5Cored.dll!QFileInfo::exists                                             [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\corelib/io/qfileinfo.cpp:693]
+#19 Qt5Cored.dll!QFile::exists                                                 [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\corelib/io/qfile.cpp:432]
+Note: @0:00:44.881 in thread 3756
+Note: instruction: data16 cmp    %ax %cx
+
+Error #19: UNINITIALIZED READ: reading register ax
+# 0 KERNELBASE.dll!GetUserInfo                                                +0x3f     (0x756719fd <KERNELBASE.dll+0x219fd>)
+# 1 KERNELBASE.dll!GetThreadId                                                +0x176    (0x75671fde <KERNELBASE.dll+0x21fde>)
+# 2 KERNELBASE.dll!GetLocaleInfoW                                             +0x3a     (0x75671712 <KERNELBASE.dll+0x21712>)
+# 3 Qt5Cored.dll!QSystemLocalePrivate::getLocaleInfo                           [tools/qlocale_win.cpp:149]
+# 4 Qt5Cored.dll!QSystemLocalePrivate::getLocaleInfo_qchar                     [tools/qlocale_win.cpp:172]
+# 5 Qt5Cored.dll!QSystemLocalePrivate::zeroDigit                               [tools/qlocale_win.cpp:220]
+# 6 Qt5Cored.dll!QSystemLocale::query                                          [tools/qlocale_win.cpp:705]
+# 7 Qt5Cored.dll!QLocalePrivate::updateSystemPrivate                           [tools/qlocale.cpp:620]
+# 8 Qt5Cored.dll!systemData                                                    [tools/qlocale.cpp:639]
+# 9 Qt5Cored.dll!defaultData                                                   [tools/qlocale.cpp:650]
+#10 Qt5Cored.dll!(anonymous namespace)::Q_QGS_defaultLocalePrivate::innerFunction::Holder::Holder [tools/qlocale.cpp:701]
+#11 Qt5Cored.dll!(anonymous namespace)::Q_QGS_defaultLocalePrivate::innerFunction [tools/qlocale.cpp:701]
+#12 Qt5Cored.dll!QGlobalStatic<>::operator*                                    [../../include/QtCore/qglobalstatic.h:137]
+#13 Qt5Cored.dll!QLocale::QLocale                                              [tools/qlocale.cpp:781]
+#14 Qt5Cored.dll!QResourceFileEnginePrivate::QResourceFileEnginePrivate        [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\corelib/io/qresource.cpp:1192]
+#15 Qt5Cored.dll!QResourceFileEngine::QResourceFileEngine                      [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\corelib/io/qresource.cpp:1221]
+#16 Qt5Cored.dll!_q_resolveEntryAndCreateLegacyEngine_recursive                [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\corelib/io/qfilesystemengine.cpp:154]
+#17 Qt5Cored.dll!QFileSystemEngine::resolveEntryAndCreateLegacyEngine          [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\corelib/io/qfilesystemengine.cpp:200]
+#18 Qt5Cored.dll!QFileInfo::exists                                             [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\corelib/io/qfileinfo.cpp:693]
+#19 Qt5Cored.dll!QFile::exists                                                 [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\corelib/io/qfile.cpp:432]
+Note: @0:00:45.037 in thread 3756
+Note: instruction: data16 cmp    %ax %cx
+
+Error #20: UNINITIALIZED READ: reading register ax
+# 0 KERNELBASE.dll!GetUserInfo                                                +0x3f     (0x756719fd <KERNELBASE.dll+0x219fd>)
+# 1 KERNELBASE.dll!GetLocaleInfoW                                             +0xe1     (0x756717b9 <KERNELBASE.dll+0x217b9>)
+# 2 KERNELBASE.dll!GetLocaleInfoW                                             +0x3a     (0x75671712 <KERNELBASE.dll+0x21712>)
+# 3 Qt5Cored.dll!QSystemLocalePrivate::getLocaleInfo                           [tools/qlocale_win.cpp:149]
+# 4 Qt5Cored.dll!QSystemLocalePrivate::getLocaleInfo_qchar                     [tools/qlocale_win.cpp:172]
+# 5 Qt5Cored.dll!QSystemLocalePrivate::negativeSign                            [tools/qlocale_win.cpp:236]
+# 6 Qt5Cored.dll!QSystemLocale::query                                          [tools/qlocale_win.cpp:667]
+# 7 Qt5Cored.dll!QLocalePrivate::updateSystemPrivate                           [tools/qlocale.cpp:624]
+# 8 Qt5Cored.dll!systemData                                                    [tools/qlocale.cpp:639]
+# 9 Qt5Cored.dll!defaultData                                                   [tools/qlocale.cpp:650]
+#10 Qt5Cored.dll!(anonymous namespace)::Q_QGS_defaultLocalePrivate::innerFunction::Holder::Holder [tools/qlocale.cpp:701]
+#11 Qt5Cored.dll!(anonymous namespace)::Q_QGS_defaultLocalePrivate::innerFunction [tools/qlocale.cpp:701]
+#12 Qt5Cored.dll!QGlobalStatic<>::operator*                                    [../../include/QtCore/qglobalstatic.h:137]
+#13 Qt5Cored.dll!QLocale::QLocale                                              [tools/qlocale.cpp:781]
+#14 Qt5Cored.dll!QResourceFileEnginePrivate::QResourceFileEnginePrivate        [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\corelib/io/qresource.cpp:1192]
+#15 Qt5Cored.dll!QResourceFileEngine::QResourceFileEngine                      [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\corelib/io/qresource.cpp:1221]
+#16 Qt5Cored.dll!_q_resolveEntryAndCreateLegacyEngine_recursive                [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\corelib/io/qfilesystemengine.cpp:154]
+#17 Qt5Cored.dll!QFileSystemEngine::resolveEntryAndCreateLegacyEngine          [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\corelib/io/qfilesystemengine.cpp:200]
+#18 Qt5Cored.dll!QFileInfo::exists                                             [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\corelib/io/qfileinfo.cpp:693]
+#19 Qt5Cored.dll!QFile::exists                                                 [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\corelib/io/qfile.cpp:432]
+Note: @0:00:45.209 in thread 3756
+Note: instruction: data16 cmp    %ax %cx
+
+Error #21: UNINITIALIZED READ: reading register ax
+# 0 KERNELBASE.dll!GetUserInfo                                                +0x3f     (0x756719fd <KERNELBASE.dll+0x219fd>)
+# 1 KERNELBASE.dll!SetStdHandle                                               +0x352    (0x7566440c <KERNELBASE.dll+0x1440c>)
+# 2 KERNELBASE.dll!GetLocaleInfoW                                             +0x3a     (0x75671712 <KERNELBASE.dll+0x21712>)
+# 3 Qt5Cored.dll!QSystemLocalePrivate::getLocaleInfo                           [tools/qlocale_win.cpp:149]
+# 4 Qt5Cored.dll!QSystemLocalePrivate::getLocaleInfo_qchar                     [tools/qlocale_win.cpp:172]
+# 5 Qt5Cored.dll!QSystemLocalePrivate::positiveSign                            [tools/qlocale_win.cpp:241]
+# 6 Qt5Cored.dll!QSystemLocale::query                                          [tools/qlocale_win.cpp:669]
+# 7 Qt5Cored.dll!QLocalePrivate::updateSystemPrivate                           [tools/qlocale.cpp:628]
+# 8 Qt5Cored.dll!systemData                                                    [tools/qlocale.cpp:639]
+# 9 Qt5Cored.dll!defaultData                                                   [tools/qlocale.cpp:650]
+#10 Qt5Cored.dll!(anonymous namespace)::Q_QGS_defaultLocalePrivate::innerFunction::Holder::Holder [tools/qlocale.cpp:701]
+#11 Qt5Cored.dll!(anonymous namespace)::Q_QGS_defaultLocalePrivate::innerFunction [tools/qlocale.cpp:701]
+#12 Qt5Cored.dll!QGlobalStatic<>::operator*                                    [../../include/QtCore/qglobalstatic.h:137]
+#13 Qt5Cored.dll!QLocale::QLocale                                              [tools/qlocale.cpp:781]
+#14 Qt5Cored.dll!QResourceFileEnginePrivate::QResourceFileEnginePrivate        [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\corelib/io/qresource.cpp:1192]
+#15 Qt5Cored.dll!QResourceFileEngine::QResourceFileEngine                      [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\corelib/io/qresource.cpp:1221]
+#16 Qt5Cored.dll!_q_resolveEntryAndCreateLegacyEngine_recursive                [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\corelib/io/qfilesystemengine.cpp:154]
+#17 Qt5Cored.dll!QFileSystemEngine::resolveEntryAndCreateLegacyEngine          [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\corelib/io/qfilesystemengine.cpp:200]
+#18 Qt5Cored.dll!QFileInfo::exists                                             [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\corelib/io/qfileinfo.cpp:693]
+#19 Qt5Cored.dll!QFile::exists                                                 [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\corelib/io/qfile.cpp:432]
+Note: @0:00:45.380 in thread 3756
+Note: instruction: data16 cmp    %ax %cx
+
+Error #22: UNADDRESSABLE ACCESS: reading 0x00000240-0x00000244 4 byte(s)
+# 0 Qt5Guid.dll!QScopedPointer<>::data            [../../include/QtCore/qscopedpointer.h:143]
+# 1 Qt5Guid.dll!operator==<>                      [../../include/QtCore/qscopedpointer.h:184]
+# 2 Qt5Guid.dll!qbrush_fast_equals                [../../include/QtGui/5.2.0/QtGui/private/qpainter_p.h:95]
+# 3 Qt5Guid.dll!QRasterPaintEngine::ensureBrush   [../../include/QtGui/5.2.0/QtGui/private/qpaintengine_raster_p.h:253]
+# 4 Qt5Guid.dll!QRasterPaintEngine::fillRect      [painting/qpaintengine_raster.cpp:1831]
+# 5 Qt5Guid.dll!QPainter::fillRect                [painting/qpainter.cpp:6886]
+# 6 qtbase.dll!__smokeqt::x_QPainter::x_187       [C:/src/qtbase-master141107/qtbase/kdebindings-build/smoke/qt/x_11.cpp:3008]
+# 7 qtbase.dll!__smokeqt::xcall_QPainter          [C:/src/qtbase-master141107/qtbase/kdebindings-build/smoke/qt/x_11.cpp:3732]
+# 8 qtbase.dll!SmokeMethod::invoke                [C:/src/qtbase-master141107/qtbase/src/SmokeMethod.cpp:20]
+# 9 qtbase.dll!MethodCall::invokeMethod           [C:/src/qtbase-master141107/qtbase/src/MethodCall.cpp:104]
+#10 qtbase.dll!MethodCall::marshal                [C:/src/qtbase-master141107/qtbase/src/MethodCall.cpp:84]
+#11 qtbase.dll!MethodCall::eval                   [C:/src/qtbase-master141107/qtbase/src/MethodCall.cpp:117]
+#12 qtbase.dll!ForeignMethod::invoke              [C:/src/qtbase-master141107/qtbase/src/ForeignMethod.cpp:6]
+#13 qtbase.dll!SmokeMethod::invoke                [C:/src/qtbase-master141107/qtbase/src/SmokeMethod.hpp:78]
+#14 qtbase.dll!DynamicBinding::invoke             [C:/src/qtbase-master141107/qtbase/src/DynamicBinding.cpp:10]
+#15 qtbase.dll!qt_qinvoke                         [C:/src/qtbase-master141107/qtbase/src/invoke.cpp:17]
+#16 R.dll!?                                      +0x0      (0x6c81c612 <R.dll+0x11c612>)
+#17 R.dll!?                                      +0x0      (0x6c77ec0a <R.dll+0x7ec0a>)
+#18 R.dll!?                                      +0x0      (0x6c77f693 <R.dll+0x7f693>)
+#19 R.dll!?                                      +0x0      (0x6c77e9e7 <R.dll+0x7e9e7>)
+Note: @0:01:18.983 in thread 3756
+Note: instruction: mov    (%eax) -> %eax
+
+Error #23: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404934-0x01404938 4 byte(s)
+# 0 ntdll.dll!KiFastSystemCallRet                          +0x0      (0x774c70b4 <ntdll.dll+0x470b4>)
+# 1 Qt5Cored.dll!QEventDispatcherWin32::processEvents       [kernel/qeventdispatcher_win.cpp:756]
+# 2 qwindowsd.dll!QWindowsGuiEventDispatcher::processEvents [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\plugins\platforms\windows/qwindowsguieventdispatcher.cpp:80]
+# 3 Qt5Cored.dll!QCoreApplication::processEvents            [kernel/qcoreapplication.cpp:1076]
+# 4 qtbase.dll!QEventLoop_exec                              [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:124]
+# 5 qtbase.dll!run_callback_main_thread                     [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:181]
+# 6 qtbase.dll!EventLoopWindowProc@16                       [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:246]
+# 7 USER32.dll!gapfnScSendMessage                          +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+# 8 USER32.dll!gapfnScSendMessage                          +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+# 9 USER32.dll!GetScrollBarInfo                            +0xfc     (0x75d24f0e <USER32.dll+0x14f0e>)
+#10 USER32.dll!GetScrollBarInfo                            +0x16b    (0x75d24f7d <USER32.dll+0x14f7d>)
+#11 ntdll.dll!KiUserCallbackDispatcher                     +0x2d     (0x774c6fee <ntdll.dll+0x46fee>)
+#12 Rgraphapp.dll!GA_peekevent                              [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+#13 R.dll!?                                                +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+#14 R.dll!?                                                +0x0      (0x6c75141d <R.dll+0x5141d>)
+#15 R.dll!?                                                +0x0      (0x6c75189d <R.dll+0x5189d>)
+#16 R.dll!?                                                +0x0      (0x6c752770 <R.dll+0x52770>)
+#17 Rterm.exe!?                                            +0x0      (0x00401746 <Rterm.exe+0x1746>)
+#18 Rterm.exe!?                                            +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+#19 KERNEL32.dll!BaseThreadInitThunk                       +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:27.285 in thread 3756
+Note: 0x01404934 refers to 0 byte(s) beyond the top of the stack 0x01404934
+Note: instruction: ret    %esp (%esp) -> %esp
+
+Error #24: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404938-0x0140493c 4 byte(s)
+# 0 ntdll.dll!ZwCallbackReturn                             +0xc      (0x774c5474 <ntdll.dll+0x45474>)
+# 1 Qt5Cored.dll!QEventDispatcherWin32::processEvents       [kernel/qeventdispatcher_win.cpp:756]
+# 2 qwindowsd.dll!QWindowsGuiEventDispatcher::processEvents [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\plugins\platforms\windows/qwindowsguieventdispatcher.cpp:80]
+# 3 Qt5Cored.dll!QCoreApplication::processEvents            [kernel/qcoreapplication.cpp:1076]
+# 4 qtbase.dll!QEventLoop_exec                              [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:124]
+# 5 qtbase.dll!run_callback_main_thread                     [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:181]
+# 6 qtbase.dll!EventLoopWindowProc@16                       [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:246]
+# 7 USER32.dll!gapfnScSendMessage                          +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+# 8 USER32.dll!gapfnScSendMessage                          +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+# 9 USER32.dll!GetScrollBarInfo                            +0xfc     (0x75d24f0e <USER32.dll+0x14f0e>)
+#10 USER32.dll!GetScrollBarInfo                            +0x16b    (0x75d24f7d <USER32.dll+0x14f7d>)
+#11 ntdll.dll!KiUserCallbackDispatcher                     +0x2d     (0x774c6fee <ntdll.dll+0x46fee>)
+#12 Rgraphapp.dll!GA_peekevent                              [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+#13 R.dll!?                                                +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+#14 R.dll!?                                                +0x0      (0x6c75141d <R.dll+0x5141d>)
+#15 R.dll!?                                                +0x0      (0x6c75189d <R.dll+0x5189d>)
+#16 R.dll!?                                                +0x0      (0x6c752770 <R.dll+0x52770>)
+#17 Rterm.exe!?                                            +0x0      (0x00401746 <Rterm.exe+0x1746>)
+#18 Rterm.exe!?                                            +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+#19 KERNEL32.dll!BaseThreadInitThunk                       +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:28.673 in thread 3756
+Note: 0x01404938 refers to 0 byte(s) beyond the top of the stack 0x01404938
+Note: instruction: ret    $0x0000000c %esp (%esp) -> %esp
+
+Error #25: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404948-0x0140494c 4 byte(s)
+# 0 ntdll.dll!KiUserApcDispatcher                          +0x65     (0x774c6fbd <ntdll.dll+0x46fbd>)
+# 1 Qt5Cored.dll!QEventDispatcherWin32::processEvents       [kernel/qeventdispatcher_win.cpp:756]
+# 2 qwindowsd.dll!QWindowsGuiEventDispatcher::processEvents [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\plugins\platforms\windows/qwindowsguieventdispatcher.cpp:80]
+# 3 Qt5Cored.dll!QCoreApplication::processEvents            [kernel/qcoreapplication.cpp:1076]
+# 4 qtbase.dll!QEventLoop_exec                              [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:124]
+# 5 qtbase.dll!run_callback_main_thread                     [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:181]
+# 6 qtbase.dll!EventLoopWindowProc@16                       [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:246]
+# 7 USER32.dll!gapfnScSendMessage                          +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+# 8 USER32.dll!gapfnScSendMessage                          +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+# 9 USER32.dll!GetScrollBarInfo                            +0xfc     (0x75d24f0e <USER32.dll+0x14f0e>)
+#10 USER32.dll!GetScrollBarInfo                            +0x16b    (0x75d24f7d <USER32.dll+0x14f7d>)
+#11 ntdll.dll!KiUserCallbackDispatcher                     +0x2d     (0x774c6fee <ntdll.dll+0x46fee>)
+#12 Rgraphapp.dll!GA_peekevent                              [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+#13 R.dll!?                                                +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+#14 R.dll!?                                                +0x0      (0x6c75141d <R.dll+0x5141d>)
+#15 R.dll!?                                                +0x0      (0x6c75189d <R.dll+0x5189d>)
+#16 R.dll!?                                                +0x0      (0x6c752770 <R.dll+0x52770>)
+#17 Rterm.exe!?                                            +0x0      (0x00401746 <Rterm.exe+0x1746>)
+#18 Rterm.exe!?                                            +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+#19 KERNEL32.dll!BaseThreadInitThunk                       +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:28.673 in thread 3756
+Note: 0x01404948 refers to 0 byte(s) beyond the top of the stack 0x01404948
+Note: instruction: ret    $0x00000010 %esp (%esp) -> %esp
+
+Error #26: UNADDRESSABLE ACCESS beyond top of stack: reading 0x0140495c-0x01404960 4 byte(s)
+# 0 ntdll.dll!RtlRaiseStatus                               +0xbb     (0x774c71c0 <ntdll.dll+0x471c0>)
+# 1 Qt5Cored.dll!QEventDispatcherWin32::processEvents       [kernel/qeventdispatcher_win.cpp:756]
+# 2 qwindowsd.dll!QWindowsGuiEventDispatcher::processEvents [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\plugins\platforms\windows/qwindowsguieventdispatcher.cpp:80]
+# 3 Qt5Cored.dll!QCoreApplication::processEvents            [kernel/qcoreapplication.cpp:1076]
+# 4 qtbase.dll!QEventLoop_exec                              [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:124]
+# 5 qtbase.dll!run_callback_main_thread                     [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:181]
+# 6 qtbase.dll!EventLoopWindowProc@16                       [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:246]
+# 7 USER32.dll!gapfnScSendMessage                          +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+# 8 USER32.dll!gapfnScSendMessage                          +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+# 9 USER32.dll!GetScrollBarInfo                            +0xfc     (0x75d24f0e <USER32.dll+0x14f0e>)
+#10 USER32.dll!GetScrollBarInfo                            +0x16b    (0x75d24f7d <USER32.dll+0x14f7d>)
+#11 ntdll.dll!KiUserCallbackDispatcher                     +0x2d     (0x774c6fee <ntdll.dll+0x46fee>)
+#12 Rgraphapp.dll!GA_peekevent                              [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+#13 R.dll!?                                                +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+#14 R.dll!?                                                +0x0      (0x6c75141d <R.dll+0x5141d>)
+#15 R.dll!?                                                +0x0      (0x6c75189d <R.dll+0x5189d>)
+#16 R.dll!?                                                +0x0      (0x6c752770 <R.dll+0x52770>)
+#17 Rterm.exe!?                                            +0x0      (0x00401746 <Rterm.exe+0x1746>)
+#18 Rterm.exe!?                                            +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+#19 KERNEL32.dll!BaseThreadInitThunk                       +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:28.704 in thread 3756
+Note: 0x0140495c refers to 0 byte(s) beyond the top of the stack 0x0140495c
+Note: instruction: pop    %esp (%esp) -> %fs:0x00 %esp
+
+Error #27: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404968-0x0140496c 4 byte(s)
+# 0 ntdll.dll!RtlRaiseStatus                               +0xc4     (0x774c71c9 <ntdll.dll+0x471c9>)
+# 1 Qt5Cored.dll!QEventDispatcherWin32::processEvents       [kernel/qeventdispatcher_win.cpp:756]
+# 2 qwindowsd.dll!QWindowsGuiEventDispatcher::processEvents [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\plugins\platforms\windows/qwindowsguieventdispatcher.cpp:80]
+# 3 Qt5Cored.dll!QCoreApplication::processEvents            [kernel/qcoreapplication.cpp:1076]
+# 4 qtbase.dll!QEventLoop_exec                              [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:124]
+# 5 qtbase.dll!run_callback_main_thread                     [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:181]
+# 6 qtbase.dll!EventLoopWindowProc@16                       [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:246]
+# 7 USER32.dll!gapfnScSendMessage                          +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+# 8 USER32.dll!gapfnScSendMessage                          +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+# 9 USER32.dll!GetScrollBarInfo                            +0xfc     (0x75d24f0e <USER32.dll+0x14f0e>)
+#10 USER32.dll!GetScrollBarInfo                            +0x16b    (0x75d24f7d <USER32.dll+0x14f7d>)
+#11 ntdll.dll!KiUserCallbackDispatcher                     +0x2d     (0x774c6fee <ntdll.dll+0x46fee>)
+#12 Rgraphapp.dll!GA_peekevent                              [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+#13 R.dll!?                                                +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+#14 R.dll!?                                                +0x0      (0x6c75141d <R.dll+0x5141d>)
+#15 R.dll!?                                                +0x0      (0x6c75189d <R.dll+0x5189d>)
+#16 R.dll!?                                                +0x0      (0x6c752770 <R.dll+0x52770>)
+#17 Rterm.exe!?                                            +0x0      (0x00401746 <Rterm.exe+0x1746>)
+#18 Rterm.exe!?                                            +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+#19 KERNEL32.dll!BaseThreadInitThunk                       +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:28.736 in thread 3756
+Note: 0x01404968 refers to 0 byte(s) beyond the top of the stack 0x01404968
+Note: instruction: pop    %esp (%esp) -> %ebp %esp
+
+Error #28: UNADDRESSABLE ACCESS beyond top of stack: reading 0x0140496c-0x01404970 4 byte(s)
+# 0 ntdll.dll!RtlRaiseStatus                               +0xc5     (0x774c71ca <ntdll.dll+0x471ca>)
+# 1 Qt5Cored.dll!QEventDispatcherWin32::processEvents       [kernel/qeventdispatcher_win.cpp:756]
+# 2 qwindowsd.dll!QWindowsGuiEventDispatcher::processEvents [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\plugins\platforms\windows/qwindowsguieventdispatcher.cpp:80]
+# 3 Qt5Cored.dll!QCoreApplication::processEvents            [kernel/qcoreapplication.cpp:1076]
+# 4 qtbase.dll!QEventLoop_exec                              [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:124]
+# 5 qtbase.dll!run_callback_main_thread                     [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:181]
+# 6 qtbase.dll!EventLoopWindowProc@16                       [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:246]
+# 7 USER32.dll!gapfnScSendMessage                          +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+# 8 USER32.dll!gapfnScSendMessage                          +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+# 9 USER32.dll!GetScrollBarInfo                            +0xfc     (0x75d24f0e <USER32.dll+0x14f0e>)
+#10 USER32.dll!GetScrollBarInfo                            +0x16b    (0x75d24f7d <USER32.dll+0x14f7d>)
+#11 ntdll.dll!KiUserCallbackDispatcher                     +0x2d     (0x774c6fee <ntdll.dll+0x46fee>)
+#12 Rgraphapp.dll!GA_peekevent                              [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+#13 R.dll!?                                                +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+#14 R.dll!?                                                +0x0      (0x6c75141d <R.dll+0x5141d>)
+#15 R.dll!?                                                +0x0      (0x6c75189d <R.dll+0x5189d>)
+#16 R.dll!?                                                +0x0      (0x6c752770 <R.dll+0x52770>)
+#17 Rterm.exe!?                                            +0x0      (0x00401746 <Rterm.exe+0x1746>)
+#18 Rterm.exe!?                                            +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+#19 KERNEL32.dll!BaseThreadInitThunk                       +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:28.938 in thread 3756
+Note: 0x0140496c refers to 0 byte(s) beyond the top of the stack 0x0140496c
+Note: instruction: ret    $0x00000014 %esp (%esp) -> %esp
+
+Error #29: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404984-0x01404988 4 byte(s)
+# 0 ntdll.dll!RtlRaiseStatus                               +0x86     (0x774c718b <ntdll.dll+0x4718b>)
+# 1 Qt5Cored.dll!QEventDispatcherWin32::processEvents       [kernel/qeventdispatcher_win.cpp:756]
+# 2 qwindowsd.dll!QWindowsGuiEventDispatcher::processEvents [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\plugins\platforms\windows/qwindowsguieventdispatcher.cpp:80]
+# 3 Qt5Cored.dll!QCoreApplication::processEvents            [kernel/qcoreapplication.cpp:1076]
+# 4 qtbase.dll!QEventLoop_exec                              [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:124]
+# 5 qtbase.dll!run_callback_main_thread                     [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:181]
+# 6 qtbase.dll!EventLoopWindowProc@16                       [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:246]
+# 7 USER32.dll!gapfnScSendMessage                          +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+# 8 USER32.dll!gapfnScSendMessage                          +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+# 9 USER32.dll!GetScrollBarInfo                            +0xfc     (0x75d24f0e <USER32.dll+0x14f0e>)
+#10 USER32.dll!GetScrollBarInfo                            +0x16b    (0x75d24f7d <USER32.dll+0x14f7d>)
+#11 ntdll.dll!KiUserCallbackDispatcher                     +0x2d     (0x774c6fee <ntdll.dll+0x46fee>)
+#12 Rgraphapp.dll!GA_peekevent                              [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+#13 R.dll!?                                                +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+#14 R.dll!?                                                +0x0      (0x6c75141d <R.dll+0x5141d>)
+#15 R.dll!?                                                +0x0      (0x6c75189d <R.dll+0x5189d>)
+#16 R.dll!?                                                +0x0      (0x6c752770 <R.dll+0x52770>)
+#17 Rterm.exe!?                                            +0x0      (0x00401746 <Rterm.exe+0x1746>)
+#18 Rterm.exe!?                                            +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+#19 KERNEL32.dll!BaseThreadInitThunk                       +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:29.079 in thread 3756
+Note: 0x01404984 refers to 0 byte(s) beyond the top of the stack 0x01404984
+Note: instruction: pop    %esp (%esp) -> %edi %esp
+
+Error #30: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404988-0x0140498c 4 byte(s)
+# 0 ntdll.dll!RtlRaiseStatus                               +0x87     (0x774c718c <ntdll.dll+0x4718c>)
+# 1 Qt5Cored.dll!QEventDispatcherWin32::processEvents       [kernel/qeventdispatcher_win.cpp:756]
+# 2 qwindowsd.dll!QWindowsGuiEventDispatcher::processEvents [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\plugins\platforms\windows/qwindowsguieventdispatcher.cpp:80]
+# 3 Qt5Cored.dll!QCoreApplication::processEvents            [kernel/qcoreapplication.cpp:1076]
+# 4 qtbase.dll!QEventLoop_exec                              [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:124]
+# 5 qtbase.dll!run_callback_main_thread                     [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:181]
+# 6 qtbase.dll!EventLoopWindowProc@16                       [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:246]
+# 7 USER32.dll!gapfnScSendMessage                          +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+# 8 USER32.dll!gapfnScSendMessage                          +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+# 9 USER32.dll!GetScrollBarInfo                            +0xfc     (0x75d24f0e <USER32.dll+0x14f0e>)
+#10 USER32.dll!GetScrollBarInfo                            +0x16b    (0x75d24f7d <USER32.dll+0x14f7d>)
+#11 ntdll.dll!KiUserCallbackDispatcher                     +0x2d     (0x774c6fee <ntdll.dll+0x46fee>)
+#12 Rgraphapp.dll!GA_peekevent                              [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+#13 R.dll!?                                                +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+#14 R.dll!?                                                +0x0      (0x6c75141d <R.dll+0x5141d>)
+#15 R.dll!?                                                +0x0      (0x6c75189d <R.dll+0x5189d>)
+#16 R.dll!?                                                +0x0      (0x6c752770 <R.dll+0x52770>)
+#17 Rterm.exe!?                                            +0x0      (0x00401746 <Rterm.exe+0x1746>)
+#18 Rterm.exe!?                                            +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+#19 KERNEL32.dll!BaseThreadInitThunk                       +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:29.219 in thread 3756
+Note: 0x01404988 refers to 0 byte(s) beyond the top of the stack 0x01404988
+Note: instruction: pop    %esp (%esp) -> %esi %esp
+
+Error #31: UNADDRESSABLE ACCESS beyond top of stack: reading 0x0140498c-0x01404990 4 byte(s)
+# 0 ntdll.dll!RtlRaiseStatus                               +0x88     (0x774c718d <ntdll.dll+0x4718d>)
+# 1 Qt5Cored.dll!QEventDispatcherWin32::processEvents       [kernel/qeventdispatcher_win.cpp:756]
+# 2 qwindowsd.dll!QWindowsGuiEventDispatcher::processEvents [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\plugins\platforms\windows/qwindowsguieventdispatcher.cpp:80]
+# 3 Qt5Cored.dll!QCoreApplication::processEvents            [kernel/qcoreapplication.cpp:1076]
+# 4 qtbase.dll!QEventLoop_exec                              [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:124]
+# 5 qtbase.dll!run_callback_main_thread                     [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:181]
+# 6 qtbase.dll!EventLoopWindowProc@16                       [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:246]
+# 7 USER32.dll!gapfnScSendMessage                          +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+# 8 USER32.dll!gapfnScSendMessage                          +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+# 9 USER32.dll!GetScrollBarInfo                            +0xfc     (0x75d24f0e <USER32.dll+0x14f0e>)
+#10 USER32.dll!GetScrollBarInfo                            +0x16b    (0x75d24f7d <USER32.dll+0x14f7d>)
+#11 ntdll.dll!KiUserCallbackDispatcher                     +0x2d     (0x774c6fee <ntdll.dll+0x46fee>)
+#12 Rgraphapp.dll!GA_peekevent                              [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+#13 R.dll!?                                                +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+#14 R.dll!?                                                +0x0      (0x6c75141d <R.dll+0x5141d>)
+#15 R.dll!?                                                +0x0      (0x6c75189d <R.dll+0x5189d>)
+#16 R.dll!?                                                +0x0      (0x6c752770 <R.dll+0x52770>)
+#17 Rterm.exe!?                                            +0x0      (0x00401746 <Rterm.exe+0x1746>)
+#18 Rterm.exe!?                                            +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+#19 KERNEL32.dll!BaseThreadInitThunk                       +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:29.406 in thread 3756
+Note: 0x0140498c refers to 0 byte(s) beyond the top of the stack 0x0140498c
+Note: instruction: pop    %esp (%esp) -> %ebx %esp
+
+Error #32: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404990-0x01404994 4 byte(s)
+# 0 ntdll.dll!RtlRaiseStatus                               +0x89     (0x774c718e <ntdll.dll+0x4718e>)
+# 1 Qt5Cored.dll!QEventDispatcherWin32::processEvents       [kernel/qeventdispatcher_win.cpp:756]
+# 2 qwindowsd.dll!QWindowsGuiEventDispatcher::processEvents [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\plugins\platforms\windows/qwindowsguieventdispatcher.cpp:80]
+# 3 Qt5Cored.dll!QCoreApplication::processEvents            [kernel/qcoreapplication.cpp:1076]
+# 4 qtbase.dll!QEventLoop_exec                              [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:124]
+# 5 qtbase.dll!run_callback_main_thread                     [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:181]
+# 6 qtbase.dll!EventLoopWindowProc@16                       [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:246]
+# 7 USER32.dll!gapfnScSendMessage                          +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+# 8 USER32.dll!gapfnScSendMessage                          +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+# 9 USER32.dll!GetScrollBarInfo                            +0xfc     (0x75d24f0e <USER32.dll+0x14f0e>)
+#10 USER32.dll!GetScrollBarInfo                            +0x16b    (0x75d24f7d <USER32.dll+0x14f7d>)
+#11 ntdll.dll!KiUserCallbackDispatcher                     +0x2d     (0x774c6fee <ntdll.dll+0x46fee>)
+#12 Rgraphapp.dll!GA_peekevent                              [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+#13 R.dll!?                                                +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+#14 R.dll!?                                                +0x0      (0x6c75141d <R.dll+0x5141d>)
+#15 R.dll!?                                                +0x0      (0x6c75189d <R.dll+0x5189d>)
+#16 R.dll!?                                                +0x0      (0x6c752770 <R.dll+0x52770>)
+#17 Rterm.exe!?                                            +0x0      (0x00401746 <Rterm.exe+0x1746>)
+#18 Rterm.exe!?                                            +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+#19 KERNEL32.dll!BaseThreadInitThunk                       +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:29.531 in thread 3756
+Note: 0x01404990 refers to 0 byte(s) beyond the top of the stack 0x01404990
+Note: instruction: ret    $0x00000014 %esp (%esp) -> %esp
+
+Error #33: UNADDRESSABLE ACCESS beyond top of stack: reading 0x0140cb94-0x0140cb98 4 byte(s)
+# 0 ntdll.dll!RtlUnwind                                    +0x102    (0x7749fb1a <ntdll.dll+0x1fb1a>)
+# 1 Qt5Cored.dll!QEventDispatcherWin32::processEvents       [kernel/qeventdispatcher_win.cpp:756]
+# 2 qwindowsd.dll!QWindowsGuiEventDispatcher::processEvents [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\plugins\platforms\windows/qwindowsguieventdispatcher.cpp:80]
+# 3 Qt5Cored.dll!QCoreApplication::processEvents            [kernel/qcoreapplication.cpp:1076]
+# 4 qtbase.dll!QEventLoop_exec                              [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:124]
+# 5 qtbase.dll!run_callback_main_thread                     [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:181]
+# 6 qtbase.dll!EventLoopWindowProc@16                       [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:246]
+# 7 USER32.dll!gapfnScSendMessage                          +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+# 8 USER32.dll!gapfnScSendMessage                          +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+# 9 USER32.dll!GetScrollBarInfo                            +0xfc     (0x75d24f0e <USER32.dll+0x14f0e>)
+#10 USER32.dll!GetScrollBarInfo                            +0x16b    (0x75d24f7d <USER32.dll+0x14f7d>)
+#11 ntdll.dll!KiUserCallbackDispatcher                     +0x2d     (0x774c6fee <ntdll.dll+0x46fee>)
+#12 Rgraphapp.dll!GA_peekevent                              [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+#13 R.dll!?                                                +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+#14 R.dll!?                                                +0x0      (0x6c75141d <R.dll+0x5141d>)
+#15 R.dll!?                                                +0x0      (0x6c75189d <R.dll+0x5189d>)
+#16 R.dll!?                                                +0x0      (0x6c752770 <R.dll+0x52770>)
+#17 Rterm.exe!?                                            +0x0      (0x00401746 <Rterm.exe+0x1746>)
+#18 Rterm.exe!?                                            +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+#19 KERNEL32.dll!BaseThreadInitThunk                       +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:29.640 in thread 3756
+Note: 0x0140cb94 refers to -33260 byte(s) beyond the top of the stack 0x014049a8
+Note: instruction: mov    (%ebx) -> %ebx
+
+Error #34: UNADDRESSABLE ACCESS beyond top of stack: reading 0x0140cb94-0x0140cb98 4 byte(s)
+# 0 ntdll.dll!RtlRaiseStatus                               +0x11a    (0x774c721f <ntdll.dll+0x4721f>)
+# 1 ntdll.dll!RtlUnwind                                    +0x109    (0x7749fb22 <ntdll.dll+0x1fb22>)
+# 2 Qt5Cored.dll!QEventDispatcherWin32::processEvents       [kernel/qeventdispatcher_win.cpp:756]
+# 3 qwindowsd.dll!QWindowsGuiEventDispatcher::processEvents [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\plugins\platforms\windows/qwindowsguieventdispatcher.cpp:80]
+# 4 Qt5Cored.dll!QCoreApplication::processEvents            [kernel/qcoreapplication.cpp:1076]
+# 5 qtbase.dll!QEventLoop_exec                              [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:124]
+# 6 qtbase.dll!run_callback_main_thread                     [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:181]
+# 7 qtbase.dll!EventLoopWindowProc@16                       [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:246]
+# 8 USER32.dll!gapfnScSendMessage                          +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+# 9 USER32.dll!gapfnScSendMessage                          +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+#10 USER32.dll!GetScrollBarInfo                            +0xfc     (0x75d24f0e <USER32.dll+0x14f0e>)
+#11 USER32.dll!GetScrollBarInfo                            +0x16b    (0x75d24f7d <USER32.dll+0x14f7d>)
+#12 ntdll.dll!KiUserCallbackDispatcher                     +0x2d     (0x774c6fee <ntdll.dll+0x46fee>)
+#13 Rgraphapp.dll!GA_peekevent                              [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+#14 R.dll!?                                                +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+#15 R.dll!?                                                +0x0      (0x6c75141d <R.dll+0x5141d>)
+#16 R.dll!?                                                +0x0      (0x6c75189d <R.dll+0x5189d>)
+#17 R.dll!?                                                +0x0      (0x6c752770 <R.dll+0x52770>)
+#18 Rterm.exe!?                                            +0x0      (0x00401746 <Rterm.exe+0x1746>)
+#19 Rterm.exe!?                                            +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+Note: @0:36:29.781 in thread 3756
+Note: 0x0140cb94 refers to -33268 byte(s) beyond the top of the stack 0x014049a0
+Note: instruction: mov    (%ecx) -> %ecx
+
+Error #35: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404d38-0x01404d3c 4 byte(s)
+# 0 ntdll.dll!RtlUnwind                                    +0x7e     (0x7749fa96 <ntdll.dll+0x1fa96>)
+# 1 Qt5Cored.dll!QEventDispatcherWin32::processEvents       [kernel/qeventdispatcher_win.cpp:756]
+# 2 qwindowsd.dll!QWindowsGuiEventDispatcher::processEvents [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\plugins\platforms\windows/qwindowsguieventdispatcher.cpp:80]
+# 3 Qt5Cored.dll!QCoreApplication::processEvents            [kernel/qcoreapplication.cpp:1076]
+# 4 qtbase.dll!QEventLoop_exec                              [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:124]
+# 5 qtbase.dll!run_callback_main_thread                     [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:181]
+# 6 qtbase.dll!EventLoopWindowProc@16                       [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:246]
+# 7 USER32.dll!gapfnScSendMessage                          +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+# 8 USER32.dll!gapfnScSendMessage                          +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+# 9 USER32.dll!GetScrollBarInfo                            +0xfc     (0x75d24f0e <USER32.dll+0x14f0e>)
+#10 USER32.dll!GetScrollBarInfo                            +0x16b    (0x75d24f7d <USER32.dll+0x14f7d>)
+#11 ntdll.dll!KiUserCallbackDispatcher                     +0x2d     (0x774c6fee <ntdll.dll+0x46fee>)
+#12 Rgraphapp.dll!GA_peekevent                              [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+#13 R.dll!?                                                +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+#14 R.dll!?                                                +0x0      (0x6c75141d <R.dll+0x5141d>)
+#15 R.dll!?                                                +0x0      (0x6c75189d <R.dll+0x5189d>)
+#16 R.dll!?                                                +0x0      (0x6c752770 <R.dll+0x52770>)
+#17 Rterm.exe!?                                            +0x0      (0x00401746 <Rterm.exe+0x1746>)
+#18 Rterm.exe!?                                            +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+#19 KERNEL32.dll!BaseThreadInitThunk                       +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:29.874 in thread 3756
+Note: 0x01404d38 refers to -912 byte(s) beyond the top of the stack 0x014049a8
+Note: instruction: cmp    %ebx 0x08(%ebp)
+
+Error #36: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404d38-0x01404d3c 4 byte(s)
+# 0 ntdll.dll!RtlUnwind                                    +0x87     (0x7749fa9f <ntdll.dll+0x1fa9f>)
+# 1 Qt5Cored.dll!QEventDispatcherWin32::processEvents       [kernel/qeventdispatcher_win.cpp:756]
+# 2 qwindowsd.dll!QWindowsGuiEventDispatcher::processEvents [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\plugins\platforms\windows/qwindowsguieventdispatcher.cpp:80]
+# 3 Qt5Cored.dll!QCoreApplication::processEvents            [kernel/qcoreapplication.cpp:1076]
+# 4 qtbase.dll!QEventLoop_exec                              [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:124]
+# 5 qtbase.dll!run_callback_main_thread                     [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:181]
+# 6 qtbase.dll!EventLoopWindowProc@16                       [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:246]
+# 7 USER32.dll!gapfnScSendMessage                          +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+# 8 USER32.dll!gapfnScSendMessage                          +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+# 9 USER32.dll!GetScrollBarInfo                            +0xfc     (0x75d24f0e <USER32.dll+0x14f0e>)
+#10 USER32.dll!GetScrollBarInfo                            +0x16b    (0x75d24f7d <USER32.dll+0x14f7d>)
+#11 ntdll.dll!KiUserCallbackDispatcher                     +0x2d     (0x774c6fee <ntdll.dll+0x46fee>)
+#12 Rgraphapp.dll!GA_peekevent                              [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+#13 R.dll!?                                                +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+#14 R.dll!?                                                +0x0      (0x6c75141d <R.dll+0x5141d>)
+#15 R.dll!?                                                +0x0      (0x6c75189d <R.dll+0x5189d>)
+#16 R.dll!?                                                +0x0      (0x6c752770 <R.dll+0x52770>)
+#17 Rterm.exe!?                                            +0x0      (0x00401746 <Rterm.exe+0x1746>)
+#18 Rterm.exe!?                                            +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+#19 KERNEL32.dll!BaseThreadInitThunk                       +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:29.984 in thread 3756
+Note: 0x01404d38 refers to -912 byte(s) beyond the top of the stack 0x014049a8
+Note: instruction: cmp    0x08(%ebp) $0x00000000
+
+Error #37: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404d38-0x01404d3c 4 byte(s)
+# 0 ntdll.dll!RtlUnwind                                    +0x8d     (0x7749faa5 <ntdll.dll+0x1faa5>)
+# 1 Qt5Cored.dll!QEventDispatcherWin32::processEvents       [kernel/qeventdispatcher_win.cpp:756]
+# 2 qwindowsd.dll!QWindowsGuiEventDispatcher::processEvents [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\plugins\platforms\windows/qwindowsguieventdispatcher.cpp:80]
+# 3 Qt5Cored.dll!QCoreApplication::processEvents            [kernel/qcoreapplication.cpp:1076]
+# 4 qtbase.dll!QEventLoop_exec                              [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:124]
+# 5 qtbase.dll!run_callback_main_thread                     [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:181]
+# 6 qtbase.dll!EventLoopWindowProc@16                       [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:246]
+# 7 USER32.dll!gapfnScSendMessage                          +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+# 8 USER32.dll!gapfnScSendMessage                          +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+# 9 USER32.dll!GetScrollBarInfo                            +0xfc     (0x75d24f0e <USER32.dll+0x14f0e>)
+#10 USER32.dll!GetScrollBarInfo                            +0x16b    (0x75d24f7d <USER32.dll+0x14f7d>)
+#11 ntdll.dll!KiUserCallbackDispatcher                     +0x2d     (0x774c6fee <ntdll.dll+0x46fee>)
+#12 Rgraphapp.dll!GA_peekevent                              [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+#13 R.dll!?                                                +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+#14 R.dll!?                                                +0x0      (0x6c75141d <R.dll+0x5141d>)
+#15 R.dll!?                                                +0x0      (0x6c75189d <R.dll+0x5189d>)
+#16 R.dll!?                                                +0x0      (0x6c752770 <R.dll+0x52770>)
+#17 Rterm.exe!?                                            +0x0      (0x00401746 <Rterm.exe+0x1746>)
+#18 Rterm.exe!?                                            +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+#19 KERNEL32.dll!BaseThreadInitThunk                       +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:30.108 in thread 3756
+Note: 0x01404d38 refers to -912 byte(s) beyond the top of the stack 0x014049a8
+Note: instruction: cmp    0x08(%ebp) %ebx
+
+Error #38: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404a58-0x01404a5c 4 byte(s)
+# 0 ntdll.dll!RtlUnwind                                    +0x96     (0x7749faae <ntdll.dll+0x1faae>)
+# 1 Qt5Cored.dll!QEventDispatcherWin32::processEvents       [kernel/qeventdispatcher_win.cpp:756]
+# 2 qwindowsd.dll!QWindowsGuiEventDispatcher::processEvents [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\plugins\platforms\windows/qwindowsguieventdispatcher.cpp:80]
+# 3 Qt5Cored.dll!QCoreApplication::processEvents            [kernel/qcoreapplication.cpp:1076]
+# 4 qtbase.dll!QEventLoop_exec                              [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:124]
+# 5 qtbase.dll!run_callback_main_thread                     [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:181]
+# 6 qtbase.dll!EventLoopWindowProc@16                       [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:246]
+# 7 USER32.dll!gapfnScSendMessage                          +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+# 8 USER32.dll!gapfnScSendMessage                          +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+# 9 USER32.dll!GetScrollBarInfo                            +0xfc     (0x75d24f0e <USER32.dll+0x14f0e>)
+#10 USER32.dll!GetScrollBarInfo                            +0x16b    (0x75d24f7d <USER32.dll+0x14f7d>)
+#11 ntdll.dll!KiUserCallbackDispatcher                     +0x2d     (0x774c6fee <ntdll.dll+0x46fee>)
+#12 Rgraphapp.dll!GA_peekevent                              [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+#13 R.dll!?                                                +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+#14 R.dll!?                                                +0x0      (0x6c75141d <R.dll+0x5141d>)
+#15 R.dll!?                                                +0x0      (0x6c75189d <R.dll+0x5189d>)
+#16 R.dll!?                                                +0x0      (0x6c752770 <R.dll+0x52770>)
+#17 Rterm.exe!?                                            +0x0      (0x00401746 <Rterm.exe+0x1746>)
+#18 Rterm.exe!?                                            +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+#19 KERNEL32.dll!BaseThreadInitThunk                       +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:30.218 in thread 3756
+Note: 0x01404a58 refers to -176 byte(s) beyond the top of the stack 0x014049a8
+Note: instruction: cmp    %ebx 0xfffffd28(%ebp)
+
+Error #39: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404a5c-0x01404a60 4 byte(s)
+# 0 ntdll.dll!RtlUnwind                                    +0xa5     (0x7749fabd <ntdll.dll+0x1fabd>)
+# 1 Qt5Cored.dll!QEventDispatcherWin32::processEvents       [kernel/qeventdispatcher_win.cpp:756]
+# 2 qwindowsd.dll!QWindowsGuiEventDispatcher::processEvents [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\plugins\platforms\windows/qwindowsguieventdispatcher.cpp:80]
+# 3 Qt5Cored.dll!QCoreApplication::processEvents            [kernel/qcoreapplication.cpp:1076]
+# 4 qtbase.dll!QEventLoop_exec                              [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:124]
+# 5 qtbase.dll!run_callback_main_thread                     [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:181]
+# 6 qtbase.dll!EventLoopWindowProc@16                       [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:246]
+# 7 USER32.dll!gapfnScSendMessage                          +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+# 8 USER32.dll!gapfnScSendMessage                          +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+# 9 USER32.dll!GetScrollBarInfo                            +0xfc     (0x75d24f0e <USER32.dll+0x14f0e>)
+#10 USER32.dll!GetScrollBarInfo                            +0x16b    (0x75d24f7d <USER32.dll+0x14f7d>)
+#11 ntdll.dll!KiUserCallbackDispatcher                     +0x2d     (0x774c6fee <ntdll.dll+0x46fee>)
+#12 Rgraphapp.dll!GA_peekevent                              [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+#13 R.dll!?                                                +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+#14 R.dll!?                                                +0x0      (0x6c75141d <R.dll+0x5141d>)
+#15 R.dll!?                                                +0x0      (0x6c75189d <R.dll+0x5189d>)
+#16 R.dll!?                                                +0x0      (0x6c752770 <R.dll+0x52770>)
+#17 Rterm.exe!?                                            +0x0      (0x00401746 <Rterm.exe+0x1746>)
+#18 Rterm.exe!?                                            +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+#19 KERNEL32.dll!BaseThreadInitThunk                       +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:30.311 in thread 3756
+Note: 0x01404a5c refers to -180 byte(s) beyond the top of the stack 0x014049a8
+Note: instruction: cmp    %eax 0xfffffd2c(%ebp)
+
+Error #40: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404a58-0x01404a5c 4 byte(s)
+# 0 ntdll.dll!RtlUnwind                                    +0xbd     (0x7749fad5 <ntdll.dll+0x1fad5>)
+# 1 Qt5Cored.dll!QEventDispatcherWin32::processEvents       [kernel/qeventdispatcher_win.cpp:756]
+# 2 qwindowsd.dll!QWindowsGuiEventDispatcher::processEvents [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\plugins\platforms\windows/qwindowsguieventdispatcher.cpp:80]
+# 3 Qt5Cored.dll!QCoreApplication::processEvents            [kernel/qcoreapplication.cpp:1076]
+# 4 qtbase.dll!QEventLoop_exec                              [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:124]
+# 5 qtbase.dll!run_callback_main_thread                     [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:181]
+# 6 qtbase.dll!EventLoopWindowProc@16                       [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:246]
+# 7 USER32.dll!gapfnScSendMessage                          +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+# 8 USER32.dll!gapfnScSendMessage                          +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+# 9 USER32.dll!GetScrollBarInfo                            +0xfc     (0x75d24f0e <USER32.dll+0x14f0e>)
+#10 USER32.dll!GetScrollBarInfo                            +0x16b    (0x75d24f7d <USER32.dll+0x14f7d>)
+#11 ntdll.dll!KiUserCallbackDispatcher                     +0x2d     (0x774c6fee <ntdll.dll+0x46fee>)
+#12 Rgraphapp.dll!GA_peekevent                              [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+#13 R.dll!?                                                +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+#14 R.dll!?                                                +0x0      (0x6c75141d <R.dll+0x5141d>)
+#15 R.dll!?                                                +0x0      (0x6c75189d <R.dll+0x5189d>)
+#16 R.dll!?                                                +0x0      (0x6c752770 <R.dll+0x52770>)
+#17 Rterm.exe!?                                            +0x0      (0x00401746 <Rterm.exe+0x1746>)
+#18 Rterm.exe!?                                            +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+#19 KERNEL32.dll!BaseThreadInitThunk                       +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:30.452 in thread 3756
+Note: 0x01404a58 refers to -176 byte(s) beyond the top of the stack 0x014049a8
+Note: instruction: cmp    %eax 0xfffffd28(%ebp)
+
+Error #41: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404a5c-0x01404a60 4 byte(s)
+# 0 ntdll.dll!RtlUnwind                                    +0xc5     (0x7749fadd <ntdll.dll+0x1fadd>)
+# 1 Qt5Cored.dll!QEventDispatcherWin32::processEvents       [kernel/qeventdispatcher_win.cpp:756]
+# 2 qwindowsd.dll!QWindowsGuiEventDispatcher::processEvents [C:\Qt\Qt5.2.0\5.2.0\Src\qtbase\src\plugins\platforms\windows/qwindowsguieventdispatcher.cpp:80]
+# 3 Qt5Cored.dll!QCoreApplication::processEvents            [kernel/qcoreapplication.cpp:1076]
+# 4 qtbase.dll!QEventLoop_exec                              [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:124]
+# 5 qtbase.dll!run_callback_main_thread                     [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:181]
+# 6 qtbase.dll!EventLoopWindowProc@16                       [C:/src/qtbase-master141107/qtbase/src/EventLoop.cpp:246]
+# 7 USER32.dll!gapfnScSendMessage                          +0x1ce    (0x75d2c4e7 <USER32.dll+0x1c4e7>)
+# 8 USER32.dll!gapfnScSendMessage                          +0x2ce    (0x75d2c5e7 <USER32.dll+0x1c5e7>)
+# 9 USER32.dll!GetScrollBarInfo                            +0xfc     (0x75d24f0e <USER32.dll+0x14f0e>)
+#10 USER32.dll!GetScrollBarInfo                            +0x16b    (0x75d24f7d <USER32.dll+0x14f7d>)
+#11 ntdll.dll!KiUserCallbackDispatcher                     +0x2d     (0x774c6fee <ntdll.dll+0x46fee>)
+#12 Rgraphapp.dll!GA_peekevent                              [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+#13 R.dll!?                                                +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+#14 R.dll!?                                                +0x0      (0x6c75141d <R.dll+0x5141d>)
+#15 R.dll!?                                                +0x0      (0x6c75189d <R.dll+0x5189d>)
+#16 R.dll!?                                                +0x0      (0x6c752770 <R.dll+0x52770>)
+#17 Rterm.exe!?                                            +0x0      (0x00401746 <Rterm.exe+0x1746>)
+#18 Rterm.exe!?                                            +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+#19 KERNEL32.dll!BaseThreadInitThunk                       +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:30.592 in thread 3756
+Note: 0x01404a5c refers to -180 byte(s) beyond the top of the stack 0x014049a8
+Note: instruction: cmp    %eax 0xfffffd2c(%ebp)
+
+Error #42: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404934-0x01404938 4 byte(s)
+# 0 ntdll.dll!KiFastSystemCallRet    +0x0      (0x774c70b4 <ntdll.dll+0x470b4>)
+# 1 Rgraphapp.dll!GA_peekevent        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 R.dll!?                          +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+# 3 R.dll!?                          +0x0      (0x6c75141d <R.dll+0x5141d>)
+# 4 R.dll!?                          +0x0      (0x6c75189d <R.dll+0x5189d>)
+# 5 R.dll!?                          +0x0      (0x6c752770 <R.dll+0x52770>)
+# 6 Rterm.exe!?                      +0x0      (0x00401746 <Rterm.exe+0x1746>)
+# 7 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 8 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:30.842 in thread 3756
+Note: 0x01404934 refers to 0 byte(s) beyond the top of the stack 0x01404934
+Note: instruction: ret    %esp (%esp) -> %esp
+
+Error #43: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404938-0x0140493c 4 byte(s)
+# 0 ntdll.dll!ZwCallbackReturn       +0xc      (0x774c5474 <ntdll.dll+0x45474>)
+# 1 Rgraphapp.dll!GA_peekevent        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 R.dll!?                          +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+# 3 R.dll!?                          +0x0      (0x6c75141d <R.dll+0x5141d>)
+# 4 R.dll!?                          +0x0      (0x6c75189d <R.dll+0x5189d>)
+# 5 R.dll!?                          +0x0      (0x6c752770 <R.dll+0x52770>)
+# 6 Rterm.exe!?                      +0x0      (0x00401746 <Rterm.exe+0x1746>)
+# 7 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 8 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:30.873 in thread 3756
+Note: 0x01404938 refers to 0 byte(s) beyond the top of the stack 0x01404938
+Note: instruction: ret    $0x0000000c %esp (%esp) -> %esp
+
+Error #44: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404948-0x0140494c 4 byte(s)
+# 0 ntdll.dll!KiUserApcDispatcher    +0x65     (0x774c6fbd <ntdll.dll+0x46fbd>)
+# 1 Rgraphapp.dll!GA_peekevent        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 R.dll!?                          +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+# 3 R.dll!?                          +0x0      (0x6c75141d <R.dll+0x5141d>)
+# 4 R.dll!?                          +0x0      (0x6c75189d <R.dll+0x5189d>)
+# 5 R.dll!?                          +0x0      (0x6c752770 <R.dll+0x52770>)
+# 6 Rterm.exe!?                      +0x0      (0x00401746 <Rterm.exe+0x1746>)
+# 7 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 8 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:30.935 in thread 3756
+Note: 0x01404948 refers to 0 byte(s) beyond the top of the stack 0x01404948
+Note: instruction: ret    $0x00000010 %esp (%esp) -> %esp
+
+Error #45: UNADDRESSABLE ACCESS beyond top of stack: reading 0x0140495c-0x01404960 4 byte(s)
+# 0 ntdll.dll!RtlRaiseStatus         +0xbb     (0x774c71c0 <ntdll.dll+0x471c0>)
+# 1 Rgraphapp.dll!GA_peekevent        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 R.dll!?                          +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+# 3 R.dll!?                          +0x0      (0x6c75141d <R.dll+0x5141d>)
+# 4 R.dll!?                          +0x0      (0x6c75189d <R.dll+0x5189d>)
+# 5 R.dll!?                          +0x0      (0x6c752770 <R.dll+0x52770>)
+# 6 Rterm.exe!?                      +0x0      (0x00401746 <Rterm.exe+0x1746>)
+# 7 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 8 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:30.982 in thread 3756
+Note: 0x0140495c refers to 0 byte(s) beyond the top of the stack 0x0140495c
+Note: instruction: pop    %esp (%esp) -> %fs:0x00 %esp
+
+Error #46: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404968-0x0140496c 4 byte(s)
+# 0 ntdll.dll!RtlRaiseStatus         +0xc4     (0x774c71c9 <ntdll.dll+0x471c9>)
+# 1 Rgraphapp.dll!GA_peekevent        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 R.dll!?                          +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+# 3 R.dll!?                          +0x0      (0x6c75141d <R.dll+0x5141d>)
+# 4 R.dll!?                          +0x0      (0x6c75189d <R.dll+0x5189d>)
+# 5 R.dll!?                          +0x0      (0x6c752770 <R.dll+0x52770>)
+# 6 Rterm.exe!?                      +0x0      (0x00401746 <Rterm.exe+0x1746>)
+# 7 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 8 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:31.044 in thread 3756
+Note: 0x01404968 refers to 0 byte(s) beyond the top of the stack 0x01404968
+Note: instruction: pop    %esp (%esp) -> %ebp %esp
+
+Error #47: UNADDRESSABLE ACCESS beyond top of stack: reading 0x0140496c-0x01404970 4 byte(s)
+# 0 ntdll.dll!RtlRaiseStatus         +0xc5     (0x774c71ca <ntdll.dll+0x471ca>)
+# 1 Rgraphapp.dll!GA_peekevent        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 R.dll!?                          +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+# 3 R.dll!?                          +0x0      (0x6c75141d <R.dll+0x5141d>)
+# 4 R.dll!?                          +0x0      (0x6c75189d <R.dll+0x5189d>)
+# 5 R.dll!?                          +0x0      (0x6c752770 <R.dll+0x52770>)
+# 6 Rterm.exe!?                      +0x0      (0x00401746 <Rterm.exe+0x1746>)
+# 7 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 8 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:31.091 in thread 3756
+Note: 0x0140496c refers to 0 byte(s) beyond the top of the stack 0x0140496c
+Note: instruction: ret    $0x00000014 %esp (%esp) -> %esp
+
+Error #48: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404984-0x01404988 4 byte(s)
+# 0 ntdll.dll!RtlRaiseStatus         +0x86     (0x774c718b <ntdll.dll+0x4718b>)
+# 1 Rgraphapp.dll!GA_peekevent        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 R.dll!?                          +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+# 3 R.dll!?                          +0x0      (0x6c75141d <R.dll+0x5141d>)
+# 4 R.dll!?                          +0x0      (0x6c75189d <R.dll+0x5189d>)
+# 5 R.dll!?                          +0x0      (0x6c752770 <R.dll+0x52770>)
+# 6 Rterm.exe!?                      +0x0      (0x00401746 <Rterm.exe+0x1746>)
+# 7 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 8 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:31.154 in thread 3756
+Note: 0x01404984 refers to 0 byte(s) beyond the top of the stack 0x01404984
+Note: instruction: pop    %esp (%esp) -> %edi %esp
+
+Error #49: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404988-0x0140498c 4 byte(s)
+# 0 ntdll.dll!RtlRaiseStatus         +0x87     (0x774c718c <ntdll.dll+0x4718c>)
+# 1 Rgraphapp.dll!GA_peekevent        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 R.dll!?                          +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+# 3 R.dll!?                          +0x0      (0x6c75141d <R.dll+0x5141d>)
+# 4 R.dll!?                          +0x0      (0x6c75189d <R.dll+0x5189d>)
+# 5 R.dll!?                          +0x0      (0x6c752770 <R.dll+0x52770>)
+# 6 Rterm.exe!?                      +0x0      (0x00401746 <Rterm.exe+0x1746>)
+# 7 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 8 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:31.185 in thread 3756
+Note: 0x01404988 refers to 0 byte(s) beyond the top of the stack 0x01404988
+Note: instruction: pop    %esp (%esp) -> %esi %esp
+
+Error #50: UNADDRESSABLE ACCESS beyond top of stack: reading 0x0140498c-0x01404990 4 byte(s)
+# 0 ntdll.dll!RtlRaiseStatus         +0x88     (0x774c718d <ntdll.dll+0x4718d>)
+# 1 Rgraphapp.dll!GA_peekevent        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 R.dll!?                          +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+# 3 R.dll!?                          +0x0      (0x6c75141d <R.dll+0x5141d>)
+# 4 R.dll!?                          +0x0      (0x6c75189d <R.dll+0x5189d>)
+# 5 R.dll!?                          +0x0      (0x6c752770 <R.dll+0x52770>)
+# 6 Rterm.exe!?                      +0x0      (0x00401746 <Rterm.exe+0x1746>)
+# 7 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 8 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:31.247 in thread 3756
+Note: 0x0140498c refers to 0 byte(s) beyond the top of the stack 0x0140498c
+Note: instruction: pop    %esp (%esp) -> %ebx %esp
+
+Error #51: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404990-0x01404994 4 byte(s)
+# 0 ntdll.dll!RtlRaiseStatus         +0x89     (0x774c718e <ntdll.dll+0x4718e>)
+# 1 Rgraphapp.dll!GA_peekevent        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 R.dll!?                          +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+# 3 R.dll!?                          +0x0      (0x6c75141d <R.dll+0x5141d>)
+# 4 R.dll!?                          +0x0      (0x6c75189d <R.dll+0x5189d>)
+# 5 R.dll!?                          +0x0      (0x6c752770 <R.dll+0x52770>)
+# 6 Rterm.exe!?                      +0x0      (0x00401746 <Rterm.exe+0x1746>)
+# 7 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 8 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:31.294 in thread 3756
+Note: 0x01404990 refers to 0 byte(s) beyond the top of the stack 0x01404990
+Note: instruction: ret    $0x00000014 %esp (%esp) -> %esp
+
+Error #52: UNADDRESSABLE ACCESS beyond top of stack: reading 0x0140ec74-0x0140ec78 4 byte(s)
+# 0 ntdll.dll!RtlUnwind              +0x102    (0x7749fb1a <ntdll.dll+0x1fb1a>)
+# 1 Rgraphapp.dll!GA_peekevent        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 R.dll!?                          +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+# 3 R.dll!?                          +0x0      (0x6c75141d <R.dll+0x5141d>)
+# 4 R.dll!?                          +0x0      (0x6c75189d <R.dll+0x5189d>)
+# 5 R.dll!?                          +0x0      (0x6c752770 <R.dll+0x52770>)
+# 6 Rterm.exe!?                      +0x0      (0x00401746 <Rterm.exe+0x1746>)
+# 7 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 8 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:31.341 in thread 3756
+Note: 0x0140ec74 refers to -41676 byte(s) beyond the top of the stack 0x014049a8
+Note: instruction: mov    (%ebx) -> %ebx
+
+Error #53: UNADDRESSABLE ACCESS beyond top of stack: reading 0x0140ec74-0x0140ec78 4 byte(s)
+# 0 ntdll.dll!RtlRaiseStatus         +0x11a    (0x774c721f <ntdll.dll+0x4721f>)
+# 1 ntdll.dll!RtlUnwind              +0x109    (0x7749fb22 <ntdll.dll+0x1fb22>)
+# 2 Rgraphapp.dll!GA_peekevent        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 3 R.dll!?                          +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+# 4 R.dll!?                          +0x0      (0x6c75141d <R.dll+0x5141d>)
+# 5 R.dll!?                          +0x0      (0x6c75189d <R.dll+0x5189d>)
+# 6 R.dll!?                          +0x0      (0x6c752770 <R.dll+0x52770>)
+# 7 Rterm.exe!?                      +0x0      (0x00401746 <Rterm.exe+0x1746>)
+# 8 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 9 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:31.388 in thread 3756
+Note: 0x0140ec74 refers to -41684 byte(s) beyond the top of the stack 0x014049a0
+Note: instruction: mov    (%ecx) -> %ecx
+
+Error #54: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404d38-0x01404d3c 4 byte(s)
+# 0 ntdll.dll!RtlUnwind              +0x7e     (0x7749fa96 <ntdll.dll+0x1fa96>)
+# 1 Rgraphapp.dll!GA_peekevent        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 R.dll!?                          +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+# 3 R.dll!?                          +0x0      (0x6c75141d <R.dll+0x5141d>)
+# 4 R.dll!?                          +0x0      (0x6c75189d <R.dll+0x5189d>)
+# 5 R.dll!?                          +0x0      (0x6c752770 <R.dll+0x52770>)
+# 6 Rterm.exe!?                      +0x0      (0x00401746 <Rterm.exe+0x1746>)
+# 7 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 8 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:31.450 in thread 3756
+Note: 0x01404d38 refers to -912 byte(s) beyond the top of the stack 0x014049a8
+Note: instruction: cmp    %ebx 0x08(%ebp)
+
+Error #55: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404a60-0x01404a64 4 byte(s) within 0x01404a60-0x01404a64
+# 0 system call NtContinue CONTEXT.ContextFlags
+# 1 ntdll.dll!ZwContinue                                     +0xb      (0x774c5574 <ntdll.dll+0x45574>)
+# 2 ntdll.dll!RtlUnwind                                      +0x125    (0x7749fb3e <ntdll.dll+0x1fb3e>)
+# 3 Rgraphapp.dll!GA_peekevent                                [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 R.dll!?                                                  +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+# 5 R.dll!?                                                  +0x0      (0x6c75141d <R.dll+0x5141d>)
+# 6 R.dll!?                                                  +0x0      (0x6c75189d <R.dll+0x5189d>)
+# 7 R.dll!?                                                  +0x0      (0x6c752770 <R.dll+0x52770>)
+# 8 Rterm.exe!?                                              +0x0      (0x00401746 <Rterm.exe+0x1746>)
+# 9 Rterm.exe!?                                              +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+#10 KERNEL32.dll!BaseThreadInitThunk                         +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:31.497 in thread 3756
+Note: 0x01404a60 refers to -200 byte(s) beyond the top of the stack 0x01404998
+
+Error #56: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404aec-0x01404aee 2 byte(s) within 0x01404aec-0x01404aee
+# 0 system call NtContinue CONTEXT.SegGs
+# 1 ntdll.dll!ZwContinue                              +0xb      (0x774c5574 <ntdll.dll+0x45574>)
+# 2 ntdll.dll!RtlUnwind                               +0x125    (0x7749fb3e <ntdll.dll+0x1fb3e>)
+# 3 Rgraphapp.dll!GA_peekevent                         [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 R.dll!?                                           +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+# 5 R.dll!?                                           +0x0      (0x6c75141d <R.dll+0x5141d>)
+# 6 R.dll!?                                           +0x0      (0x6c75189d <R.dll+0x5189d>)
+# 7 R.dll!?                                           +0x0      (0x6c752770 <R.dll+0x52770>)
+# 8 Rterm.exe!?                                       +0x0      (0x00401746 <Rterm.exe+0x1746>)
+# 9 Rterm.exe!?                                       +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+#10 KERNEL32.dll!BaseThreadInitThunk                  +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:31.544 in thread 3756
+Note: 0x01404aec refers to -340 byte(s) beyond the top of the stack 0x01404998
+
+Error #57: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404af0-0x01404af2 2 byte(s) within 0x01404af0-0x01404af2
+# 0 system call NtContinue CONTEXT.SegFs
+# 1 ntdll.dll!ZwContinue                              +0xb      (0x774c5574 <ntdll.dll+0x45574>)
+# 2 ntdll.dll!RtlUnwind                               +0x125    (0x7749fb3e <ntdll.dll+0x1fb3e>)
+# 3 Rgraphapp.dll!GA_peekevent                         [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 R.dll!?                                           +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+# 5 R.dll!?                                           +0x0      (0x6c75141d <R.dll+0x5141d>)
+# 6 R.dll!?                                           +0x0      (0x6c75189d <R.dll+0x5189d>)
+# 7 R.dll!?                                           +0x0      (0x6c752770 <R.dll+0x52770>)
+# 8 Rterm.exe!?                                       +0x0      (0x00401746 <Rterm.exe+0x1746>)
+# 9 Rterm.exe!?                                       +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+#10 KERNEL32.dll!BaseThreadInitThunk                  +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:31.762 in thread 3756
+Note: 0x01404af0 refers to -344 byte(s) beyond the top of the stack 0x01404998
+
+Error #58: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404af4-0x01404af6 2 byte(s) within 0x01404af4-0x01404af6
+# 0 system call NtContinue CONTEXT.SegEs
+# 1 ntdll.dll!ZwContinue                              +0xb      (0x774c5574 <ntdll.dll+0x45574>)
+# 2 ntdll.dll!RtlUnwind                               +0x125    (0x7749fb3e <ntdll.dll+0x1fb3e>)
+# 3 Rgraphapp.dll!GA_peekevent                         [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 R.dll!?                                           +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+# 5 R.dll!?                                           +0x0      (0x6c75141d <R.dll+0x5141d>)
+# 6 R.dll!?                                           +0x0      (0x6c75189d <R.dll+0x5189d>)
+# 7 R.dll!?                                           +0x0      (0x6c752770 <R.dll+0x52770>)
+# 8 Rterm.exe!?                                       +0x0      (0x00401746 <Rterm.exe+0x1746>)
+# 9 Rterm.exe!?                                       +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+#10 KERNEL32.dll!BaseThreadInitThunk                  +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:31.824 in thread 3756
+Note: 0x01404af4 refers to -348 byte(s) beyond the top of the stack 0x01404998
+
+Error #59: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404af8-0x01404afa 2 byte(s) within 0x01404af8-0x01404afa
+# 0 system call NtContinue CONTEXT.SegDs
+# 1 ntdll.dll!ZwContinue                              +0xb      (0x774c5574 <ntdll.dll+0x45574>)
+# 2 ntdll.dll!RtlUnwind                               +0x125    (0x7749fb3e <ntdll.dll+0x1fb3e>)
+# 3 Rgraphapp.dll!GA_peekevent                         [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 R.dll!?                                           +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+# 5 R.dll!?                                           +0x0      (0x6c75141d <R.dll+0x5141d>)
+# 6 R.dll!?                                           +0x0      (0x6c75189d <R.dll+0x5189d>)
+# 7 R.dll!?                                           +0x0      (0x6c752770 <R.dll+0x52770>)
+# 8 Rterm.exe!?                                       +0x0      (0x00401746 <Rterm.exe+0x1746>)
+# 9 Rterm.exe!?                                       +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+#10 KERNEL32.dll!BaseThreadInitThunk                  +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:31.902 in thread 3756
+Note: 0x01404af8 refers to -352 byte(s) beyond the top of the stack 0x01404998
+
+Error #60: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404afc-0x01404b14 24 byte(s) within 0x01404afc-0x01404b14
+# 0 system call NtContinue CONTEXT.Exx
+# 1 ntdll.dll!ZwContinue                            +0xb      (0x774c5574 <ntdll.dll+0x45574>)
+# 2 ntdll.dll!RtlUnwind                             +0x125    (0x7749fb3e <ntdll.dll+0x1fb3e>)
+# 3 Rgraphapp.dll!GA_peekevent                       [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 R.dll!?                                         +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+# 5 R.dll!?                                         +0x0      (0x6c75141d <R.dll+0x5141d>)
+# 6 R.dll!?                                         +0x0      (0x6c75189d <R.dll+0x5189d>)
+# 7 R.dll!?                                         +0x0      (0x6c752770 <R.dll+0x52770>)
+# 8 Rterm.exe!?                                     +0x0      (0x00401746 <Rterm.exe+0x1746>)
+# 9 Rterm.exe!?                                     +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+#10 KERNEL32.dll!BaseThreadInitThunk                +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:31.965 in thread 3756
+Note: 0x01404afc refers to -356 byte(s) beyond the top of the stack 0x01404998
+
+Error #61: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404b14-0x01404b18 4 byte(s) within 0x01404b14-0x01404b18
+# 0 system call NtContinue CONTEXT.Ebp
+# 1 ntdll.dll!ZwContinue                            +0xb      (0x774c5574 <ntdll.dll+0x45574>)
+# 2 ntdll.dll!RtlUnwind                             +0x125    (0x7749fb3e <ntdll.dll+0x1fb3e>)
+# 3 Rgraphapp.dll!GA_peekevent                       [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 R.dll!?                                         +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+# 5 R.dll!?                                         +0x0      (0x6c75141d <R.dll+0x5141d>)
+# 6 R.dll!?                                         +0x0      (0x6c75189d <R.dll+0x5189d>)
+# 7 R.dll!?                                         +0x0      (0x6c752770 <R.dll+0x52770>)
+# 8 Rterm.exe!?                                     +0x0      (0x00401746 <Rterm.exe+0x1746>)
+# 9 Rterm.exe!?                                     +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+#10 KERNEL32.dll!BaseThreadInitThunk                +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:32.012 in thread 3756
+Note: 0x01404b14 refers to -380 byte(s) beyond the top of the stack 0x01404998
+
+Error #62: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404b18-0x01404b1c 4 byte(s) within 0x01404b18-0x01404b1c
+# 0 system call NtContinue CONTEXT.Eip
+# 1 ntdll.dll!ZwContinue                            +0xb      (0x774c5574 <ntdll.dll+0x45574>)
+# 2 ntdll.dll!RtlUnwind                             +0x125    (0x7749fb3e <ntdll.dll+0x1fb3e>)
+# 3 Rgraphapp.dll!GA_peekevent                       [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 R.dll!?                                         +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+# 5 R.dll!?                                         +0x0      (0x6c75141d <R.dll+0x5141d>)
+# 6 R.dll!?                                         +0x0      (0x6c75189d <R.dll+0x5189d>)
+# 7 R.dll!?                                         +0x0      (0x6c752770 <R.dll+0x52770>)
+# 8 Rterm.exe!?                                     +0x0      (0x00401746 <Rterm.exe+0x1746>)
+# 9 Rterm.exe!?                                     +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+#10 KERNEL32.dll!BaseThreadInitThunk                +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:32.074 in thread 3756
+Note: 0x01404b18 refers to -384 byte(s) beyond the top of the stack 0x01404998
+
+Error #63: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404b24-0x01404b28 4 byte(s) within 0x01404b24-0x01404b28
+# 0 system call NtContinue CONTEXT.Esp
+# 1 ntdll.dll!ZwContinue                            +0xb      (0x774c5574 <ntdll.dll+0x45574>)
+# 2 ntdll.dll!RtlUnwind                             +0x125    (0x7749fb3e <ntdll.dll+0x1fb3e>)
+# 3 Rgraphapp.dll!GA_peekevent                       [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 R.dll!?                                         +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+# 5 R.dll!?                                         +0x0      (0x6c75141d <R.dll+0x5141d>)
+# 6 R.dll!?                                         +0x0      (0x6c75189d <R.dll+0x5189d>)
+# 7 R.dll!?                                         +0x0      (0x6c752770 <R.dll+0x52770>)
+# 8 Rterm.exe!?                                     +0x0      (0x00401746 <Rterm.exe+0x1746>)
+# 9 Rterm.exe!?                                     +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+#10 KERNEL32.dll!BaseThreadInitThunk                +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:32.136 in thread 3756
+Note: 0x01404b24 refers to -396 byte(s) beyond the top of the stack 0x01404998
+
+Error #64: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404b20-0x01404b24 4 byte(s) within 0x01404b20-0x01404b24
+# 0 system call NtContinue CONTEXT.Eflags
+# 1 ntdll.dll!ZwContinue                               +0xb      (0x774c5574 <ntdll.dll+0x45574>)
+# 2 ntdll.dll!RtlUnwind                                +0x125    (0x7749fb3e <ntdll.dll+0x1fb3e>)
+# 3 Rgraphapp.dll!GA_peekevent                          [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 R.dll!?                                            +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+# 5 R.dll!?                                            +0x0      (0x6c75141d <R.dll+0x5141d>)
+# 6 R.dll!?                                            +0x0      (0x6c75189d <R.dll+0x5189d>)
+# 7 R.dll!?                                            +0x0      (0x6c752770 <R.dll+0x52770>)
+# 8 Rterm.exe!?                                        +0x0      (0x00401746 <Rterm.exe+0x1746>)
+# 9 Rterm.exe!?                                        +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+#10 KERNEL32.dll!BaseThreadInitThunk                   +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:32.199 in thread 3756
+Note: 0x01404b20 refers to -392 byte(s) beyond the top of the stack 0x01404998
+
+Error #65: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404b1c-0x01404b1e 2 byte(s) within 0x01404b1c-0x01404b1e
+# 0 system call NtContinue CONTEXT.SegCs
+# 1 ntdll.dll!ZwContinue                              +0xb      (0x774c5574 <ntdll.dll+0x45574>)
+# 2 ntdll.dll!RtlUnwind                               +0x125    (0x7749fb3e <ntdll.dll+0x1fb3e>)
+# 3 Rgraphapp.dll!GA_peekevent                         [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 R.dll!?                                           +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+# 5 R.dll!?                                           +0x0      (0x6c75141d <R.dll+0x5141d>)
+# 6 R.dll!?                                           +0x0      (0x6c75189d <R.dll+0x5189d>)
+# 7 R.dll!?                                           +0x0      (0x6c752770 <R.dll+0x52770>)
+# 8 Rterm.exe!?                                       +0x0      (0x00401746 <Rterm.exe+0x1746>)
+# 9 Rterm.exe!?                                       +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+#10 KERNEL32.dll!BaseThreadInitThunk                  +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:32.370 in thread 3756
+Note: 0x01404b1c refers to -388 byte(s) beyond the top of the stack 0x01404998
+
+Error #66: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404b28-0x01404b2a 2 byte(s) within 0x01404b28-0x01404b2a
+# 0 system call NtContinue CONTEXT.SegSs
+# 1 ntdll.dll!ZwContinue                              +0xb      (0x774c5574 <ntdll.dll+0x45574>)
+# 2 ntdll.dll!RtlUnwind                               +0x125    (0x7749fb3e <ntdll.dll+0x1fb3e>)
+# 3 Rgraphapp.dll!GA_peekevent                         [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 R.dll!?                                           +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+# 5 R.dll!?                                           +0x0      (0x6c75141d <R.dll+0x5141d>)
+# 6 R.dll!?                                           +0x0      (0x6c75189d <R.dll+0x5189d>)
+# 7 R.dll!?                                           +0x0      (0x6c752770 <R.dll+0x52770>)
+# 8 Rterm.exe!?                                       +0x0      (0x00401746 <Rterm.exe+0x1746>)
+# 9 Rterm.exe!?                                       +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+#10 KERNEL32.dll!BaseThreadInitThunk                  +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:32.433 in thread 3756
+Note: 0x01404b28 refers to -400 byte(s) beyond the top of the stack 0x01404998
+
+Error #67: UNINITIALIZED READ: reading register esp
+# 0 ntdll.dll!RtlAddMandatoryAce     +0x57a    (0x7749e337 <ntdll.dll+0x1e337>)
+# 1 Rgraphapp.dll!GA_peekevent        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 R.dll!?                          +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+# 3 R.dll!?                          +0x0      (0x6c75141d <R.dll+0x5141d>)
+# 4 R.dll!?                          +0x0      (0x6c75189d <R.dll+0x5189d>)
+# 5 R.dll!?                          +0x0      (0x6c752770 <R.dll+0x52770>)
+# 6 Rterm.exe!?                      +0x0      (0x00401746 <Rterm.exe+0x1746>)
+# 7 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 8 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:32.495 in thread 3756
+Note: instruction: pop    %esp (%esp) -> %edi %esp
+
+Error #68: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404d48-0x01404d4c 4 byte(s)
+# 0 ntdll.dll!RtlAddMandatoryAce     +0x57a    (0x7749e337 <ntdll.dll+0x1e337>)
+# 1 Rgraphapp.dll!GA_peekevent        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 R.dll!?                          +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+# 3 R.dll!?                          +0x0      (0x6c75141d <R.dll+0x5141d>)
+# 4 R.dll!?                          +0x0      (0x6c75189d <R.dll+0x5189d>)
+# 5 R.dll!?                          +0x0      (0x6c752770 <R.dll+0x52770>)
+# 6 Rterm.exe!?                      +0x0      (0x00401746 <Rterm.exe+0x1746>)
+# 7 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 8 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:32.558 in thread 3756
+Note: 0x01404d48 refers to 0 byte(s) beyond the top of the stack 0x01404d48
+Note: instruction: pop    %esp (%esp) -> %edi %esp
+
+Error #69: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404d4c-0x01404d50 4 byte(s)
+# 0 ntdll.dll!RtlAddMandatoryAce     +0x57b    (0x7749e338 <ntdll.dll+0x1e338>)
+# 1 Rgraphapp.dll!GA_peekevent        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 R.dll!?                          +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+# 3 R.dll!?                          +0x0      (0x6c75141d <R.dll+0x5141d>)
+# 4 R.dll!?                          +0x0      (0x6c75189d <R.dll+0x5189d>)
+# 5 R.dll!?                          +0x0      (0x6c752770 <R.dll+0x52770>)
+# 6 Rterm.exe!?                      +0x0      (0x00401746 <Rterm.exe+0x1746>)
+# 7 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 8 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:32.604 in thread 3756
+Note: 0x01404d4c refers to 0 byte(s) beyond the top of the stack 0x01404d4c
+Note: instruction: pop    %esp (%esp) -> %esi %esp
+
+Error #70: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404d50-0x01404d54 4 byte(s)
+# 0 ntdll.dll!RtlAddMandatoryAce     +0x57c    (0x7749e339 <ntdll.dll+0x1e339>)
+# 1 Rgraphapp.dll!GA_peekevent        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 R.dll!?                          +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+# 3 R.dll!?                          +0x0      (0x6c75141d <R.dll+0x5141d>)
+# 4 R.dll!?                          +0x0      (0x6c75189d <R.dll+0x5189d>)
+# 5 R.dll!?                          +0x0      (0x6c752770 <R.dll+0x52770>)
+# 6 Rterm.exe!?                      +0x0      (0x00401746 <Rterm.exe+0x1746>)
+# 7 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 8 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:32.667 in thread 3756
+Note: 0x01404d50 refers to 0 byte(s) beyond the top of the stack 0x01404d50
+Note: instruction: pop    %esp (%esp) -> %ebx %esp
+
+Error #71: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404d54-0x01404d58 4 byte(s)
+# 0 ntdll.dll!RtlAddMandatoryAce     +0x57d    (0x7749e33a <ntdll.dll+0x1e33a>)
+# 1 Rgraphapp.dll!GA_peekevent        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 R.dll!?                          +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+# 3 R.dll!?                          +0x0      (0x6c75141d <R.dll+0x5141d>)
+# 4 R.dll!?                          +0x0      (0x6c75189d <R.dll+0x5189d>)
+# 5 R.dll!?                          +0x0      (0x6c752770 <R.dll+0x52770>)
+# 6 Rterm.exe!?                      +0x0      (0x00401746 <Rterm.exe+0x1746>)
+# 7 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 8 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:32.729 in thread 3756
+Note: 0x01404d54 refers to 0 byte(s) beyond the top of the stack 0x01404d54
+Note: instruction: pop    %esp (%esp) -> %ebp %esp
+
+Error #72: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404d58-0x01404d5c 4 byte(s)
+# 0 ntdll.dll!RtlAddMandatoryAce     +0x57e    (0x7749e33b <ntdll.dll+0x1e33b>)
+# 1 Rgraphapp.dll!GA_peekevent        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 R.dll!?                          +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+# 3 R.dll!?                          +0x0      (0x6c75141d <R.dll+0x5141d>)
+# 4 R.dll!?                          +0x0      (0x6c75189d <R.dll+0x5189d>)
+# 5 R.dll!?                          +0x0      (0x6c752770 <R.dll+0x52770>)
+# 6 Rterm.exe!?                      +0x0      (0x00401746 <Rterm.exe+0x1746>)
+# 7 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 8 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:32.776 in thread 3756
+Note: 0x01404d58 refers to 0 byte(s) beyond the top of the stack 0x01404d58
+Note: instruction: ret    %esp (%esp) -> %esp
+
+Error #73: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404d88-0x01404d8c 4 byte(s)
+# 0 ntdll.dll!RtlAddMandatoryAce     +0x3e9    (0x7749e1a6 <ntdll.dll+0x1e1a6>)
+# 1 Rgraphapp.dll!GA_peekevent        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 R.dll!?                          +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+# 3 R.dll!?                          +0x0      (0x6c75141d <R.dll+0x5141d>)
+# 4 R.dll!?                          +0x0      (0x6c75189d <R.dll+0x5189d>)
+# 5 R.dll!?                          +0x0      (0x6c752770 <R.dll+0x52770>)
+# 6 Rterm.exe!?                      +0x0      (0x00401746 <Rterm.exe+0x1746>)
+# 7 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 8 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:32.838 in thread 3756
+Note: 0x01404d88 refers to -44 byte(s) beyond the top of the stack 0x01404d5c
+Note: instruction: mov    0x0c(%ebp) -> %eax
+
+Error #74: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404d84-0x01404d88 4 byte(s)
+# 0 ntdll.dll!RtlAddMandatoryAce     +0x3f5    (0x7749e1b2 <ntdll.dll+0x1e1b2>)
+# 1 Rgraphapp.dll!GA_peekevent        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 R.dll!?                          +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+# 3 R.dll!?                          +0x0      (0x6c75141d <R.dll+0x5141d>)
+# 4 R.dll!?                          +0x0      (0x6c75189d <R.dll+0x5189d>)
+# 5 R.dll!?                          +0x0      (0x6c752770 <R.dll+0x52770>)
+# 6 Rterm.exe!?                      +0x0      (0x00401746 <Rterm.exe+0x1746>)
+# 7 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 8 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:32.885 in thread 3756
+Note: 0x01404d84 refers to -40 byte(s) beyond the top of the stack 0x01404d5c
+Note: instruction: mov    0x08(%ebp) -> %ecx
+
+Error #75: UNADDRESSABLE ACCESS beyond top of stack: reading 0x01404d70-0x01404d74 4 byte(s)
+# 0 ntdll.dll!RtlAddMandatoryAce     +0x41f    (0x7749e1dc <ntdll.dll+0x1e1dc>)
+# 1 Rgraphapp.dll!GA_peekevent        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 R.dll!?                          +0x0      (0x6c71e16f <R.dll+0x1e16f>)
+# 3 R.dll!?                          +0x0      (0x6c75141d <R.dll+0x5141d>)
+# 4 R.dll!?                          +0x0      (0x6c75189d <R.dll+0x5189d>)
+# 5 R.dll!?                          +0x0      (0x6c752770 <R.dll+0x52770>)
+# 6 Rterm.exe!?                      +0x0      (0x00401746 <Rterm.exe+0x1746>)
+# 7 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 8 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+Note: @0:36:33.041 in thread 3756
+Note: 0x01404d70 refers to -20 byte(s) beyond the top of the stack 0x01404d5c
+Note: instruction: mov    0xfffffff4(%ebp) -> %eax
+
+Error #76: POSSIBLE LEAK 432 direct bytes 0x026b01f8-0x026b03a8 + 0 indirect bytes
+# 0 replace_malloc                    [d:\drmemory_package\common\alloc_replace.c:2373]
+# 1 Rgraphapp.dll!GAI_memalloc        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 Rgraphapp.dll!GAI_init_objects    [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 3 Rgraphapp.dll!GA_startgraphapp    [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 Rterm.exe!?                      +0x0      (0x0040156f <Rterm.exe+0x156f>)
+# 5 Rterm.exe!?                      +0x0      (0x00402c6d <Rterm.exe+0x2c6d>)
+# 6 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 7 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+
+Error #77: POSSIBLE LEAK 432 direct bytes 0x026b0468-0x026b0618 + 0 indirect bytes
+# 0 replace_malloc                    [d:\drmemory_package\common\alloc_replace.c:2373]
+# 1 Rgraphapp.dll!GAI_memalloc        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 Rgraphapp.dll!GAI_new_object      [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 3 Rgraphapp.dll!GA_new_font_object  [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 Rgraphapp.dll!GAI_init_fonts      [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 5 Rgraphapp.dll!GA_startgraphapp    [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 6 Rterm.exe!?                      +0x0      (0x0040156f <Rterm.exe+0x156f>)
+# 7 Rterm.exe!?                      +0x0      (0x00402c6d <Rterm.exe+0x2c6d>)
+# 8 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 9 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+
+Error #78: POSSIBLE LEAK 432 direct bytes 0x026b0638-0x026b07e8 + 0 indirect bytes
+# 0 replace_malloc                    [d:\drmemory_package\common\alloc_replace.c:2373]
+# 1 Rgraphapp.dll!GAI_memalloc        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 Rgraphapp.dll!GAI_new_object      [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 3 Rgraphapp.dll!GA_new_font_object  [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 Rgraphapp.dll!GAI_init_fonts      [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 5 Rgraphapp.dll!GA_startgraphapp    [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 6 Rterm.exe!?                      +0x0      (0x0040156f <Rterm.exe+0x156f>)
+# 7 Rterm.exe!?                      +0x0      (0x00402c6d <Rterm.exe+0x2c6d>)
+# 8 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 9 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+
+Error #79: POSSIBLE LEAK 16 direct bytes 0x026b0808-0x026b0818 + 0 indirect bytes
+# 0 replace_malloc                    [d:\drmemory_package\common\alloc_replace.c:2373]
+# 1 Rgraphapp.dll!GAI_memalloc        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 Rgraphapp.dll!GAI_new_string      [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 3 Rgraphapp.dll!GAI_init_fonts      [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 Rgraphapp.dll!GA_startgraphapp    [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 5 Rterm.exe!?                      +0x0      (0x0040156f <Rterm.exe+0x156f>)
+# 6 Rterm.exe!?                      +0x0      (0x00402c6d <Rterm.exe+0x2c6d>)
+# 7 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 8 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+
+Error #80: POSSIBLE LEAK 432 direct bytes 0x026b0838-0x026b09e8 + 0 indirect bytes
+# 0 replace_malloc                    [d:\drmemory_package\common\alloc_replace.c:2373]
+# 1 Rgraphapp.dll!GAI_memalloc        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 Rgraphapp.dll!GAI_new_object      [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 3 Rgraphapp.dll!GA_new_font_object  [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 Rgraphapp.dll!GAI_init_fonts      [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 5 Rgraphapp.dll!GA_startgraphapp    [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 6 Rterm.exe!?                      +0x0      (0x0040156f <Rterm.exe+0x156f>)
+# 7 Rterm.exe!?                      +0x0      (0x00402c6d <Rterm.exe+0x2c6d>)
+# 8 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 9 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+
+Error #81: POSSIBLE LEAK 432 direct bytes 0x026b0a08-0x026b0bb8 + 0 indirect bytes
+# 0 replace_malloc                       [d:\drmemory_package\common\alloc_replace.c:2373]
+# 1 Rgraphapp.dll!GAI_memalloc           [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 Rgraphapp.dll!GAI_new_object         [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 3 Rgraphapp.dll!GA_new_font_object     [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 Rgraphapp.dll!GA_newfont.constprop.1 [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 5 Rgraphapp.dll!GAI_init_fonts         [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 6 Rgraphapp.dll!GA_startgraphapp       [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 7 Rterm.exe!?                         +0x0      (0x0040156f <Rterm.exe+0x156f>)
+# 8 Rterm.exe!?                         +0x0      (0x00402c6d <Rterm.exe+0x2c6d>)
+# 9 Rterm.exe!?                         +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+#10 KERNEL32.dll!BaseThreadInitThunk    +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+
+Error #82: POSSIBLE LEAK 20 direct bytes 0x026b0bd8-0x026b0bec + 0 indirect bytes
+# 0 replace_malloc                       [d:\drmemory_package\common\alloc_replace.c:2373]
+# 1 Rgraphapp.dll!GAI_memalloc           [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 Rgraphapp.dll!GAI_new_string         [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 3 Rgraphapp.dll!GA_newfont.constprop.1 [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 Rgraphapp.dll!GAI_init_fonts         [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 5 Rgraphapp.dll!GA_startgraphapp       [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 6 Rterm.exe!?                         +0x0      (0x0040156f <Rterm.exe+0x156f>)
+# 7 Rterm.exe!?                         +0x0      (0x00402c6d <Rterm.exe+0x2c6d>)
+# 8 Rterm.exe!?                         +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 9 KERNEL32.dll!BaseThreadInitThunk    +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+
+Error #83: POSSIBLE LEAK 432 direct bytes 0x026b0c10-0x026b0dc0 + 0 indirect bytes
+# 0 replace_malloc                       [d:\drmemory_package\common\alloc_replace.c:2373]
+# 1 Rgraphapp.dll!GAI_memalloc           [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 Rgraphapp.dll!GAI_new_object         [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 3 Rgraphapp.dll!GA_new_font_object     [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 Rgraphapp.dll!GA_newfont.constprop.1 [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 5 Rgraphapp.dll!GAI_init_fonts         [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 6 Rgraphapp.dll!GA_startgraphapp       [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 7 Rterm.exe!?                         +0x0      (0x0040156f <Rterm.exe+0x156f>)
+# 8 Rterm.exe!?                         +0x0      (0x00402c6d <Rterm.exe+0x2c6d>)
+# 9 Rterm.exe!?                         +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+#10 KERNEL32.dll!BaseThreadInitThunk    +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+
+Error #84: POSSIBLE LEAK 12 direct bytes 0x026b0de0-0x026b0dec + 0 indirect bytes
+# 0 replace_malloc                       [d:\drmemory_package\common\alloc_replace.c:2373]
+# 1 Rgraphapp.dll!GAI_memalloc           [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 Rgraphapp.dll!GAI_new_string         [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 3 Rgraphapp.dll!GA_newfont.constprop.1 [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 Rgraphapp.dll!GAI_init_fonts         [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 5 Rgraphapp.dll!GA_startgraphapp       [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 6 Rterm.exe!?                         +0x0      (0x0040156f <Rterm.exe+0x156f>)
+# 7 Rterm.exe!?                         +0x0      (0x00402c6d <Rterm.exe+0x2c6d>)
+# 8 Rterm.exe!?                         +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 9 KERNEL32.dll!BaseThreadInitThunk    +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+
+Error #85: POSSIBLE LEAK 432 direct bytes 0x026b0e10-0x026b0fc0 + 0 indirect bytes
+# 0 replace_malloc                       [d:\drmemory_package\common\alloc_replace.c:2373]
+# 1 Rgraphapp.dll!GAI_memalloc           [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 Rgraphapp.dll!GAI_new_object         [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 3 Rgraphapp.dll!GA_new_font_object     [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 Rgraphapp.dll!GA_newfont.constprop.1 [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 5 Rgraphapp.dll!GAI_init_fonts         [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 6 Rgraphapp.dll!GA_startgraphapp       [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 7 Rterm.exe!?                         +0x0      (0x0040156f <Rterm.exe+0x156f>)
+# 8 Rterm.exe!?                         +0x0      (0x00402c6d <Rterm.exe+0x2c6d>)
+# 9 Rterm.exe!?                         +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+#10 KERNEL32.dll!BaseThreadInitThunk    +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+
+Error #86: POSSIBLE LEAK 16 direct bytes 0x026b0fe0-0x026b0ff0 + 0 indirect bytes
+# 0 replace_malloc                       [d:\drmemory_package\common\alloc_replace.c:2373]
+# 1 Rgraphapp.dll!GAI_memalloc           [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 Rgraphapp.dll!GAI_new_string         [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 3 Rgraphapp.dll!GA_newfont.constprop.1 [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 Rgraphapp.dll!GAI_init_fonts         [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 5 Rgraphapp.dll!GA_startgraphapp       [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 6 Rterm.exe!?                         +0x0      (0x0040156f <Rterm.exe+0x156f>)
+# 7 Rterm.exe!?                         +0x0      (0x00402c6d <Rterm.exe+0x2c6d>)
+# 8 Rterm.exe!?                         +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 9 KERNEL32.dll!BaseThreadInitThunk    +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+
+Error #87: POSSIBLE LEAK 432 direct bytes 0x026b1010-0x026b11c0 + 0 indirect bytes
+# 0 replace_malloc                    [d:\drmemory_package\common\alloc_replace.c:2373]
+# 1 Rgraphapp.dll!GAI_memalloc        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 Rgraphapp.dll!GAI_new_object      [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 3 Rgraphapp.dll!GAI_init_cursors    [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 Rgraphapp.dll!GA_startgraphapp    [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 5 Rterm.exe!?                      +0x0      (0x0040156f <Rterm.exe+0x156f>)
+# 6 Rterm.exe!?                      +0x0      (0x00402c6d <Rterm.exe+0x2c6d>)
+# 7 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 8 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+
+Error #88: POSSIBLE LEAK 432 direct bytes 0x026b11e0-0x026b1390 + 0 indirect bytes
+# 0 replace_malloc                    [d:\drmemory_package\common\alloc_replace.c:2373]
+# 1 Rgraphapp.dll!GAI_memalloc        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 Rgraphapp.dll!GAI_new_object      [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 3 Rgraphapp.dll!GAI_init_cursors    [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 Rgraphapp.dll!GA_startgraphapp    [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 5 Rterm.exe!?                      +0x0      (0x0040156f <Rterm.exe+0x156f>)
+# 6 Rterm.exe!?                      +0x0      (0x00402c6d <Rterm.exe+0x2c6d>)
+# 7 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 8 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+
+Error #89: POSSIBLE LEAK 16 direct bytes 0x026b13b0-0x026b13c0 + 0 indirect bytes
+# 0 replace_malloc                    [d:\drmemory_package\common\alloc_replace.c:2373]
+# 1 Rgraphapp.dll!GAI_memalloc        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 Rgraphapp.dll!GAI_new_string      [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 3 Rgraphapp.dll!GAI_init_cursors    [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 Rgraphapp.dll!GA_startgraphapp    [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 5 Rterm.exe!?                      +0x0      (0x0040156f <Rterm.exe+0x156f>)
+# 6 Rterm.exe!?                      +0x0      (0x00402c6d <Rterm.exe+0x2c6d>)
+# 7 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 8 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+
+Error #90: POSSIBLE LEAK 432 direct bytes 0x026b13e0-0x026b1590 + 0 indirect bytes
+# 0 replace_malloc                    [d:\drmemory_package\common\alloc_replace.c:2373]
+# 1 Rgraphapp.dll!GAI_memalloc        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 Rgraphapp.dll!GAI_new_object      [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 3 Rgraphapp.dll!GAI_init_cursors    [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 Rgraphapp.dll!GA_startgraphapp    [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 5 Rterm.exe!?                      +0x0      (0x0040156f <Rterm.exe+0x156f>)
+# 6 Rterm.exe!?                      +0x0      (0x00402c6d <Rterm.exe+0x2c6d>)
+# 7 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 8 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+
+Error #91: POSSIBLE LEAK 16 direct bytes 0x026b15b0-0x026b15c0 + 0 indirect bytes
+# 0 replace_malloc                    [d:\drmemory_package\common\alloc_replace.c:2373]
+# 1 Rgraphapp.dll!GAI_memalloc        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 Rgraphapp.dll!GAI_new_string      [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 3 Rgraphapp.dll!GAI_init_cursors    [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 Rgraphapp.dll!GA_startgraphapp    [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 5 Rterm.exe!?                      +0x0      (0x0040156f <Rterm.exe+0x156f>)
+# 6 Rterm.exe!?                      +0x0      (0x00402c6d <Rterm.exe+0x2c6d>)
+# 7 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 8 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+
+Error #92: POSSIBLE LEAK 432 direct bytes 0x026b15e0-0x026b1790 + 0 indirect bytes
+# 0 replace_malloc                    [d:\drmemory_package\common\alloc_replace.c:2373]
+# 1 Rgraphapp.dll!GAI_memalloc        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 Rgraphapp.dll!GAI_new_object      [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 3 Rgraphapp.dll!GAI_init_cursors    [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 Rgraphapp.dll!GA_startgraphapp    [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 5 Rterm.exe!?                      +0x0      (0x0040156f <Rterm.exe+0x156f>)
+# 6 Rterm.exe!?                      +0x0      (0x00402c6d <Rterm.exe+0x2c6d>)
+# 7 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 8 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+
+Error #93: POSSIBLE LEAK 16 direct bytes 0x026b17b0-0x026b17c0 + 0 indirect bytes
+# 0 replace_malloc                    [d:\drmemory_package\common\alloc_replace.c:2373]
+# 1 Rgraphapp.dll!GAI_memalloc        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 Rgraphapp.dll!GAI_new_string      [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 3 Rgraphapp.dll!GAI_init_cursors    [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 Rgraphapp.dll!GA_startgraphapp    [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 5 Rterm.exe!?                      +0x0      (0x0040156f <Rterm.exe+0x156f>)
+# 6 Rterm.exe!?                      +0x0      (0x00402c6d <Rterm.exe+0x2c6d>)
+# 7 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 8 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+
+Error #94: POSSIBLE LEAK 432 direct bytes 0x026b17e0-0x026b1990 + 0 indirect bytes
+# 0 replace_malloc                    [d:\drmemory_package\common\alloc_replace.c:2373]
+# 1 Rgraphapp.dll!GAI_memalloc        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 Rgraphapp.dll!GAI_new_object      [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 3 Rgraphapp.dll!GAI_init_cursors    [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 Rgraphapp.dll!GA_startgraphapp    [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 5 Rterm.exe!?                      +0x0      (0x0040156f <Rterm.exe+0x156f>)
+# 6 Rterm.exe!?                      +0x0      (0x00402c6d <Rterm.exe+0x2c6d>)
+# 7 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 8 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+
+Error #95: POSSIBLE LEAK 16 direct bytes 0x026b19b0-0x026b19c0 + 0 indirect bytes
+# 0 replace_malloc                    [d:\drmemory_package\common\alloc_replace.c:2373]
+# 1 Rgraphapp.dll!GAI_memalloc        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 Rgraphapp.dll!GAI_new_string      [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 3 Rgraphapp.dll!GAI_init_cursors    [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 Rgraphapp.dll!GA_startgraphapp    [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 5 Rterm.exe!?                      +0x0      (0x0040156f <Rterm.exe+0x156f>)
+# 6 Rterm.exe!?                      +0x0      (0x00402c6d <Rterm.exe+0x2c6d>)
+# 7 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 8 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+
+Error #96: POSSIBLE LEAK 432 direct bytes 0x026b19e0-0x026b1b90 + 0 indirect bytes
+# 0 replace_malloc                    [d:\drmemory_package\common\alloc_replace.c:2373]
+# 1 Rgraphapp.dll!GAI_memalloc        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 Rgraphapp.dll!GAI_new_object      [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 3 Rgraphapp.dll!GAI_init_cursors    [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 Rgraphapp.dll!GA_startgraphapp    [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 5 Rterm.exe!?                      +0x0      (0x0040156f <Rterm.exe+0x156f>)
+# 6 Rterm.exe!?                      +0x0      (0x00402c6d <Rterm.exe+0x2c6d>)
+# 7 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 8 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+
+Error #97: POSSIBLE LEAK 16 direct bytes 0x026b1bb0-0x026b1bc0 + 0 indirect bytes
+# 0 replace_malloc                    [d:\drmemory_package\common\alloc_replace.c:2373]
+# 1 Rgraphapp.dll!GAI_memalloc        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 Rgraphapp.dll!GAI_new_string      [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 3 Rgraphapp.dll!GAI_init_cursors    [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 Rgraphapp.dll!GA_startgraphapp    [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 5 Rterm.exe!?                      +0x0      (0x0040156f <Rterm.exe+0x156f>)
+# 6 Rterm.exe!?                      +0x0      (0x00402c6d <Rterm.exe+0x2c6d>)
+# 7 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 8 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+
+Error #98: POSSIBLE LEAK 432 direct bytes 0x026b1be0-0x026b1d90 + 0 indirect bytes
+# 0 replace_malloc                    [d:\drmemory_package\common\alloc_replace.c:2373]
+# 1 Rgraphapp.dll!GAI_memalloc        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 Rgraphapp.dll!GAI_new_object      [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 3 Rgraphapp.dll!GAI_init_cursors    [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 Rgraphapp.dll!GA_startgraphapp    [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 5 Rterm.exe!?                      +0x0      (0x0040156f <Rterm.exe+0x156f>)
+# 6 Rterm.exe!?                      +0x0      (0x00402c6d <Rterm.exe+0x2c6d>)
+# 7 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 8 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+
+Error #99: POSSIBLE LEAK 16 direct bytes 0x026b1db0-0x026b1dc0 + 0 indirect bytes
+# 0 replace_malloc                    [d:\drmemory_package\common\alloc_replace.c:2373]
+# 1 Rgraphapp.dll!GAI_memalloc        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 Rgraphapp.dll!GAI_new_string      [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 3 Rgraphapp.dll!GAI_init_cursors    [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 Rgraphapp.dll!GA_startgraphapp    [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 5 Rterm.exe!?                      +0x0      (0x0040156f <Rterm.exe+0x156f>)
+# 6 Rterm.exe!?                      +0x0      (0x00402c6d <Rterm.exe+0x2c6d>)
+# 7 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 8 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+
+Error #100: POSSIBLE LEAK 432 direct bytes 0x026b1f30-0x026b20e0 + 0 indirect bytes
+# 0 replace_malloc                    [d:\drmemory_package\common\alloc_replace.c:2373]
+# 1 Rgraphapp.dll!GAI_memalloc        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 Rgraphapp.dll!GAI_new_object      [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 3 Rgraphapp.dll!GA_newcursor        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 Rgraphapp.dll!GAI_init_cursors    [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 5 Rgraphapp.dll!GA_startgraphapp    [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 6 Rterm.exe!?                      +0x0      (0x0040156f <Rterm.exe+0x156f>)
+# 7 Rterm.exe!?                      +0x0      (0x00402c6d <Rterm.exe+0x2c6d>)
+# 8 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 9 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+
+Error #101: POSSIBLE LEAK 16 direct bytes 0x026b2100-0x026b2110 + 0 indirect bytes
+# 0 replace_malloc                    [d:\drmemory_package\common\alloc_replace.c:2373]
+# 1 Rgraphapp.dll!GAI_memalloc        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 Rgraphapp.dll!GAI_init_cursors    [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 3 Rgraphapp.dll!GA_startgraphapp    [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 Rterm.exe!?                      +0x0      (0x0040156f <Rterm.exe+0x156f>)
+# 5 Rterm.exe!?                      +0x0      (0x00402c6d <Rterm.exe+0x2c6d>)
+# 6 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 7 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+
+Error #102: POSSIBLE LEAK 432 direct bytes 0x026b21d0-0x026b2380 + 0 indirect bytes
+# 0 replace_malloc                    [d:\drmemory_package\common\alloc_replace.c:2373]
+# 1 Rgraphapp.dll!GAI_memalloc        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 Rgraphapp.dll!GAI_new_object      [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 3 Rgraphapp.dll!GA_imagetobitmap    [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 Rgraphapp.dll!GAI_init_contexts   [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 5 Rgraphapp.dll!GA_startgraphapp    [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 6 Rterm.exe!?                      +0x0      (0x0040156f <Rterm.exe+0x156f>)
+# 7 Rterm.exe!?                      +0x0      (0x00402c6d <Rterm.exe+0x2c6d>)
+# 8 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 9 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+
+Error #103: POSSIBLE LEAK 432 direct bytes 0x026b23a0-0x026b2550 + 0 indirect bytes
+# 0 replace_malloc                    [d:\drmemory_package\common\alloc_replace.c:2373]
+# 1 Rgraphapp.dll!GAI_memalloc        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 Rgraphapp.dll!GAI_new_object      [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 3 Rgraphapp.dll!GA_imagetobitmap    [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 Rgraphapp.dll!GAI_init_contexts   [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 5 Rgraphapp.dll!GA_startgraphapp    [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 6 Rterm.exe!?                      +0x0      (0x0040156f <Rterm.exe+0x156f>)
+# 7 Rterm.exe!?                      +0x0      (0x00402c6d <Rterm.exe+0x2c6d>)
+# 8 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 9 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+
+Error #104: POSSIBLE LEAK 16 direct bytes 0x026b2570-0x026b2580 + 0 indirect bytes
+# 0 replace_malloc                    [d:\drmemory_package\common\alloc_replace.c:2373]
+# 1 Rgraphapp.dll!GAI_memalloc        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 Rgraphapp.dll!GAI_new_string      [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 3 Rgraphapp.dll!GAI_init_contexts   [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 Rgraphapp.dll!GA_startgraphapp    [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 5 Rterm.exe!?                      +0x0      (0x0040156f <Rterm.exe+0x156f>)
+# 6 Rterm.exe!?                      +0x0      (0x00402c6d <Rterm.exe+0x2c6d>)
+# 7 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 8 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+
+Error #105: POSSIBLE LEAK 12 direct bytes 0x026b2800-0x026b280c + 0 indirect bytes
+# 0 replace_malloc                                    [d:\drmemory_package\common\alloc_replace.c:2373]
+# 1 Rgraphapp.dll!GAI_memalloc                        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 Rgraphapp.dll!GAI_new_string                      [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 3 generate_shared_esp_fastpath_helper               [d:\drmemory_package\drmemory\stack.c:1557]
+# 4 Rterm.exe!?                                      +0x0      (0x0040156f <Rterm.exe+0x156f>)
+# 5 Rterm.exe!?                                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 6 KERNEL32.dll!BaseThreadInitThunk                 +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+
+Error #106: POSSIBLE LEAK 432 direct bytes 0x026b87b8-0x026b8968 + 0 indirect bytes
+# 0 replace_malloc                    [d:\drmemory_package\common\alloc_replace.c:2373]
+# 1 Rgraphapp.dll!GAI_memalloc        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 Rgraphapp.dll!GAI_new_object      [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 3 Rgraphapp.dll!GA_new_font_object  [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 Rgraphapp.dll!GA_gnewfont         [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 5 R.dll!?                          +0x0      (0x6c707a4b <R.dll+0x7a4b>)
+# 6 R.dll!?                          +0x0      (0x6c717de8 <R.dll+0x17de8>)
+# 7 Rterm.exe!?                      +0x0      (0x004016ef <Rterm.exe+0x16ef>)
+# 8 Rterm.exe!?                      +0x0      (0x00401589 <Rterm.exe+0x1589>)
+# 9 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+#10 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+
+Error #107: POSSIBLE LEAK 20 direct bytes 0x026b8988-0x026b899c + 0 indirect bytes
+# 0 replace_malloc                    [d:\drmemory_package\common\alloc_replace.c:2373]
+# 1 Rgraphapp.dll!GAI_memalloc        [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 2 Rgraphapp.dll!GAI_new_string      [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 3 Rgraphapp.dll!GA_gnewfont         [/data/gannet/ripley/Sources/mingw-test3/src/mingw-w64/stable/v2.x/mingw-w64-crt/crt/crtdll.c:166]
+# 4 R.dll!?                          +0x0      (0x6c707a4b <R.dll+0x7a4b>)
+# 5 R.dll!?                          +0x0      (0x6c717de8 <R.dll+0x17de8>)
+# 6 Rterm.exe!?                      +0x0      (0x004016ef <Rterm.exe+0x16ef>)
+# 7 Rterm.exe!?                      +0x0      (0x00401589 <Rterm.exe+0x1589>)
+# 8 Rterm.exe!?                      +0x0      (0x004013ea <Rterm.exe+0x13ea>)
+# 9 KERNEL32.dll!BaseThreadInitThunk +0x11     (0x75c73c45 <KERNEL32.dll+0x53c45>)
+
+Error #108: LEAK 24 direct bytes 0x026c1d20-0x026c1d38 + 0 indirect bytes
+# 0 replace_operator_new               [d:\drmemory_package\common\alloc_replace.c:2609]
+# 1 qtbase.dll!SmokeClass::methods     [C:/src/qtbase-master141107/qtbase/src/SmokeClass.cpp:189]
+# 2 qtbase.dll!MocClass::methods       [C:/src/qtbase-master141107/qtbase/src/MocClass.cpp:89]
+# 3 qtbase.dll!SmokeClass::methods     [C:/src/qtbase-master141107/qtbase/src/SmokeClass.cpp:205]
+# 4 qtbase.dll!MocClass::methods       [C:/src/qtbase-master141107/qtbase/src/MocClass.cpp:89]
+# 5 qtbase.dll!SmokeClass::methods     [C:/src/qtbase-master141107/qtbase/src/SmokeClass.cpp:205]
+# 6 qtbase.dll!MocClass::methods       [C:/src/qtbase-master141107/qtbase/src/MocClass.cpp:89]
+# 7 qtbase.dll!qt_qmethods             [C:/src/qtbase-master141107/qtbase/src/smoke.cpp:47]
+# 8 R.dll!?                           +0x0      (0x6c81b919 <R.dll+0x11b919>)
+# 9 R.dll!?                           +0x0      (0x6c77ec0a <R.dll+0x7ec0a>)
+#10 R.dll!?                           +0x0      (0x6c780ef1 <R.dll+0x80ef1>)
+#11 R.dll!?                           +0x0      (0x6c77e9e7 <R.dll+0x7e9e7>)
+
+Error #109: LEAK 24 direct bytes 0x026c2630-0x026c2648 + 0 indirect bytes
+# 0 replace_operator_new               [d:\drmemory_package\common\alloc_replace.c:2609]
+# 1 qtbase.dll!SmokeClass::methods     [C:/src/qtbase-master141107/qtbase/src/SmokeClass.cpp:189]
+# 2 qtbase.dll!MocClass::methods       [C:/src/qtbase-master141107/qtbase/src/MocClass.cpp:89]
+# 3 qtbase.dll!qt_qmethods             [C:/src/qtbase-master141107/qtbase/src/smoke.cpp:47]
+# 4 R.dll!?                           +0x0      (0x6c81b919 <R.dll+0x11b919>)
+# 5 R.dll!?                           +0x0      (0x6c77ec0a <R.dll+0x7ec0a>)
+# 6 R.dll!?                           +0x0      (0x6c780ef1 <R.dll+0x80ef1>)
+# 7 R.dll!?                           +0x0      (0x6c77e9e7 <R.dll+0x7e9e7>)
+# 8 R.dll!?                           +0x0      (0x6c77f693 <R.dll+0x7f693>)
+# 9 R.dll!?                           +0x0      (0x6c77e9e7 <R.dll+0x7e9e7>)
+#10 R.dll!?                           +0x0      (0x6c782b16 <R.dll+0x82b16>)
+#11 R.dll!?                           +0x0      (0x6c77e777 <R.dll+0x7e777>)
+
+Error #110: LEAK 24 direct bytes 0x026f9150-0x026f9168 + 0 indirect bytes
+# 0 replace_operator_new               [d:\drmemory_package\common\alloc_replace.c:2609]
+# 1 qtbase.dll!SmokeClass::methods     [C:/src/qtbase-master141107/qtbase/src/SmokeClass.cpp:189]
+# 2 qtbase.dll!MocClass::methods       [C:/src/qtbase-master141107/qtbase/src/MocClass.cpp:89]
+# 3 qtbase.dll!SmokeClass::methods     [C:/src/qtbase-master141107/qtbase/src/SmokeClass.cpp:205]
+# 4 qtbase.dll!MocClass::methods       [C:/src/qtbase-master141107/qtbase/src/MocClass.cpp:89]
+# 5 qtbase.dll!qt_qmethods             [C:/src/qtbase-master141107/qtbase/src/smoke.cpp:47]
+# 6 R.dll!?                           +0x0      (0x6c81b919 <R.dll+0x11b919>)
+# 7 R.dll!?                           +0x0      (0x6c77ec0a <R.dll+0x7ec0a>)
+# 8 R.dll!?                           +0x0      (0x6c780ef1 <R.dll+0x80ef1>)
+# 9 R.dll!?                           +0x0      (0x6c77e9e7 <R.dll+0x7e9e7>)
+#10 R.dll!?                           +0x0      (0x6c77f693 <R.dll+0x7f693>)
+#11 R.dll!?                           +0x0      (0x6c77e9e7 <R.dll+0x7e9e7>)
+
+Error #111: LEAK 8 direct bytes 0x026fb0f0-0x026fb0f8 + 300 indirect bytes
+# 0 replace_operator_new                                 [d:\drmemory_package\common\alloc_replace.c:2609]
+# 1 Qt5Guid.dll!QRegion::copy                            [painting/qregion.cpp:3881]
+# 2 Qt5Guid.dll!QRegion::detach                          [painting/qregion.cpp:252]
+# 3 Qt5Guid.dll!QRegion::subtracted                      [painting/qregion.cpp:4136]
+# 4 Qt5Guid.dll!QRegion::operator-                       [painting/qregion.cpp:497]
+# 5 Qt5Guid.dll!QRegion::operator-=                      [painting/qregion.cpp:579]
+# 6 Qt5Widgetsd.dll!QWidgetPrivate::subtractOpaqueChildren [kernel/qwidget.cpp:1913]
+# 7 Qt5Widgetsd.dll!QWidgetPrivate::drawWidget           [kernel/qwidget.cpp:5084]
+# 8 Qt5Widgetsd.dll!QWidgetPrivate::paintSiblingsRecursive [kernel/qwidget.cpp:5336]
+# 9 Qt5Widgetsd.dll!QWidgetPrivate::drawWidget           [kernel/qwidget.cpp:5193]
+#10 Qt5Widgetsd.dll!QWidgetBackingStore::sync            [kernel/qwidgetbackingstore.cpp:1090]
+#11 Qt5Widgetsd.dll!QWidgetBackingStore::sync            [kernel/qwidgetbackingstore.cpp:922]
+
+Error #112: LEAK 24 direct bytes 0x026fb650-0x026fb668 + 0 indirect bytes
+# 0 replace_operator_new               [d:\drmemory_package\common\alloc_replace.c:2609]
+# 1 qtbase.dll!SmokeClass::methods     [C:/src/qtbase-master141107/qtbase/src/SmokeClass.cpp:189]
+# 2 qtbase.dll!SmokeClass::methods     [C:/src/qtbase-master141107/qtbase/src/SmokeClass.cpp:205]
+# 3 qtbase.dll!MocClass::methods       [C:/src/qtbase-master141107/qtbase/src/MocClass.cpp:89]
+# 4 qtbase.dll!SmokeClass::methods     [C:/src/qtbase-master141107/qtbase/src/SmokeClass.cpp:205]
+# 5 qtbase.dll!MocClass::methods       [C:/src/qtbase-master141107/qtbase/src/MocClass.cpp:89]
+# 6 qtbase.dll!qt_qmethods             [C:/src/qtbase-master141107/qtbase/src/smoke.cpp:47]
+# 7 R.dll!?                           +0x0      (0x6c81b919 <R.dll+0x11b919>)
+# 8 R.dll!?                           +0x0      (0x6c77ec0a <R.dll+0x7ec0a>)
+# 9 R.dll!?                           +0x0      (0x6c780ef1 <R.dll+0x80ef1>)
+#10 R.dll!?                           +0x0      (0x6c77e9e7 <R.dll+0x7e9e7>)
+#11 R.dll!?                           +0x0      (0x6c77f693 <R.dll+0x7f693>)
+
+Error #113: LEAK 796 direct bytes 0x02712778-0x02712a94 + 0 indirect bytes
+# 0 replace_malloc               [d:\drmemory_package\common\alloc_replace.c:2373]
+# 1 R.dll!?                     +0x0      (0x6c755664 <R.dll+0x55664>)
+# 2 R.dll!?                     +0x0      (0x6c775dfd <R.dll+0x75dfd>)
+# 3 R.dll!?                     +0x0      (0x6c77e662 <R.dll+0x7e662>)
+# 4 R.dll!?                     +0x0      (0x6c782b16 <R.dll+0x82b16>)
+# 5 R.dll!?                     +0x0      (0x6c77b57d <R.dll+0x7b57d>)
+# 6 R.dll!?                     +0x0      (0x6c77e662 <R.dll+0x7e662>)
+# 7 R.dll!?                     +0x0      (0x6c782b16 <R.dll+0x82b16>)
+# 8 R.dll!?                     +0x0      (0x6c77e777 <R.dll+0x7e777>)
+# 9 R.dll!?                     +0x0      (0x6c77f693 <R.dll+0x7f693>)
+#10 R.dll!?                     +0x0      (0x6c77e9e7 <R.dll+0x7e9e7>)
+#11 R.dll!?                     +0x0      (0x6c77e9e7 <R.dll+0x7e9e7>)
+
+Error #114: LEAK 24 direct bytes 0x02719d60-0x02719d78 + 0 indirect bytes
+# 0 replace_operator_new               [d:\drmemory_package\common\alloc_replace.c:2609]
+# 1 qtbase.dll!SmokeClass::methods     [C:/src/qtbase-master141107/qtbase/src/SmokeClass.cpp:189]
+# 2 qtbase.dll!MocClass::methods       [C:/src/qtbase-master141107/qtbase/src/MocClass.cpp:89]
+# 3 qtbase.dll!SmokeClass::methods     [C:/src/qtbase-master141107/qtbase/src/SmokeClass.cpp:205]
+# 4 qtbase.dll!MocClass::methods       [C:/src/qtbase-master141107/qtbase/src/MocClass.cpp:89]
+# 5 qtbase.dll!SmokeClass::methods     [C:/src/qtbase-master141107/qtbase/src/SmokeClass.cpp:205]
+# 6 qtbase.dll!MocClass::methods       [C:/src/qtbase-master141107/qtbase/src/MocClass.cpp:89]
+# 7 qtbase.dll!SmokeClass::methods     [C:/src/qtbase-master141107/qtbase/src/SmokeClass.cpp:205]
+# 8 qtbase.dll!MocClass::methods       [C:/src/qtbase-master141107/qtbase/src/MocClass.cpp:89]
+# 9 qtbase.dll!qt_qmethods             [C:/src/qtbase-master141107/qtbase/src/smoke.cpp:47]
+#10 R.dll!?                           +0x0      (0x6c81b919 <R.dll+0x11b919>)
+#11 R.dll!?                           +0x0      (0x6c77ec0a <R.dll+0x7ec0a>)
+
+Error #115: LEAK 31 direct bytes 0x02721030-0x0272104f + 0 indirect bytes
+# 0 replace_operator_new_array               [d:\drmemory_package\common\alloc_replace.c:2638]
+# 1 Qt5Cored.dll!qstrdup                     [tools/qbytearray.cpp:113]
+# 2 qtbase.dll!qt_qnewMetaObject             [C:/src/qtbase-master141107/qtbase/src/metaobject.cpp:172]
+# 3 R.dll!?                                 +0x0      (0x6c81ad81 <R.dll+0x11ad81>)
+# 4 R.dll!?                                 +0x0      (0x6c77ec0a <R.dll+0x7ec0a>)
+# 5 R.dll!?                                 +0x0      (0x6c77f693 <R.dll+0x7f693>)
+# 6 R.dll!?                                 +0x0      (0x6c77e9e7 <R.dll+0x7e9e7>)
+# 7 R.dll!?                                 +0x0      (0x6c782b16 <R.dll+0x82b16>)
+# 8 R.dll!?                                 +0x0      (0x6c77e777 <R.dll+0x7e777>)
+# 9 R.dll!?                                 +0x0      (0x6c780ef1 <R.dll+0x80ef1>)
+#10 R.dll!?                                 +0x0      (0x6c77e9e7 <R.dll+0x7e9e7>)
+#11 R.dll!?                                 +0x0      (0x6c77f693 <R.dll+0x7f693>)
+
+Error #116: LEAK 692 direct bytes 0x02722240-0x027224f4 + 0 indirect bytes
+# 0 replace_malloc               [d:\drmemory_package\common\alloc_replace.c:2373]
+# 1 R.dll!?                     +0x0      (0x6c755664 <R.dll+0x55664>)
+# 2 R.dll!?                     +0x0      (0x6c775dfd <R.dll+0x75dfd>)
+# 3 R.dll!?                     +0x0      (0x6c77e662 <R.dll+0x7e662>)
+# 4 R.dll!?                     +0x0      (0x6c782b16 <R.dll+0x82b16>)
+# 5 R.dll!?                     +0x0      (0x6c77e777 <R.dll+0x7e777>)
+# 6 R.dll!?                     +0x0      (0x6c7882f0 <R.dll+0x882f0>)
+# 7 R.dll!?                     +0x0      (0x6c77b57d <R.dll+0x7b57d>)
+# 8 R.dll!?                     +0x0      (0x6c77e662 <R.dll+0x7e662>)
+# 9 R.dll!?                     +0x0      (0x6c782b16 <R.dll+0x82b16>)
+#10 R.dll!?                     +0x0      (0x6c77b57d <R.dll+0x7b57d>)
+#11 R.dll!?                     +0x0      (0x6c77e662 <R.dll+0x7e662>)
+
+Error #117: LEAK 24 direct bytes 0x02728a90-0x02728aa8 + 0 indirect bytes
+# 0 replace_operator_new               [d:\drmemory_package\common\alloc_replace.c:2609]
+# 1 qtbase.dll!SmokeClass::methods     [C:/src/qtbase-master141107/qtbase/src/SmokeClass.cpp:189]
+# 2 qtbase.dll!SmokeClass::methods     [C:/src/qtbase-master141107/qtbase/src/SmokeClass.cpp:205]
+# 3 qtbase.dll!MocClass::methods       [C:/src/qtbase-master141107/qtbase/src/MocClass.cpp:89]
+# 4 qtbase.dll!SmokeClass::methods     [C:/src/qtbase-master141107/qtbase/src/SmokeClass.cpp:205]
+# 5 qtbase.dll!MocClass::methods       [C:/src/qtbase-master141107/qtbase/src/MocClass.cpp:89]
+# 6 qtbase.dll!SmokeClass::methods     [C:/src/qtbase-master141107/qtbase/src/SmokeClass.cpp:205]
+# 7 qtbase.dll!MocClass::methods       [C:/src/qtbase-master141107/qtbase/src/MocClass.cpp:89]
+# 8 qtbase.dll!qt_qmethods             [C:/src/qtbase-master141107/qtbase/src/smoke.cpp:47]
+# 9 R.dll!?                           +0x0      (0x6c81b919 <R.dll+0x11b919>)
+#10 R.dll!?                           +0x0      (0x6c77ec0a <R.dll+0x7ec0a>)
+#11 R.dll!?                           +0x0      (0x6c780ef1 <R.dll+0x80ef1>)
+
+Error #118: LEAK 38 direct bytes 0x02731d90-0x02731db6 + 0 indirect bytes
+# 0 replace_malloc               [d:\drmemory_package\common\alloc_replace.c:2373]
+# 1 R.dll!?                     +0x0      (0x6c755664 <R.dll+0x55664>)
+# 2 R.dll!?                     +0x0      (0x6c775dfd <R.dll+0x75dfd>)
+# 3 R.dll!?                     +0x0      (0x6c77e662 <R.dll+0x7e662>)
+# 4 R.dll!?                     +0x0      (0x6c77b57d <R.dll+0x7b57d>)
+# 5 R.dll!?                     +0x0      (0x6c77e662 <R.dll+0x7e662>)
+# 6 R.dll!?                     +0x0      (0x6c77b57d <R.dll+0x7b57d>)
+# 7 R.dll!?                     +0x0      (0x6c77e662 <R.dll+0x7e662>)
+# 8 R.dll!?                     +0x0      (0x6c780419 <R.dll+0x80419>)
+# 9 R.dll!?                     +0x0      (0x6c77e45c <R.dll+0x7e45c>)
+#10 R.dll!?                     +0x0      (0x6c77e662 <R.dll+0x7e662>)
+#11 R.dll!?                     +0x0      (0x6c780419 <R.dll+0x80419>)
+
+Error #119: LEAK 40 direct bytes 0x027325d0-0x027325f8 + 0 indirect bytes
+# 0 replace_malloc               [d:\drmemory_package\common\alloc_replace.c:2373]
+# 1 R.dll!?                     +0x0      (0x6c755664 <R.dll+0x55664>)
+# 2 R.dll!?                     +0x0      (0x6c775dfd <R.dll+0x75dfd>)
+# 3 R.dll!?                     +0x0      (0x6c77e662 <R.dll+0x7e662>)
+# 4 R.dll!?                     +0x0      (0x6c782b16 <R.dll+0x82b16>)
+# 5 R.dll!?                     +0x0      (0x6c77b57d <R.dll+0x7b57d>)
+# 6 R.dll!?                     +0x0      (0x6c77e662 <R.dll+0x7e662>)
+# 7 R.dll!?                     +0x0      (0x6c782b16 <R.dll+0x82b16>)
+# 8 R.dll!?                     +0x0      (0x6c77b57d <R.dll+0x7b57d>)
+# 9 R.dll!?                     +0x0      (0x6c77e662 <R.dll+0x7e662>)
+#10 R.dll!?                     +0x0      (0x6c780419 <R.dll+0x80419>)
+#11 R.dll!?                     +0x0      (0x6c77e45c <R.dll+0x7e45c>)
+
+Error #120: LEAK 24 direct bytes 0x02747c18-0x02747c30 + 0 indirect bytes
+# 0 replace_operator_new               [d:\drmemory_package\common\alloc_replace.c:2609]
+# 1 qtbase.dll!SmokeClass::methods     [C:/src/qtbase-master141107/qtbase/src/SmokeClass.cpp:189]
+# 2 qtbase.dll!qt_qmethods             [C:/src/qtbase-master141107/qtbase/src/smoke.cpp:47]
+# 3 R.dll!?                           +0x0      (0x6c81b919 <R.dll+0x11b919>)
+# 4 R.dll!?                           +0x0      (0x6c77ec0a <R.dll+0x7ec0a>)
+# 5 R.dll!?                           +0x0      (0x6c780ef1 <R.dll+0x80ef1>)
+# 6 R.dll!?                           +0x0      (0x6c77e9e7 <R.dll+0x7e9e7>)
+# 7 R.dll!?                           +0x0      (0x6c77f693 <R.dll+0x7f693>)
+# 8 R.dll!?                           +0x0      (0x6c77e9e7 <R.dll+0x7e9e7>)
+# 9 R.dll!?                           +0x0      (0x6c782b16 <R.dll+0x82b16>)
+#10 R.dll!?                           +0x0      (0x6c77e777 <R.dll+0x7e777>)
+#11 R.dll!?                           +0x0      (0x6c780ef1 <R.dll+0x80ef1>)
+
+Error #121: LEAK 26 direct bytes 0x0274ad20-0x0274ad3a + 0 indirect bytes
+# 0 replace_malloc               [d:\drmemory_package\common\alloc_replace.c:2373]
+# 1 R.dll!?                     +0x0      (0x6c755664 <R.dll+0x55664>)
+# 2 R.dll!?                     +0x0      (0x6c775dfd <R.dll+0x75dfd>)
+# 3 R.dll!?                     +0x0      (0x6c77e662 <R.dll+0x7e662>)
+# 4 R.dll!?                     +0x0      (0x6c782b16 <R.dll+0x82b16>)
+# 5 R.dll!?                     +0x0      (0x6c77e777 <R.dll+0x7e777>)
+# 6 R.dll!?                     +0x0      (0x6c7510db <R.dll+0x510db>)
+# 7 R.dll!?                     +0x0      (0x6c7511db <R.dll+0x511db>)
+# 8 R.dll!?                     +0x0      (0x6c751fe8 <R.dll+0x51fe8>)
+# 9 R.dll!?                     +0x0      (0x6c7527b8 <R.dll+0x527b8>)
+#10 Rterm.exe!?                 +0x0      (0x00401746 <Rterm.exe+0x1746>)
+#11 Rterm.exe!?                 +0x0      (0x00401589 <Rterm.exe+0x1589>)
+
+Error #122: LEAK 794 direct bytes 0x02763c50-0x02763f6a + 0 indirect bytes
+# 0 replace_malloc               [d:\drmemory_package\common\alloc_replace.c:2373]
+# 1 R.dll!?                     +0x0      (0x6c755664 <R.dll+0x55664>)
+# 2 R.dll!?                     +0x0      (0x6c775dfd <R.dll+0x75dfd>)
+# 3 R.dll!?                     +0x0      (0x6c77e662 <R.dll+0x7e662>)
+# 4 R.dll!?                     +0x0      (0x6c782b16 <R.dll+0x82b16>)
+# 5 R.dll!?                     +0x0      (0x6c77b57d <R.dll+0x7b57d>)
+# 6 R.dll!?                     +0x0      (0x6c77e662 <R.dll+0x7e662>)
+# 7 R.dll!?                     +0x0      (0x6c782b16 <R.dll+0x82b16>)
+# 8 R.dll!?                     +0x0      (0x6c77b57d <R.dll+0x7b57d>)
+# 9 R.dll!?                     +0x0      (0x6c77e662 <R.dll+0x7e662>)
+#10 R.dll!?                     +0x0      (0x6c782b16 <R.dll+0x82b16>)
+#11 R.dll!?                     +0x0      (0x6c77b57d <R.dll+0x7b57d>)
+
+Error #123: LEAK 24 direct bytes 0x0276b450-0x0276b468 + 0 indirect bytes
+# 0 replace_operator_new               [d:\drmemory_package\common\alloc_replace.c:2609]
+# 1 qtbase.dll!SmokeClass::methods     [C:/src/qtbase-master141107/qtbase/src/SmokeClass.cpp:189]
+# 2 qtbase.dll!SmokeClass::methods     [C:/src/qtbase-master141107/qtbase/src/SmokeClass.cpp:205]
+# 3 qtbase.dll!MocClass::methods       [C:/src/qtbase-master141107/qtbase/src/MocClass.cpp:89]
+# 4 qtbase.dll!qt_qmethods             [C:/src/qtbase-master141107/qtbase/src/smoke.cpp:47]
+# 5 R.dll!?                           +0x0      (0x6c81b919 <R.dll+0x11b919>)
+# 6 R.dll!?                           +0x0      (0x6c77ec0a <R.dll+0x7ec0a>)
+# 7 R.dll!?                           +0x0      (0x6c780ef1 <R.dll+0x80ef1>)
+# 8 R.dll!?                           +0x0      (0x6c77e9e7 <R.dll+0x7e9e7>)
+# 9 R.dll!?                           +0x0      (0x6c77f693 <R.dll+0x7f693>)
+#10 R.dll!?                           +0x0      (0x6c77e9e7 <R.dll+0x7e9e7>)
+#11 R.dll!?                           +0x0      (0x6c782b16 <R.dll+0x82b16>)
+
+Error #124: LEAK 104 direct bytes 0x02777f90-0x02777ff8 + 0 indirect bytes
+# 0 replace_malloc               [d:\drmemory_package\common\alloc_replace.c:2373]
+# 1 R.dll!?                     +0x0      (0x6c755664 <R.dll+0x55664>)
+# 2 R.dll!?                     +0x0      (0x6c775dfd <R.dll+0x75dfd>)
+# 3 R.dll!?                     +0x0      (0x6c77e662 <R.dll+0x7e662>)
+# 4 R.dll!?                     +0x0      (0x6c782b16 <R.dll+0x82b16>)
+# 5 R.dll!?                     +0x0      (0x6c77e777 <R.dll+0x7e777>)
+# 6 R.dll!?                     +0x0      (0x6c77e9e7 <R.dll+0x7e9e7>)
+# 7 R.dll!?                     +0x0      (0x6c7510db <R.dll+0x510db>)
+# 8 R.dll!?                     +0x0      (0x6c7511db <R.dll+0x511db>)
+# 9 R.dll!?                     +0x0      (0x6c751fe8 <R.dll+0x51fe8>)
+#10 R.dll!?                     +0x0      (0x6c7527b8 <R.dll+0x527b8>)
+#11 Rterm.exe!?                 +0x0      (0x00401746 <Rterm.exe+0x1746>)
+
+Error #125: LEAK 8 direct bytes 0x0277f038-0x0277f040 + 108 indirect bytes
+# 0 replace_operator_new                                 [d:\drmemory_package\common\alloc_replace.c:2609]
+# 1 Qt5Guid.dll!QRegion::QRegion                         [painting/qregion.cpp:3801]
+# 2 Qt5Guid.dll!QRegion::intersected                     [painting/qregion.cpp:4110]
+# 3 Qt5Guid.dll!QRegion::operator&                       [painting/qregion.cpp:487]
+# 4 Qt5Guid.dll!QRegion::operator&=                      [painting/qregion.cpp:560]
+# 5 Qt5Widgetsd.dll!QWidgetPrivate::paintSiblingsRecursive [kernel/qwidget.cpp:5332]
+# 6 Qt5Widgetsd.dll!QWidgetPrivate::drawWidget           [kernel/qwidget.cpp:5193]
+# 7 Qt5Widgetsd.dll!QWidgetPrivate::paintSiblingsRecursive [kernel/qwidget.cpp:5336]
+# 8 Qt5Widgetsd.dll!QWidgetPrivate::paintSiblingsRecursive [kernel/qwidget.cpp:5323]
+# 9 Qt5Widgetsd.dll!QWidgetPrivate::drawWidget           [kernel/qwidget.cpp:5193]
+#10 Qt5Widgetsd.dll!QWidgetPrivate::paintSiblingsRecursive [kernel/qwidget.cpp:5336]
+#11 Qt5Widgetsd.dll!QWidgetPrivate::paintSiblingsRecursive [kernel/qwidget.cpp:5323]
+
+Reached maximum leak report limit (-report_leak_max). No further leaks will be reported.
