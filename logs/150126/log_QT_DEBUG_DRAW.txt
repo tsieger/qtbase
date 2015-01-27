@@ -1,0 +1,648 @@
+> library(qtbase);source('C:/src/qtbase-141013-win32-fixes/qtbase/demo/charact$
+Learn more about Qt at http://qt.nokia.com
+QPainter::begin(), device=1f610d74, type=3
+Debug: systemStateChanged 0x1f6142f0 deviceRect QRect(0,0 544x389) QRect(0,0 544x389) QRegion(size=0), bounds = QRect(0,0 0x0)
+
+Debug: QRasterPaintEngine::begin( 0x1f610d74 ) devType: 3 devRect: QRect(0,0 544x389)
+clip 0: 0 0 - 543 388
+Debug: QRasterPaintEngine::penChanged(): QPen(1,QBrush(QColor(ARGB 1, 0, 0, 0) , SolidPattern )  , SolidLine , 16 , 64 , QVector() , 0 , 2 )
+Debug: QRasterPaintEngine::compositionModeChanged() 3
+Debug: QRasterPaintEngine::fillRecct():  QRectF(0,0 544x36) QBrush(QColor(ARGB 1, 0.941176, 0.941176, 0.941176) , SolidPattern )
+Debug: QRasterPaintEngine::updateBrush() QBrush(QColor(ARGB 1, 0.941176, 0.941176, 0.941176) , SolidPattern )
+Debug: QRasterPaintEngine::fillRecct():  QRectF(0,36 10x310) QBrush(QColor(ARGB 1, 0.941176, 0.941176, 0.941176) , SolidPattern )
+Debug: QRasterPaintEngine::fillRecct():  QRectF(534,36 10x310) QBrush(QColor(ARGB 1, 0.941176, 0.941176, 0.941176) , SolidPattern )
+Debug: QRasterPaintEngine::fillRecct():  QRectF(0,346 544x43) QBrush(QColor(ARGB 1, 0.941176, 0.941176, 0.941176) , SolidPattern )
+Debug: QRasterPaintEngine::compositionModeChanged() 0
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(0,0 544x389)
+clip 1: 0 0 - 543 388
+QPainter::begin(), device=1f610d74, type=3
+Debug: systemStateChanged 0x1f6142f0 deviceRect QRect(0,0 544x389) QRect(0,0 544x389) QRegion(size=4), bounds = QRect(0,0 544x389)
+ -  0 QRect(0,0 544x36)
+ -  1 QRect(0,36 10x310)
+ -  2 QRect(534,36 10x310)
+ -  3 QRect(0,346 544x43)
+
+Debug: QRasterPaintEngine::begin( 0x1f610d74 ) devType: 3 devRect: QRect(0,0 544x389)
+clip 2: 0 0 - 543 388
+Debug: QRasterPaintEngine::penChanged(): QPen(1,QBrush(QColor(ARGB 1, 0, 0, 0) , SolidPattern )  , SolidLine , 16 , 64 , QVector() , 0 , 2 )
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(0,0 544x389)
+clip 3: 0 0 - 543 388
+QPainter::begin(), device=1f610d74, type=3
+Debug: systemStateChanged 0x1f6142f0 deviceRect QRect(9,9 26x20) QRect(0,0 544x389) QRegion(size=1), bounds = QRect(9,9 26x20)
+ -  0 QRect(9,9 26x20)
+
+Debug: QRasterPaintEngine::begin( 0x1f610d74 ) devType: 3 devRect: QRect(9,9 26x20)
+clip 4: 9 9 - 34 28
+Debug: QRasterPaintEngine::penChanged(): QPen(1,QBrush(QColor(ARGB 1, 0, 0, 0) , SolidPattern )  , SolidLine , 16 , 64 , QVector() , 0 , 2 )
+Debug: QRasterPaintEngine::transformChanged() QTransform(type=TxTranslate, 11=1 12=0 13=0 21=0 22=1 23=0 31=9 32=9 33=1)
+QPainter::setPen(), color=ff000000, (brushStyle=1) style=1, cap=16, join=64
+QPainter::drawText(), r=[0,0,26,20], flags=132241, str='Font:'
+QPainter::drawTextItem(), pos=[0,14], str='Font:'
+ - QRasterPaintEngine::drawTextItem(), (0.00,14.50), string=Font: ct=0
+Debug: QRasterPaintEngine::updatePen(): QPen(1,QBrush(QColor(ARGB 1, 0, 0, 0) , SolidPattern )  , SolidLine , 16 , 64 , QVector() , 0 , 2 )
+QPainter::begin(), device=01401b8c, type=3
+Debug: systemStateChanged 0x1f626ce0 deviceRect QRect(0,0 9x10) QRect(0,0 9x10) QRegion(size=0), bounds = QRect(0,0 0x0)
+
+Debug: QRasterPaintEngine::begin( 0x1401b8c ) devType: 3 devRect: QRect(0,0 9x10)
+clip 5: 0 0 - 8 9
+Debug: QRasterPaintEngine::compositionModeChanged() 3
+Debug: QRasterPaintEngine::fillRect():  QRectF(0,0 9x10) QColor(ARGB 0, 0, 0, 0)
+Debug:  - QRasterPaintEngine::drawImage(), p= QPointF(0, 0)  image= QSize(9, 10) depth= 32
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(0,0 9x10)
+clip 6: 0 0 - 8 9
+QPainter::begin(), device=01401b8c, type=3
+Debug: systemStateChanged 0x1f626ce0 deviceRect QRect(0,0 9x12) QRect(0,0 9x12) QRegion(size=0), bounds = QRect(0,0 0x0)
+
+Debug: QRasterPaintEngine::begin( 0x1401b8c ) devType: 3 devRect: QRect(0,0 9x12)
+clip 7: 0 0 - 8 11
+Debug: QRasterPaintEngine::compositionModeChanged() 3
+Debug: QRasterPaintEngine::fillRect():  QRectF(0,0 9x12) QColor(ARGB 0, 0, 0, 0)
+Debug:  - QRasterPaintEngine::drawImage(), p= QPointF(0, 0)  image= QSize(9, 12) depth= 32
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(0,0 9x12)
+clip 8: 0 0 - 8 11
+QPainter::begin(), device=01401b8c, type=3
+Debug: systemStateChanged 0x1f626ce0 deviceRect QRect(0,0 9x10) QRect(0,0 9x10) QRegion(size=0), bounds = QRect(0,0 0x0)
+
+Debug: QRasterPaintEngine::begin( 0x1401b8c ) devType: 3 devRect: QRect(0,0 9x10)
+clip 9: 0 0 - 8 9
+Debug: QRasterPaintEngine::compositionModeChanged() 3
+Debug: QRasterPaintEngine::fillRect():  QRectF(0,0 9x10) QColor(ARGB 0, 0, 0, 0)
+Debug:  - QRasterPaintEngine::drawImage(), p= QPointF(0, 0)  image= QSize(9, 10) depth= 32
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(0,0 9x10)
+clip 10: 0 0 - 8 9
+QPainter::begin(), device=01401b8c, type=3
+Debug: systemStateChanged 0x1f626ce0 deviceRect QRect(0,0 7x12) QRect(0,0 7x12) QRegion(size=0), bounds = QRect(0,0 0x0)
+
+Debug: QRasterPaintEngine::begin( 0x1401b8c ) devType: 3 devRect: QRect(0,0 7x12)
+clip 11: 0 0 - 6 11
+Debug: QRasterPaintEngine::compositionModeChanged() 3
+Debug: QRasterPaintEngine::fillRect():  QRectF(0,0 7x12) QColor(ARGB 0, 0, 0, 0)
+Debug:  - QRasterPaintEngine::drawImage(), p= QPointF(0, 0)  image= QSize(7, 12) depth= 32
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(0,0 7x12)
+clip 12: 0 0 - 6 11
+QPainter::begin(), device=01401b8c, type=3
+Debug: systemStateChanged 0x1f626ce0 deviceRect QRect(0,0 5x10) QRect(0,0 5x10) QRegion(size=0), bounds = QRect(0,0 0x0)
+
+Debug: QRasterPaintEngine::begin( 0x1401b8c ) devType: 3 devRect: QRect(0,0 5x10)
+clip 13: 0 0 - 4 9
+Debug: QRasterPaintEngine::compositionModeChanged() 3
+Debug: QRasterPaintEngine::fillRect():  QRectF(0,0 5x10) QColor(ARGB 0, 0, 0, 0)
+Debug:  - QRasterPaintEngine::drawImage(), p= QPointF(0, 0)  image= QSize(5, 10) depth= 32
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(0,0 5x10)
+clip 14: 0 0 - 4 9
+QPainter::setPen(), color=ff000000, (brushStyle=1) style=1, cap=16, join=64
+QPainter::setPen(), color=ff000000, (brushStyle=1) style=1, cap=16, join=64
+QPainter::setPen(), color=ff000000, (brushStyle=1) style=1, cap=16, join=64
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(9,9 26x20)
+clip 15: 9 9 - 34 28
+QPainter::begin(), device=1f610d74, type=3
+Debug: systemStateChanged 0x1f6142f0 deviceRect QRect(41,9 135x20) QRect(0,0 544x389) QRegion(size=1), bounds = QRect(41,9 135x20)
+ -  0 QRect(41,9 135x20)
+
+Debug: QRasterPaintEngine::begin( 0x1f610d74 ) devType: 3 devRect: QRect(41,9 135x20)
+clip 16: 41 9 - 175 28
+Debug: QRasterPaintEngine::penChanged(): QPen(1,QBrush(QColor(ARGB 1, 0, 0, 0) , SolidPattern )  , SolidLine , 16 , 64 , QVector() , 0 , 2 )
+Debug: QRasterPaintEngine::transformChanged() QTransform(type=TxTranslate, 11=1 12=0 13=0 21=0 22=1 23=0 31=41 32=9 33=1)
+QPainter::setPen(), color=ff000000
+Debug: QRasterPaintEngine::penChanged(): QPen(1,QBrush(QColor(ARGB 1, 0, 0, 0) , SolidPattern )  , SolidLine , 16 , 64 , QVector() , 0 , 2 )
+QPainter::save()
+QPainter::restore()
+QPainter::save()
+QPainter::restore()
+QPainter::save()
+Debug: QRasterPaintEngine::clip():  QRect(3,3 113x14) 1
+clip 17: 44 12 - 156 25
+QPainter::restore()
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(41,9 135x20)
+clip 18: 41 9 - 175 28
+QPainter::begin(), device=1f610d74, type=3
+Debug: systemStateChanged 0x1f6142f0 deviceRect QRect(44,12 113x14) QRect(0,0 544x389) QRegion(size=1), bounds = QRect(44,12 113x14)
+ -  0 QRect(44,12 113x14)
+
+Debug: QRasterPaintEngine::begin( 0x1f610d74 ) devType: 3 devRect: QRect(44,12 113x14)
+clip 19: 44 12 - 156 25
+Debug: QRasterPaintEngine::penChanged(): QPen(1,QBrush(QColor(ARGB 1, 0, 0, 0) , SolidPattern )  , SolidLine , 16 , 64 , QVector() , 0 , 2 )
+Debug: QRasterPaintEngine::transformChanged() QTransform(type=TxTranslate, 11=1 12=0 13=0 21=0 22=1 23=0 31=44 32=12 33=1)
+QPainter::save()
+Debug:  - QRasterPaintEngine::drawImage(), r= QRectF(0,0 113x14)  sr= QRectF(0,0 113x14)  image= QSize(113, 14) depth= 32
+QPainter::restore()
+Debug: QRasterPaintEngine::clip():  QRect(0,0 113x14) 1
+clip 20: 44 12 - 156 25
+QPainter::setPen(), color=ff000000
+Debug: QRasterPaintEngine::penChanged(): QPen(1,QBrush(QColor(ARGB 1, 0, 0, 0) , SolidPattern )  , SolidLine , 16 , 64 , QVector() , 0 , 2 )
+QPainter::drawTextItem(), pos=[3,12], str='MS Shell Dlg 2'
+ - QRasterPaintEngine::drawTextItem(), (3.00,12.00), string=MS Shell Dlg 2 ct=0
+Debug: QRasterPaintEngine::updatePen(): QPen(1,QBrush(QColor(ARGB 1, 0, 0, 0) , SolidPattern )  , SolidLine , 16 , 64 , QVector() , 0 , 2 )
+QPainter::begin(), device=014044dc, type=3
+Debug: systemStateChanged 0x1f626ce0 deviceRect QRect(0,0 5x5) QRect(0,0 5x5) QRegion(size=0), bounds = QRect(0,0 0x0)
+
+Debug: QRasterPaintEngine::begin( 0x14044dc ) devType: 3 devRect: QRect(0,0 5x5)
+clip 21: 0 0 - 4 4
+Debug: QRasterPaintEngine::compositionModeChanged() 3
+Debug: QRasterPaintEngine::fillRect():  QRectF(0,0 5x5) QColor(ARGB 0, 0, 0, 0)
+Debug:  - QRasterPaintEngine::drawImage(), p= QPointF(0, 0)  image= QSize(5, 5) depth= 32
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(0,0 5x5)
+clip 22: 0 0 - 4 4
+QPainter::begin(), device=014044dc, type=3
+Debug: systemStateChanged 0x1f626ce0 deviceRect QRect(0,0 5x13) QRect(0,0 5x13) QRegion(size=0), bounds = QRect(0,0 0x0)
+
+Debug: QRasterPaintEngine::begin( 0x14044dc ) devType: 3 devRect: QRect(0,0 5x13)
+clip 23: 0 0 - 4 12
+Debug: QRasterPaintEngine::compositionModeChanged() 3
+Debug: QRasterPaintEngine::fillRect():  QRectF(0,0 5x13) QColor(ARGB 0, 0, 0, 0)
+Debug:  - QRasterPaintEngine::drawImage(), p= QPointF(0, 0)  image= QSize(5, 13) depth= 32
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(0,0 5x13)
+clip 24: 0 0 - 4 12
+QPainter::begin(), device=014044dc, type=3
+Debug: systemStateChanged 0x1f626ce0 deviceRect QRect(0,0 10x12) QRect(0,0 10x12) QRegion(size=0), bounds = QRect(0,0 0x0)
+
+Debug: QRasterPaintEngine::begin( 0x14044dc ) devType: 3 devRect: QRect(0,0 10x12)
+clip 25: 0 0 - 9 11
+Debug: QRasterPaintEngine::compositionModeChanged() 3
+Debug: QRasterPaintEngine::fillRect():  QRectF(0,0 10x12) QColor(ARGB 0, 0, 0, 0)
+Debug:  - QRasterPaintEngine::drawImage(), p= QPointF(0, 0)  image= QSize(10, 12) depth= 32
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(0,0 10x12)
+clip 26: 0 0 - 9 11
+QPainter::begin(), device=014044dc, type=3
+Debug: systemStateChanged 0x1f626ce0 deviceRect QRect(0,0 9x12) QRect(0,0 9x12) QRegion(size=0), bounds = QRect(0,0 0x0)
+
+Debug: QRasterPaintEngine::begin( 0x14044dc ) devType: 3 devRect: QRect(0,0 9x12)
+clip 27: 0 0 - 8 11
+Debug: QRasterPaintEngine::compositionModeChanged() 3
+Debug: QRasterPaintEngine::fillRect():  QRectF(0,0 9x12) QColor(ARGB 0, 0, 0, 0)
+Debug:  - QRasterPaintEngine::drawImage(), p= QPointF(0, 0)  image= QSize(9, 12) depth= 32
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(0,0 9x12)
+clip 28: 0 0 - 8 11
+QPainter::begin(), device=014044dc, type=3
+Debug: systemStateChanged 0x1f626ce0 deviceRect QRect(0,0 9x12) QRect(0,0 9x12) QRegion(size=0), bounds = QRect(0,0 0x0)
+
+Debug: QRasterPaintEngine::begin( 0x14044dc ) devType: 3 devRect: QRect(0,0 9x12)
+clip 29: 0 0 - 8 11
+Debug: QRasterPaintEngine::compositionModeChanged() 3
+Debug: QRasterPaintEngine::fillRect():  QRectF(0,0 9x12) QColor(ARGB 0, 0, 0, 0)
+QPainter::begin(), device=1f610d74, type=3
+QPainter::begin(), device=1f610d74, type=3
+
+<<< 
+    Here the demo stalled. I clicked the cross in the upper right corner of the qt window to close it, 
+    then the following debugs appeared and finally the application crashed
+>>>
+
+QPainter::begin(), device=0131623c, type=2
+Debug: systemStateChanged 0x1f6bd360 deviceRect QRect(0,0 91x70) QRect(0,0 91x70) QRegion(size=0), bounds = QRect(0,0 0x0)
+
+Debug: QRasterPaintEngine::begin( 0x131623c ) devType: 2 devRect: QRect(0,0 91x70)
+clip 30: 0 0 - 90 69
+Debug: QRasterPaintEngine::penChanged(): QPen(1,QBrush(QColor(ARGB 1, 0.341176, 0.341176, 0.341176) , SolidPattern )  , SolidLine , 16 , 64 , QVector() , 0 , 2
+)
+Debug: QRasterPaintEngine::fillRecct():  QRectF(0,0 91x70) QBrush(QColor(ARGB 1, 0.941176, 0.941176, 0.941176) , SolidPattern )
+Debug: QRasterPaintEngine::updateBrush() QBrush(QColor(ARGB 1, 0.941176, 0.941176, 0.941176) , SolidPattern )
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(0,0 91x70)
+clip 31: 0 0 - 90 69
+QPainter::begin(), device=0131623c, type=2
+Debug: systemStateChanged 0x1f6bd360 deviceRect QRect(0,0 91x70) QRect(0,0 91x70) QRegion(size=1), bounds = QRect(0,0 91x70)
+ -  0 QRect(0,0 91x70)
+
+Debug: QRasterPaintEngine::begin( 0x131623c ) devType: 2 devRect: QRect(0,0 91x70)
+clip 32: 0 0 - 90 69
+Debug: QRasterPaintEngine::penChanged(): QPen(1,QBrush(QColor(ARGB 1, 0.341176, 0.341176, 0.341176) , SolidPattern )  , SolidLine , 16 , 64 , QVector() , 0 , 2
+)
+QPainter::save()
+Debug:  - QRasterPaintEngine::drawImage(), r= QRectF(0,0 91x70)  sr= QRectF(0,0 91x70)  image= QSize(113, 70) depth= 32
+QPainter::restore()
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(0,0 91x70)
+clip 33: 0 0 - 90 69
+QPainter::begin(), device=0131623c, type=2
+Debug: systemStateChanged 0x1f6bd360 deviceRect QRect(0,0 91x70) QRect(0,0 91x70) QRegion(size=1), bounds = QRect(0,0 91x70)
+ -  0 QRect(0,0 91x70)
+
+Debug: QRasterPaintEngine::begin( 0x131623c ) devType: 2 devRect: QRect(0,0 91x70)
+clip 34: 0 0 - 90 69
+Debug: QRasterPaintEngine::penChanged(): QPen(1,QBrush(QColor(ARGB 1, 0.341176, 0.341176, 0.341176) , SolidPattern )  , SolidLine , 16 , 64 , QVector() , 0 , 2
+)
+QPainter::save()
+QPainter::translate(), dx=6.000000, dy=2.000000
+Debug: QRasterPaintEngine::transformChanged() QTransform(type=TxTranslate, 11=1 12=0 13=0 21=0 22=1 23=0 31=6 32=2 33=1)
+Debug: QRasterPaintEngine::clip():  QVectorPath(size: 4  hints: 411 QRectF(0,0 79x66) ) 1
+Debug:  ----  ( 0 ,  0 )
+Debug:  ----  ( 79 ,  0 )
+Debug:  ----  ( 79 ,  66 )
+Debug:  ----  ( 0 ,  66 )
+Debug:  --- optimizing vector clip to rect clip...
+clip 35: 6 2 - 84 67
+QPainter::save()
+QPainter::setPen(), color=ff575757
+Debug: QRasterPaintEngine::penChanged(): QPen(1,QBrush(QColor(ARGB 1, 0.341176, 0.341176, 0.341176) , SolidPattern )  , SolidLine , 16 , 64 , QVector() , 0 , 2
+)
+QPainter::setPen(), color=ff575757, (brushStyle=1) style=1, cap=16, join=64
+QPainter::drawTextItem(), pos=[0,32], str='Character: '
+ - QRasterPaintEngine::drawTextItem(), (0.00,32.00), string=Character:  ct=0
+Debug: QRasterPaintEngine::updatePen(): QPen(1,QBrush(QColor(ARGB 1, 0.341176, 0.341176, 0.341176) , SolidPattern )  , SolidLine , 16 , 64 , QVector() , 0 , 2 )
+
+QPainter::begin(), device=01312c8c, type=3
+Debug: systemStateChanged 0x1f6c9f30 deviceRect QRect(0,0 5x5) QRect(0,0 5x5) QRegion(size=0), bounds = QRect(0,0 0x0)
+
+Debug: QRasterPaintEngine::begin( 0x1312c8c ) devType: 3 devRect: QRect(0,0 5x5)
+clip 36: 0 0 - 4 4
+Debug: QRasterPaintEngine::compositionModeChanged() 3
+Debug: QRasterPaintEngine::fillRect():  QRectF(0,0 5x5) QColor(ARGB 0, 0, 0, 0)
+Debug:  - QRasterPaintEngine::drawImage(), p= QPointF(0, 0)  image= QSize(5, 5) depth= 32
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(0,0 5x5)
+clip 37: 0 0 - 4 4
+QPainter::begin(), device=01312c8c, type=3
+Debug: systemStateChanged 0x1f6c9f30 deviceRect QRect(0,0 10x13) QRect(0,0 10x13) QRegion(size=0), bounds = QRect(0,0 0x0)
+
+Debug: QRasterPaintEngine::begin( 0x1312c8c ) devType: 3 devRect: QRect(0,0 10x13)
+clip 38: 0 0 - 9 12
+Debug: QRasterPaintEngine::compositionModeChanged() 3
+Debug: QRasterPaintEngine::fillRect():  QRectF(0,0 10x13) QColor(ARGB 0, 0, 0, 0)
+Debug:  - QRasterPaintEngine::drawImage(), p= QPointF(0, 0)  image= QSize(10, 13) depth= 32
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(0,0 10x13)
+clip 39: 0 0 - 9 12
+QPainter::begin(), device=01312c8c, type=3
+Debug: systemStateChanged 0x1f6c9f30 deviceRect QRect(0,0 8x10) QRect(0,0 8x10) QRegion(size=0), bounds = QRect(0,0 0x0)
+
+Debug: QRasterPaintEngine::begin( 0x1312c8c ) devType: 3 devRect: QRect(0,0 8x10)
+clip 40: 0 0 - 7 9
+Debug: QRasterPaintEngine::compositionModeChanged() 3
+Debug: QRasterPaintEngine::fillRect():  QRectF(0,0 8x10) QColor(ARGB 0, 0, 0, 0)
+Debug:  - QRasterPaintEngine::drawImage(), p= QPointF(0, 0)  image= QSize(8, 10) depth= 32
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(0,0 8x10)
+clip 41: 0 0 - 7 9
+QPainter::begin(), device=01312c8c, type=3
+Debug: systemStateChanged 0x1f6c9f30 deviceRect QRect(0,0 7x10) QRect(0,0 7x10) QRegion(size=0), bounds = QRect(0,0 0x0)
+
+Debug: QRasterPaintEngine::begin( 0x1312c8c ) devType: 3 devRect: QRect(0,0 7x10)
+clip 42: 0 0 - 6 9
+Debug: QRasterPaintEngine::compositionModeChanged() 3
+Debug: QRasterPaintEngine::fillRect():  QRectF(0,0 7x10) QColor(ARGB 0, 0, 0, 0)
+Debug:  - QRasterPaintEngine::drawImage(), p= QPointF(0, 0)  image= QSize(7, 10) depth= 32
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(0,0 7x10)
+clip 43: 0 0 - 6 9
+QPainter::begin(), device=01312c8c, type=3
+Debug: systemStateChanged 0x1f6c9f30 deviceRect QRect(0,0 8x10) QRect(0,0 8x10) QRegion(size=0), bounds = QRect(0,0 0x0)
+
+Debug: QRasterPaintEngine::begin( 0x1312c8c ) devType: 3 devRect: QRect(0,0 8x10)
+clip 44: 0 0 - 7 9
+Debug: QRasterPaintEngine::compositionModeChanged() 3
+Debug: QRasterPaintEngine::fillRect():  QRectF(0,0 8x10) QColor(ARGB 0, 0, 0, 0)
+Debug:  - QRasterPaintEngine::drawImage(), p= QPointF(0, 0)  image= QSize(8, 10) depth= 32
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(0,0 8x10)
+clip 45: 0 0 - 7 9
+QPainter::begin(), device=01312c8c, type=3
+Debug: systemStateChanged 0x1f6c9f30 deviceRect QRect(0,0 8x12) QRect(0,0 8x12) QRegion(size=0), bounds = QRect(0,0 0x0)
+
+Debug: QRasterPaintEngine::begin( 0x1312c8c ) devType: 3 devRect: QRect(0,0 8x12)
+clip 46: 0 0 - 7 11
+Debug: QRasterPaintEngine::compositionModeChanged() 3
+Debug: QRasterPaintEngine::fillRect():  QRectF(0,0 8x12) QColor(ARGB 0, 0, 0, 0)
+Debug:  - QRasterPaintEngine::drawImage(), p= QPointF(0, 0)  image= QSize(8, 12) depth= 32
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(0,0 8x12)
+clip 47: 0 0 - 7 11
+QPainter::begin(), device=01312c8c, type=3
+Debug: systemStateChanged 0x1f6c9f30 deviceRect QRect(0,0 8x10) QRect(0,0 8x10) QRegion(size=0), bounds = QRect(0,0 0x0)
+
+Debug: QRasterPaintEngine::begin( 0x1312c8c ) devType: 3 devRect: QRect(0,0 8x10)
+clip 48: 0 0 - 7 9
+Debug: QRasterPaintEngine::compositionModeChanged() 3
+Debug: QRasterPaintEngine::fillRect():  QRectF(0,0 8x10) QColor(ARGB 0, 0, 0, 0)
+Debug:  - QRasterPaintEngine::drawImage(), p= QPointF(0, 0)  image= QSize(8, 10) depth= 32
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(0,0 8x10)
+clip 49: 0 0 - 7 9
+QPainter::begin(), device=01312c8c, type=3
+Debug: systemStateChanged 0x1f6c9f30 deviceRect QRect(0,0 5x10) QRect(0,0 5x10) QRegion(size=0), bounds = QRect(0,0 0x0)
+
+Debug: QRasterPaintEngine::begin( 0x1312c8c ) devType: 3 devRect: QRect(0,0 5x10)
+clip 50: 0 0 - 4 9
+Debug: QRasterPaintEngine::compositionModeChanged() 3
+Debug: QRasterPaintEngine::fillRect():  QRectF(0,0 5x10) QColor(ARGB 0, 0, 0, 0)
+Debug:  - QRasterPaintEngine::drawImage(), p= QPointF(0, 0)  image= QSize(5, 10) depth= 32
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(0,0 5x10)
+clip 51: 0 0 - 4 9
+QPainter::begin(), device=01312c8c, type=3
+Debug: systemStateChanged 0x1f6c9f30 deviceRect QRect(0,0 9x13) QRect(0,0 9x13) QRegion(size=0), bounds = QRect(0,0 0x0)
+
+Debug: QRasterPaintEngine::begin( 0x1312c8c ) devType: 3 devRect: QRect(0,0 9x13)
+clip 52: 0 0 - 8 12
+Debug: QRasterPaintEngine::compositionModeChanged() 3
+Debug: QRasterPaintEngine::fillRect():  QRectF(0,0 9x13) QColor(ARGB 0, 0, 0, 0)
+Debug:  - QRasterPaintEngine::drawImage(), p= QPointF(0, 0)  image= QSize(9, 13) depth= 32
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(0,0 9x13)
+clip 53: 0 0 - 8 12
+QPainter::setPen(), color=ff575757, (brushStyle=1) style=1, cap=16, join=64
+QPainter::drawTextItem(), pos=[58,32], str='K'
+ - QRasterPaintEngine::drawTextItem(), (58.00,32.00), string=K ct=0
+QPainter::begin(), device=01312c8c, type=3
+Debug: systemStateChanged 0x1f6c9f30 deviceRect QRect(0,0 22x27) QRect(0,0 22x27) QRegion(size=0), bounds = QRect(0,0 0x0)
+
+Debug: QRasterPaintEngine::begin( 0x1312c8c ) devType: 3 devRect: QRect(0,0 22x27)
+clip 54: 0 0 - 21 26
+Debug: QRasterPaintEngine::compositionModeChanged() 3
+Debug: QRasterPaintEngine::fillRect():  QRectF(0,0 22x27) QColor(ARGB 0, 0, 0, 0)
+Debug:  - QRasterPaintEngine::drawImage(), p= QPointF(0, 0)  image= QSize(22, 27) depth= 32
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(0,0 22x27)
+clip 55: 0 0 - 21 26
+QPainter::setPen(), color=ff575757, (brushStyle=1) style=1, cap=16, join=64
+QPainter::setPen(), color=ff575757, (brushStyle=1) style=1, cap=16, join=64
+QPainter::setPen(), color=ff575757, (brushStyle=1) style=1, cap=16, join=64
+Debug: QRasterPaintEngine::penChanged(): QPen(1,QBrush(QColor(ARGB 1, 0.341176, 0.341176, 0.341176) , SolidPattern )  , SolidLine , 16 , 64 , QVector() , 0 , 2
+)
+QPainter::setPen(), color=ff575757
+Debug: QRasterPaintEngine::penChanged(): QPen(1,QBrush(QColor(ARGB 1, 0.341176, 0.341176, 0.341176) , SolidPattern )  , SolidLine , 16 , 64 , QVector() , 0 , 2
+)
+QPainter::setPen(), color=ff575757, (brushStyle=1) style=1, cap=16, join=64
+QPainter::drawTextItem(), pos=[0,63], str='Value: 0x4b'
+ - QRasterPaintEngine::drawTextItem(), (0.00,63.00), string=Value: 0x4b ct=0
+Debug: QRasterPaintEngine::updatePen(): QPen(1,QBrush(QColor(ARGB 1, 0.341176, 0.341176, 0.341176) , SolidPattern )  , SolidLine , 16 , 64 , QVector() , 0 , 2 )
+
+QPainter::begin(), device=01312c8c, type=3
+Debug: systemStateChanged 0x1f6c9f30 deviceRect QRect(0,0 5x13) QRect(0,0 5x13) QRegion(size=0), bounds = QRect(0,0 0x0)
+
+Debug: QRasterPaintEngine::begin( 0x1312c8c ) devType: 3 devRect: QRect(0,0 5x13)
+clip 56: 0 0 - 4 12
+Debug: QRasterPaintEngine::compositionModeChanged() 3
+Debug: QRasterPaintEngine::fillRect():  QRectF(0,0 5x13) QColor(ARGB 0, 0, 0, 0)
+Debug:  - QRasterPaintEngine::drawImage(), p= QPointF(0, 0)  image= QSize(5, 13) depth= 32
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(0,0 5x13)
+clip 57: 0 0 - 4 12
+QPainter::begin(), device=01312c8c, type=3
+Debug: systemStateChanged 0x1f6c9f30 deviceRect QRect(0,0 8x13) QRect(0,0 8x13) QRegion(size=0), bounds = QRect(0,0 0x0)
+
+Debug: QRasterPaintEngine::begin( 0x1312c8c ) devType: 3 devRect: QRect(0,0 8x13)
+clip 58: 0 0 - 7 12
+Debug: QRasterPaintEngine::compositionModeChanged() 3
+Debug: QRasterPaintEngine::fillRect():  QRectF(0,0 8x13) QColor(ARGB 0, 0, 0, 0)
+Debug:  - QRasterPaintEngine::drawImage(), p= QPointF(0, 0)  image= QSize(8, 13) depth= 32
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(0,0 8x13)
+clip 59: 0 0 - 7 12
+QPainter::begin(), device=01312c8c, type=3
+Debug: systemStateChanged 0x1f6c9f30 deviceRect QRect(0,0 9x13) QRect(0,0 9x13) QRegion(size=0), bounds = QRect(0,0 0x0)
+
+Debug: QRasterPaintEngine::begin( 0x1312c8c ) devType: 3 devRect: QRect(0,0 9x13)
+clip 60: 0 0 - 8 12
+Debug: QRasterPaintEngine::compositionModeChanged() 3
+Debug: QRasterPaintEngine::fillRect():  QRectF(0,0 9x13) QColor(ARGB 0, 0, 0, 0)
+Debug:  - QRasterPaintEngine::drawImage(), p= QPointF(0, 0)  image= QSize(9, 13) depth= 32
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(0,0 9x13)
+clip 61: 0 0 - 8 12
+QPainter::begin(), device=01312c8c, type=3
+Debug: systemStateChanged 0x1f6c9f30 deviceRect QRect(0,0 11x13) QRect(0,0 11x13) QRegion(size=0), bounds = QRect(0,0 0x0)
+
+Debug: QRasterPaintEngine::begin( 0x1312c8c ) devType: 3 devRect: QRect(0,0 11x13)
+clip 62: 0 0 - 10 12
+Debug: QRasterPaintEngine::compositionModeChanged() 3
+Debug: QRasterPaintEngine::fillRect():  QRectF(0,0 11x13) QColor(ARGB 0, 0, 0, 0)
+Debug:  - QRasterPaintEngine::drawImage(), p= QPointF(0, 0)  image= QSize(11, 13) depth= 32
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(0,0 11x13)
+clip 63: 0 0 - 10 12
+QPainter::begin(), device=01312c8c, type=3
+Debug: systemStateChanged 0x1f6c9f30 deviceRect QRect(0,0 9x13) QRect(0,0 9x13) QRegion(size=0), bounds = QRect(0,0 0x0)
+
+Debug: QRasterPaintEngine::begin( 0x1312c8c ) devType: 3 devRect: QRect(0,0 9x13)
+clip 64: 0 0 - 8 12
+Debug: QRasterPaintEngine::compositionModeChanged() 3
+Debug: QRasterPaintEngine::fillRect():  QRectF(0,0 9x13) QColor(ARGB 0, 0, 0, 0)
+Debug:  - QRasterPaintEngine::drawImage(), p= QPointF(0, 0)  image= QSize(9, 13) depth= 32
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(0,0 9x13)
+clip 65: 0 0 - 8 12
+QPainter::begin(), device=01312c8c, type=3
+Debug: systemStateChanged 0x1f6c9f30 deviceRect QRect(0,0 9x10) QRect(0,0 9x10) QRegion(size=0), bounds = QRect(0,0 0x0)
+
+Debug: QRasterPaintEngine::begin( 0x1312c8c ) devType: 3 devRect: QRect(0,0 9x10)
+clip 66: 0 0 - 8 9
+Debug: QRasterPaintEngine::compositionModeChanged() 3
+Debug: QRasterPaintEngine::fillRect():  QRectF(0,0 9x10) QColor(ARGB 0, 0, 0, 0)
+Debug:  - QRasterPaintEngine::drawImage(), p= QPointF(0, 0)  image= QSize(9, 10) depth= 32
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(0,0 9x10)
+clip 67: 0 0 - 8 9
+QPainter::begin(), device=01312c8c, type=3
+Debug: systemStateChanged 0x1f6c9f30 deviceRect QRect(0,0 9x10) QRect(0,0 9x10) QRegion(size=0), bounds = QRect(0,0 0x0)
+
+Debug: QRasterPaintEngine::begin( 0x1312c8c ) devType: 3 devRect: QRect(0,0 9x10)
+clip 68: 0 0 - 8 9
+Debug: QRasterPaintEngine::compositionModeChanged() 3
+Debug: QRasterPaintEngine::fillRect():  QRectF(0,0 9x10) QColor(ARGB 0, 0, 0, 0)
+Debug:  - QRasterPaintEngine::drawImage(), p= QPointF(0, 0)  image= QSize(9, 10) depth= 32
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(0,0 9x10)
+clip 69: 0 0 - 8 9
+QPainter::setPen(), color=ff575757, (brushStyle=1) style=1, cap=16, join=64
+QPainter::setPen(), color=ff575757, (brushStyle=1) style=1, cap=16, join=64
+QPainter::setPen(), color=ff575757, (brushStyle=1) style=1, cap=16, join=64
+Debug: QRasterPaintEngine::penChanged(): QPen(1,QBrush(QColor(ARGB 1, 0.341176, 0.341176, 0.341176) , SolidPattern )  , SolidLine , 16 , 64 , QVector() , 0 , 2
+)
+QPainter::restore()
+QPainter::restore()
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(0,0 91x70)
+clip 70: 0 0 - 90 69
+QPainter::begin(), device=013179dc, type=2
+Debug: systemStateChanged 0x1f6c9f30 deviceRect QRect(0,0 88x70) QRect(0,0 88x70) QRegion(size=0), bounds = QRect(0,0 0x0)
+
+Debug: QRasterPaintEngine::begin( 0x13179dc ) devType: 2 devRect: QRect(0,0 88x70)
+clip 71: 0 0 - 87 69
+Debug: QRasterPaintEngine::penChanged(): QPen(1,QBrush(QColor(ARGB 1, 0.341176, 0.341176, 0.341176) , SolidPattern )  , SolidLine , 16 , 64 , QVector() , 0 , 2
+)
+Debug: QRasterPaintEngine::fillRecct():  QRectF(0,0 88x70) QBrush(QColor(ARGB 1, 0.941176, 0.941176, 0.941176) , SolidPattern )
+Debug: QRasterPaintEngine::updateBrush() QBrush(QColor(ARGB 1, 0.941176, 0.941176, 0.941176) , SolidPattern )
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(0,0 88x70)
+clip 72: 0 0 - 87 69
+QPainter::begin(), device=013179dc, type=2
+Debug: systemStateChanged 0x1f6c9f30 deviceRect QRect(0,0 88x70) QRect(0,0 88x70) QRegion(size=1), bounds = QRect(0,0 88x70)
+ -  0 QRect(0,0 88x70)
+
+Debug: QRasterPaintEngine::begin( 0x13179dc ) devType: 2 devRect: QRect(0,0 88x70)
+clip 73: 0 0 - 87 69
+Debug: QRasterPaintEngine::penChanged(): QPen(1,QBrush(QColor(ARGB 1, 0.341176, 0.341176, 0.341176) , SolidPattern )  , SolidLine , 16 , 64 , QVector() , 0 , 2
+)
+QPainter::save()
+Debug:  - QRasterPaintEngine::drawImage(), r= QRectF(0,0 88x70)  sr= QRectF(0,0 88x70)  image= QSize(113, 70) depth= 32
+QPainter::restore()
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(0,0 88x70)
+clip 74: 0 0 - 87 69
+QPainter::begin(), device=013179dc, type=2
+Debug: systemStateChanged 0x1f6c9f30 deviceRect QRect(0,0 88x70) QRect(0,0 88x70) QRegion(size=1), bounds = QRect(0,0 88x70)
+ -  0 QRect(0,0 88x70)
+
+Debug: QRasterPaintEngine::begin( 0x13179dc ) devType: 2 devRect: QRect(0,0 88x70)
+clip 75: 0 0 - 87 69
+Debug: QRasterPaintEngine::penChanged(): QPen(1,QBrush(QColor(ARGB 1, 0.341176, 0.341176, 0.341176) , SolidPattern )  , SolidLine , 16 , 64 , QVector() , 0 , 2
+)
+QPainter::save()
+QPainter::translate(), dx=6.000000, dy=2.000000
+Debug: QRasterPaintEngine::transformChanged() QTransform(type=TxTranslate, 11=1 12=0 13=0 21=0 22=1 23=0 31=6 32=2 33=1)
+Debug: QRasterPaintEngine::clip():  QVectorPath(size: 4  hints: 411 QRectF(0,0 76x66) ) 1
+Debug:  ----  ( 0 ,  0 )
+Debug:  ----  ( 76 ,  0 )
+Debug:  ----  ( 76 ,  66 )
+Debug:  ----  ( 0 ,  66 )
+Debug:  --- optimizing vector clip to rect clip...
+clip 76: 6 2 - 81 67
+QPainter::save()
+QPainter::setPen(), color=ff575757
+Debug: QRasterPaintEngine::penChanged(): QPen(1,QBrush(QColor(ARGB 1, 0.341176, 0.341176, 0.341176) , SolidPattern )  , SolidLine , 16 , 64 , QVector() , 0 , 2
+)
+QPainter::setPen(), color=ff575757, (brushStyle=1) style=1, cap=16, join=64
+QPainter::drawTextItem(), pos=[0,32], str='Character: '
+ - QRasterPaintEngine::drawTextItem(), (0.00,32.00), string=Character:  ct=0
+Debug: QRasterPaintEngine::updatePen(): QPen(1,QBrush(QColor(ARGB 1, 0.341176, 0.341176, 0.341176) , SolidPattern )  , SolidLine , 16 , 64 , QVector() , 0 , 2 )
+
+QPainter::setPen(), color=ff575757, (brushStyle=1) style=1, cap=16, join=64
+QPainter::drawTextItem(), pos=[58,32], str='k'
+ - QRasterPaintEngine::drawTextItem(), (58.00,32.00), string=k ct=0
+QPainter::begin(), device=0131442c, type=3
+Debug: systemStateChanged 0x1f6e67f0 deviceRect QRect(0,0 19x28) QRect(0,0 19x28) QRegion(size=0), bounds = QRect(0,0 0x0)
+
+Debug: QRasterPaintEngine::begin( 0x131442c ) devType: 3 devRect: QRect(0,0 19x28)
+clip 77: 0 0 - 18 27
+Debug: QRasterPaintEngine::compositionModeChanged() 3
+Debug: QRasterPaintEngine::fillRect():  QRectF(0,0 19x28) QColor(ARGB 0, 0, 0, 0)
+Debug:  - QRasterPaintEngine::drawImage(), p= QPointF(0, 0)  image= QSize(19, 28) depth= 32
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(0,0 19x28)
+clip 78: 0 0 - 18 27
+QPainter::setPen(), color=ff575757, (brushStyle=1) style=1, cap=16, join=64
+QPainter::setPen(), color=ff575757, (brushStyle=1) style=1, cap=16, join=64
+QPainter::setPen(), color=ff575757, (brushStyle=1) style=1, cap=16, join=64
+Debug: QRasterPaintEngine::penChanged(): QPen(1,QBrush(QColor(ARGB 1, 0.341176, 0.341176, 0.341176) , SolidPattern )  , SolidLine , 16 , 64 , QVector() , 0 , 2
+)
+QPainter::setPen(), color=ff575757
+Debug: QRasterPaintEngine::penChanged(): QPen(1,QBrush(QColor(ARGB 1, 0.341176, 0.341176, 0.341176) , SolidPattern )  , SolidLine , 16 , 64 , QVector() , 0 , 2
+)
+QPainter::setPen(), color=ff575757, (brushStyle=1) style=1, cap=16, join=64
+QPainter::drawTextItem(), pos=[0,63], str='Value: 0x6b'
+ - QRasterPaintEngine::drawTextItem(), (0.00,63.00), string=Value: 0x6b ct=0
+Debug: QRasterPaintEngine::updatePen(): QPen(1,QBrush(QColor(ARGB 1, 0.341176, 0.341176, 0.341176) , SolidPattern )  , SolidLine , 16 , 64 , QVector() , 0 , 2 )
+
+QPainter::begin(), device=0131442c, type=3
+Debug: systemStateChanged 0x1f6e67f0 deviceRect QRect(0,0 8x13) QRect(0,0 8x13) QRegion(size=0), bounds = QRect(0,0 0x0)
+
+Debug: QRasterPaintEngine::begin( 0x131442c ) devType: 3 devRect: QRect(0,0 8x13)
+clip 79: 0 0 - 7 12
+Debug: QRasterPaintEngine::compositionModeChanged() 3
+Debug: QRasterPaintEngine::fillRect():  QRectF(0,0 8x13) QColor(ARGB 0, 0, 0, 0)
+Debug:  - QRasterPaintEngine::drawImage(), p= QPointF(0, 0)  image= QSize(8, 13) depth= 32
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(0,0 8x13)
+clip 80: 0 0 - 7 12
+QPainter::setPen(), color=ff575757, (brushStyle=1) style=1, cap=16, join=64
+QPainter::setPen(), color=ff575757, (brushStyle=1) style=1, cap=16, join=64
+QPainter::setPen(), color=ff575757, (brushStyle=1) style=1, cap=16, join=64
+Debug: QRasterPaintEngine::penChanged(): QPen(1,QBrush(QColor(ARGB 1, 0.341176, 0.341176, 0.341176) , SolidPattern )  , SolidLine , 16 , 64 , QVector() , 0 , 2
+)
+QPainter::restore()
+QPainter::restore()
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(0,0 88x70)
+clip 81: 0 0 - 87 69
+QPainter::begin(), device=1f612354, type=3
+Debug: systemStateChanged 0x1f6bd360 deviceRect QRect(0,0 88x7) QRect(0,0 88x7) QRegion(size=1), bounds = QRect(0,0 88x7)
+ -  0 QRect(0,0 88x7)
+
+Debug: QRasterPaintEngine::begin( 0x1f612354 ) devType: 3 devRect: QRect(0,0 88x7)
+clip 82: 0 0 - 87 6
+Debug: QRasterPaintEngine::penChanged(): QPen(1,QBrush(QColor(ARGB 1, 0.470588, 0.470588, 0.470588) , SolidPattern )  , SolidLine , 16 , 64 , QVector() , 0 , 2
+)
+QPainter::drawPixmap(), p=[0.00,-63.00], pix=[88,70]
+Debug:  - QRasterPaintEngine::drawPixmap(), pos= QPointF(0, -63)  pixmap= QSize(88, 70) depth= 32
+Debug:  - QRasterPaintEngine::drawImage(), p= QPointF(0, -63)  image= QSize(88, 70) depth= 32
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(0,0 88x7)
+clip 83: 0 0 - 87 6
+QPainter::begin(), device=1f612bc4, type=3
+Debug: systemStateChanged 0x1f69ca08 deviceRect QRect(0,0 88x70) QRect(0,0 88x70) QRegion(size=1), bounds = QRect(0,0 88x70)
+ -  0 QRect(0,0 88x70)
+
+Debug: QRasterPaintEngine::begin( 0x1f612bc4 ) devType: 3 devRect: QRect(0,0 88x70)
+clip 84: 0 0 - 87 69
+Debug: QRasterPaintEngine::penChanged(): QPen(1,QBrush(QColor(ARGB 1, 0.470588, 0.470588, 0.470588) , SolidPattern )  , SolidLine , 16 , 64 , QVector() , 0 , 2
+)
+QPainter::drawPixmap(), p=[0.00,0.00], pix=[88,70]
+Debug:  - QRasterPaintEngine::drawPixmap(), pos= QPointF(0, 0)  pixmap= QSize(88, 70) depth= 32
+Debug:  - QRasterPaintEngine::drawImage(), p= QPointF(0, 0)  image= QSize(88, 70) depth= 32
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(0,0 88x70)
+clip 85: 0 0 - 87 69
+QPainter::begin(), device=1f612b4c, type=3
+Debug: systemStateChanged 0x1f6bd360 deviceRect QRect(0,0 88x70) QRect(0,0 88x70) QRegion(size=0), bounds = QRect(0,0 0x0)
+
+Debug: QRasterPaintEngine::begin( 0x1f612b4c ) devType: 3 devRect: QRect(0,0 88x70)
+clip 86: 0 0 - 87 69
+Debug: QRasterPaintEngine::penChanged(): QPen(1,QBrush(QColor(ARGB 1, 0.341176, 0.341176, 0.341176) , SolidPattern )  , SolidLine , 16 , 64 , QVector() , 0 , 2
+)
+Debug: QRasterPaintEngine::compositionModeChanged() 3
+Debug: QRasterPaintEngine::fillRecct():  QRectF(1,0 86x1) QBrush(QColor(ARGB 1, 0.941176, 0.941176, 0.941176) , SolidPattern )
+Debug: QRasterPaintEngine::updateBrush() QBrush(QColor(ARGB 1, 0.941176, 0.941176, 0.941176) , SolidPattern )
+Debug: QRasterPaintEngine::fillRecct():  QRectF(0,1 88x68) QBrush(QColor(ARGB 1, 0.941176, 0.941176, 0.941176) , SolidPattern )
+Debug: QRasterPaintEngine::fillRecct():  QRectF(1,69 86x1) QBrush(QColor(ARGB 1, 0.941176, 0.941176, 0.941176) , SolidPattern )
+Debug: QRasterPaintEngine::compositionModeChanged() 0
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(0,0 88x70)
+clip 87: 0 0 - 87 69
+QPainter::begin(), device=1f612b4c, type=3
+Debug: systemStateChanged 0x1f6bd360 deviceRect QRect(0,0 88x70) QRect(0,0 88x70) QRegion(size=3), bounds = QRect(0,0 88x70)
+ -  0 QRect(1,0 86x1)
+ -  1 QRect(0,1 88x68)
+ -  2 QRect(1,69 86x1)
+
+Debug: QRasterPaintEngine::begin( 0x1f612b4c ) devType: 3 devRect: QRect(0,0 88x70)
+clip 88: 0 0 - 87 69
+Debug: QRasterPaintEngine::penChanged(): QPen(1,QBrush(QColor(ARGB 1, 0.341176, 0.341176, 0.341176) , SolidPattern )  , SolidLine , 16 , 64 , QVector() , 0 , 2
+)
+QPainter::save()
+QPainter::restore()
+QPainter::end()
+Debug: QRasterPaintEngine::end devRect: QRect(0,0 88x70)
+clip 89: 0 0 - 87 69
+QPainter::begin(), device=1f612b4c, type=3
+Debug: systemStateChanged 0x1f6bd360 deviceRect QRect(0,0 88x70) QRect(0,0 88x70) QRegion(size=3), bounds = QRect(0,0 88x70)
+ -  0 QRect(1,0 86x1)
+ -  1 QRect(0,1 88x68)
+ -  2 QRect(1,69 86x1)
+
+Debug: QRasterPaintEngine::begin( 0x1f612b4c ) devType: 3 devRect: QRect(0,0 88x70)
+clip 90: 0 0 - 87 69
+Debug: QRasterPaintEngine::penChanged(): QPen(1,QBrush(QColor(ARGB 1, 0.341176, 0.341176, 0.341176) , SolidPattern )  , SolidLine , 16 , 64 , QVector() , 0 , 2
+)
+QPainter::save()
+QPainter::translate(), dx=6.000000, dy=2.000000
+Debug: QRasterPaintEngine::transformChanged() QTransform(type=TxTranslate, 11=1 12=0 13=0 21=0 22=1 23=0 31=6 32=2 33=1)
+Debug: QRasterPaintEngine::clip():  QVectorPath(size: 4  hints: 411 QRectF(0,0 76x66) ) 1
+Debug:  ----  ( 0 ,  0 )
+Debug:  ----  ( 76 ,  0 )
+Debug:  ----  ( 76 ,  66 )
+Debug:  ----  ( 0 ,  66 )
+Debug:  --- optimizing vector clip to rect clip...
